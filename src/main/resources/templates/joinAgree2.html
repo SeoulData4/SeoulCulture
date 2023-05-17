@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="joinAgree.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <div id="skip">
+            <a href="#content">본문 내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <header id="header">
+        <!-- Gnb -->
+        <!-- ######################################################################## -->
+        <!-- 
+        menu name: Pc Homepage Gnb
+    -->
+        <!-- ######################################################################## -->
+        <!-- serverTestContent -->
+        <!-- ######################################################################## -->
+        <!-- 
+        menu name: serverTestContent
+    -->
+        <!-- ######################################################################## -->
+        <div id="divTestOnOff" style="position: relative;width:100%;text-align:center;background: orange;display:none;">
+            <section style="margin: 0 auto;padding:10px 0;">
+            <h2 id="h2TestName" style="font-size: 20px;color: #f4f6f7;font-weight: 700;">서울특별시</h2>
+            </section>
+        </div>
+        <script>
+        var divTestOnOff = $('#divTestOnOff');
+    if(divTestOnOff){
+    }
+        </script>
+        <!-- serverTestContent -->
+        <!-- PC homepage GNB  -->
+        <!-- SUB화면 GNB  -->
+        <div class="top-area">
+            <div class="inner">
+                <h1 class="logo">
+                <a href="//www.seoul.go.kr?tr_code=gnb_seoul" title="메인페이지 바로가기"><span class="sr-only">서울특별시 로고</span></a>
+                </h1>
+                <button class="btn_menu mo-view"><span class="sr-only">전체메뉴 열기</span></button>
+                <button class="btn_sch mo-view"><span class="sr-only">검색하기</span></button>
+                <!--gnb pc-view-->
+                <div class="gnb pc-view">
+                    <ul>
+                        <li><a href="/realmnews/in/list.do?tr_code=gnb_news">서울소식</a></li>
+                        <li><a href="/citizen/citizen.do?top_menu05">시민참여</a></li>
+                        <li class="info_cate"><a href="//news.seoul.go.kr" target="_blank" onclick="action_logging({tr_code:'top_menu05'});">분야별정보</a>
+                        <!-- <button type="button" title="분야정보 열기" class="btn_info_cate">분야정보</button> -->
+                        <!--
+                                  <section class="info_detail" id="info_detail_wrap">
+                                      <h2>분야별 정보</h2>
+                                      <ul>
+                                           <li class="house">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/citybuild/?tr_code=gnb_more">주택</a></p>
+                                           </li>
+                                           <li class="economy">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/economy/?tr_code=gnb_more">경제</a></p>
+                                           </li>
+                                           <li class="traffic">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/traffic/?tr_code=gnb_more">교통</a></p>
+                                           </li>
+                                           <li class="environment">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/env/?tr_code=gnb_more">환경</a></p>
+                                           </li>
+                                           <li class="welfare">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/welfare/?tr_code=gnb_more">복지</a></p>
+                                           </li>
+                                           <li class="safty">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/safe/?tr_code=gnb_more">안전</a></p>
+                                           </li>
+                                           <li class="culture">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/culture/?tr_code=gnb_more">문화</a></p>
+                                           </li>
+                                           <li class="work">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/gov/?tr_code=gnb_more">행정</a></p>
+                                           </li>                                      
+                                      </ul>
+                                      <p class="view_all"><a href="/service/all.do">서비스 전체보기</a></p>
+                                      <button class="btn_close"><span class="sr-only">닫기</span></button>
+                                  </section>
+                                  -->
+                        </li>
+                        <li><a href="/seoul/seoul.do?tr_code=top_menu04">서울소개</a></li>
+                        <li><a href="//org.seoul.go.kr?tr_code=top_menu06">부서안내</a></li>
+                        <li><a href="//opengov.seoul.go.kr" target="_blank" title="새창열림">정보공개</a></li>
+                        <li><a href="//eungdapso.seoul.go.kr?tr_code=gnb_eungdapso" target="_blank" title="새창열림">응답소</a></li>
+                        <!-- <li><a href="/seoul/newoffice.do?tr_code=top_menu07">청사안내</a></li> -->
+                    </ul>
+                    <ul class="other">
+                        <li><a href="/member/userlogin/loginCheck.do?tr_code=top_menu01">로그인</a></li>
+                        <li><a href="/member/info/mySeoul.do?tr_code=top_menu02">나의서울</a></li>
+                        <!-- <li><a href="https://citizen.seoul.kr?tr_code=top_menu03" target="_blank">전자우편ㅅㅅ</a></li> -->
+                        <li><a href="javascript:void(0)" onclick="checkMailUserYn(); return false;" target="_blank" title="새창열림">전자우편</a></li>
+                    </ul>
+                </div>
+                <!--//gnb pc-view pc일때 gnb-->
+                <!--gnb mo-view width 1152 미만 일때 gnb-->
+                <div class="gnb all_gnb">
+                    <div class="txt_login">
+                        <a href="/member/userlogin/loginCheck.do?tr_code=top_menu01">로그인</a>
+                        <div class="btn_area">
+                            <button class="btn_setting" style="display: none;"><span class="sr-only">설정</span></button>
+                            <button class="btn_close"><span class="sr-only">전체메뉴 닫기</span></button>
+                        </div>
+                    </div>
+                    <!--로그인 후 텍스트 바뀜
+                    <div class="txt_login">반갑습니다. 김서울님
+                        <div class="btn_area">
+                            <button class="btn_setting"><span class="sr-only">설정</span></button>
+                            <button class="btn_close"><span class="sr-only">전체메뉴 닫기</span></button>
+                        </div>
+                    </div>
+                    -->
+                    <!-- 전체메뉴  -->
+                    <ul id="all_menu" class="clfix tendina">
+                        <li class="selected"><a href="#" role="button">나의서울<em class="sr-only">선택됨</em></a>
+                        <ul class="sub_menu" style="display: block;">
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/member/info/mySeoul.do">나의서울<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/member/board/information_use.do">이용안내<em class="sr-only"></em></a>
+                            </li>
+                            <li><a href="#" role="button">개인정보<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/member/info/userInfoRenewal.do" target="_blank">회원정보 변경<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/member/info/userPwdRenewal.do" target="_blank">비밀번호 변경<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/member/info/userUnregistConf.do" target="_blank">회원탈퇴<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/member/info/reAgreeInfoApp.do" target="_blank">회원정보 재동의<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">마일리지<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://mileage.seoul.go.kr/main/NoticeList.do" target="_blank">마일리지 공지<em class="sr-only"></em></a></li>
+                                <li><a href="https://mileage.seoul.go.kr/main/MileageInfo.do" target="_blank">마일리지 적립안내<em class="sr-only"></em></a></li>
+                                <li><a href="https://mileage.seoul.go.kr/main/MyInfoMain.do" target="_blank">나의 마일리지 현황<em class="sr-only"></em></a></li>
+                                <li><a href="https://mileage.seoul.go.kr/main/CultureMain.do" target="_blank">마일리지 사용<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">나의 민원정보<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://eungdapso.seoul.go.kr/mpg/complaint/complaint_lis.do" target="_blank">나의상담/신고조회<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="https://citizen.seoul.kr" target="_blank">나의 메일<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://citizen.seoul.kr" target="_blank" role="button">전자우편<em class="sr-only">선택하기</em></a>
+                        </li>
+                        <li><a href="#" role="button">서울소식<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li><a href="#" role="button">새소식<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/realmnews/in/list.do">분야별 새소식<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/thismteventfstvl/list.do">이달의 행사 및 축제<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/eventreqst/list.do">이벤트 신청<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/rssboard/list.do">자치구 주요뉴스<em class="sr-only"></em></a></li>
+                                <li><a href="https://sll.seoul.go.kr/" target="_blank">강좌 교육<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_position.do">인사발령<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/seoul/mediahub.do">서울시 정책 뉴스<em class="sr-only"></em></a>
+                            </li>
+                            <li><a href="#" role="button">공고<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/news/news_tender.do">입찰공고<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_contract.do">수의계약내역<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_employ.do">채용시험<em class="sr-only"></em></a></li>
+                                <li><a href="https://event.seoul.go.kr/seoulsibo/list.do">서울시보<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_notice.do">고시공고<em class="sr-only"></em></a></li>
+                                <li><a href="https://urban.seoul.go.kr/view/html/PMNU4010000000" target="_blank">도시관리계획안 열람공고<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/rssboard/asbList.do">석면해체ㆍ제거일정<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">보도ㆍ해명자료<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/news/news_report.do">보도자료<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_explanation.do">해명자료<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="http://mediahub.seoul.go.kr/main" target="_blank">내 손안에 서울<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://event.seoul.go.kr/publication/seoul/seoul.jsp">서울사랑<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://event.seoul.go.kr/publication/friend/friend.jsp">내친구서울<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://www.seoul.go.kr/seoul/seoul.do" role="button">서울소개<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li><a href="#" target="_blank" role="button">시청안내<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://org.seoul.go.kr/org/orgChart.do">조직도<em class="sr-only"></em></a></li>
+                                <li><a href="https://org.seoul.go.kr/bonbu/orgChart.do">본부ㆍ사업소<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/pubcorp.do">공사ㆍ출연기관<em class="sr-only"></em></a></li>
+                                <li><a href="https://org.seoul.go.kr/smc/orgChart.do">시의회<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/autonomy.do">자치구<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/autonomy_sub.do">자치구별 동 현황<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/map.do">찾아오시는 길<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/newoffice.do">청사안내<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울의 상징물(조례)<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/seoul/emblem.do">휘장<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/symbol.do">캐릭터(해치)<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/flower.do">꽃, 나무, 새<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울의 상징<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="/seoul/slogan.do?selmenu=M00000069">슬로건<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/color.do">색<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/font.do">서체<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울정보<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.si.re.kr/infographics" target="_blank">인포그래픽스<em class="sr-only"></em></a></li>
+                                <li><a href="http://www.seoul.go.kr/storyw/intro/list.do">스토리인서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://data.si.re.kr/data" target="_blank">데이터로 본 서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://data.si.re.kr/photo" target="_blank">사진으로 본 서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/movie.do">영상으로 본 서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/seoulStat.do">서울 통계<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울의 역사<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/seoul/history.do">서울의 역사<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/mayor.do">역대서울시장<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.smc.seoul.kr/main/councilHistory.do?menuId=001001002002&amp;period=10" target="_blank">시의회변천<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/gov/prize_award_introduce" target="_blank">시민상ㆍ시민표창<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/gov/seoul_honorary_ambassador" target="_blank">서울홍보대사<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/seoul/playerInfo.do">서울시청 선수단 소개<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://org.seoul.go.kr?tr_code=top_menu06" role="button">부서안내<em class="sr-only">선택하기</em></a>
+                        </li>
+                        <li><a href="https://www.seoul.go.kr/citizen/monitor.do" role="button">시민참여<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li><a href="undefined" role="button">시민청원/제안<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="http://democracy.seoul.go.kr/front/index.do" target="_blank">시민제안(상상대로 서울)<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/freeboard/participation.do">공공언어 개선제안<em class="sr-only"></em></a></li>
+                                <li><a href="http://yesan.seoul.go.kr/yw/yw0101.do" target="_blank">예산낭비신고센터<em class="sr-only"></em></a></li>
+                                <li><a href="https://event.seoul.go.kr/proposal/declaration.do">불합리한 규제 신고센터<em class="sr-only"></em></a></li>
+                                <li><a href="https://event.seoul.go.kr/proposal/regForm.do">규제 입증 요청<em class="sr-only"></em></a></li>
+                                <li><a href="http://legal.seoul.go.kr/legal/front/page/lawSystemImprovement.html?pAct=intro" target="_blank">참여입법<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="http://ombudsman.seoul.go.kr" target="_blank">시민감사옴부즈만위원회<em class="sr-only"></em></a>
+                            </li>
+                            <li><a href="undefined" role="button">시민의견<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/freeboard/freeboard.do">자유게시판<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/freeboard/praiseboard.do">칭찬합시다<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="http://research.seoul.go.kr/main.do" target="_blank">온라인여론조사<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://mediahub.seoul.go.kr/competition/competitionList.do" target="_blank">공모전<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="http://volunteer.seoul.go.kr/" target="_blank">서울시자원봉사센터<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="#" role="button">분야별정보<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/citybuild/" target="_blank">주택<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/economy/" target="_blank">경제<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/traffic/" target="_blank">교통<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/env/" target="_blank">환경<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/welfare/" target="_blank">복지<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/safe/" target="_blank">안전<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/culture/" target="_blank">문화<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/gov/" target="_blank">행정<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://opengov.seoul.go.kr/" target="_blank" role="button">정보공개<em class="sr-only">선택하기</em></a>
+                        </li>
+                        <li><a href="https://eungdapso.seoul.go.kr/" target="_blank" role="button">응답소<em class="sr-only">선택하기</em></a>
+                        </li>
+                    </ul>
+                    <a class="view_all" href="https://news.seoul.go.kr/gov/site" target="_blank">서비스 전체보기</a>
+                </div>
+                <div class="dim">
+                </div>
+            </div>
+            <!--//gnb mo-view width 1152 미만 일때 gnb-->
+            <!-- //top-area -->
+        </div>
+        <script>
+        var openNewWindow;
+        function myCallback(data){
+                    if(data.success == "true"){
+                        openNewWindow=window.open("about:blank");
+                        openNewWindow.location.href="https://citizen.seoul.kr?tr_code=top_menu03";
+                        location.reload();
+                    }else {
+                        alert("전자메일 생성중 에러가 발생했습니다. \r\n다시 시도해 주세요...");
+                        return;
+                    }
+                }
+        function checkMailUserYn(){
+            var delYN='';
+            var islogin="N";
+            var pk = '';
+            if(islogin == "Y"){
+                if(delYN=="Y"){
+                    if(confirm("서울시 전자우편을 신규로 생성하시겠습니까?")){
+                        $.ajax({
+                            dataType   : "jsonp"
+                             ,url		: "//www.seoul.go.kr/member/info/seoulMailUseUpdate.do"
+                             ,data		: {"pk" : pk,
+                                            "M00101_DEL_YN" : "N"
+                             }
+                             ,jsonpCallback: "myCallback"
+                             ,error	: function(edata){
+                                 alert("전자메일 생성중 에러가 발생했습니다. \r\n다시 시도해 주세요......");
+                                 return;
+                             }				
+                         }); 
+                    }else{
+                        return;
+                    }
+                }else if(delYN == "N"){
+                    openNewWindow=window.open("about:blank");
+                    openNewWindow.location.href="https://citizen.seoul.kr?tr_code=top_menu03";
+                }else {
+                    alert("해당 쿠키가 존재하지 않습니다. 로그아웃 후 재 로그인 해주세요.");
+                     return;
+                }	
+            }else{
+                openNewWindow=window.open("about:blank");
+                openNewWindow.location.href="//www.seoul.go.kr/member/userlogin/loginCheck.do?SITE_GB=GB002&refresh_url=https://citizen.seoul.kr";
+            }
+        };
+            // 팝업창에서 탭클릭시 팝업 내에서만 탭 포커싱 이동되게..
+            var btnCategory = $('.info_cate > button');
+            var layerCategory = $('.info_detail');
+            front.btnClick(btnCategory, function($this) {
+                front.showCallback(layerCategory, function() {
+                    layerCategory.addClass('on');
+                    var closeBtn = layerCategory.find('.btn_close');
+                    front.layerFocus(layerCategory, closeBtn);
+                    front.btnClick(closeBtn, function() {
+                        front.hideCallback(layerCategory, function() {
+                            $this.attr('tabindex', '0').focus();
+                        });
+                    });
+                });
+            });
+            //오픈 클릭, click() 메서드 안에 익명 함수를 사용
+            $('.btn_menu').click(function(e){
+                //기본 동작 취소, form action, a href 등등
+                e.preventDefault();
+                    $('html, body').addClass('menu-open');
+                $('#skip, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  true); //2019-08-26 앱접근성 실태조사 수정
+                //클래스 추가		
+                $('.gnb').addClass('on');
+                $('.dim').addClass('on');
+                $('.txt_login>a').focus();
+            });
+            //닫기
+            $('.gnb .btn_close').click(function(e){
+                e.preventDefault();
+                    $('html, body').removeClass('menu-open');
+                $('#skip, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  false); //2019-08-26 앱접근성 실태조사 수정
+                //닫기
+                $('.gnb').removeClass('on');
+                $('.dim').removeClass('on');
+                $('.btn_menu').focus();	
+            });
+            $('.btn_sch').click(function(){
+                $('.search-line').slideToggle(100);
+            });
+            $(function() {
+                // beast000
+                var standalone = window.navigator.standalone, 
+                userAgent = window.navigator.userAgent.toLowerCase(),
+                safari = /safari/.test( userAgent ),
+                ios = /iphone|ipod|ipad/.test( userAgent ),
+                android = /android/.test( userAgent );
+                var appSettingUrl = "";
+                if( ios ) {
+                    if ( !standalone && safari ) {
+                    // 아이폰 브라우저 접속
+                     } else if ( standalone && !safari ) {
+                     // 아이폰 Standalone 
+                     } else if ( !standalone && !safari ) {
+                     // 아이폰 웹뷰
+                         appSettingUrl="setting://www.seoul.go.kr/"; // ??? 아이폰 설정 창 뜨는지 확인
+                     };
+                } else {
+                    //not iOS
+                    if(android) {
+                        if (typeof mobileseoulandroid === "undefined") {
+                            // 안드로이드 모바일서울 웹 뷰 아님
+                        } else {
+                            // 안드로이드 웹뷰
+                            appSettingUrl="javascript:mobileseoulandroid.openSetting()";
+                        }
+                    }
+                };
+                if(appSettingUrl != "") {		
+                    $('.gnb .btn_setting').click(function(e){
+                        e.preventDefault();
+                        location.href=appSettingUrl;
+                    });
+                } else {
+                    $('.gnb .btn_setting').hide();	
+                }
+            });
+            var _mecount 	= 0;
+            var _memax 		= 0;
+            var _res 		= '';
+            var _selmenu	= '';
+            var _patt1		= /http/gi;
+            var _patt2		= /\?/gi;
+            var _link_url	= '';
+            function fnSub_CreateMenu(data, parent){
+                var out		= [];
+                var target	= '';
+                var cls1    = '';
+                for(var i in data)
+                {
+                    if(data[i].UPPER_MENU_ID == parent)
+                    {
+                        if(data[i].OK == 'N')
+                        {
+                            // find inner link
+                            _link_url = data[i].LINK_URL + "";
+                            if((_link_url.indexOf("http")==-1) && _link_url != '#' && (_link_url) && _link_url != "undefined" ){
+                                _link_url = (!_patt2.test(_link_url)) ? _link_url + '?selmenu=' + data[i].MENU_ID : _link_url + '&selmenu=' + data[i].MENU_ID ;
+                            }
+                            target = (data[i].NEW_WIN_YN=='Y') ? ' target="_blank" ' : '';
+                            if(data[i].MENU_LEVEL=='1'){
+                                _res += (data[i].SEL_MENU=='Y') ? '<li sel_level="1" sel_menu="' + data[i].MENU_ID + '">' : '<li>';
+                                _res += '<a href="' + _link_url + '" ' + target + ' >' + data[i].MENU_NM + '</a>' + '\n';
+                                if(data[i].LEAF=='N'){
+                                    _res += '<ul class="sub_menu">' + '\n';
+                                }
+                                data[i].OK = 'Y';
+                            } else if(data[i].MENU_LEVEL=='2'){
+                                cls1 = (data[i].LEAF=='Y') ? ' class="dep_no" ' : '';
+                                _res += (data[i].SEL_MENU=='Y') ? '<li sel_level="2" sel_menu="' + data[i].MENU_ID + '" ' + cls1 + '>' : '<li' + cls1 + '>';
+                                _res += '<a href="' + _link_url + '" ' + target + ' >' + data[i].MENU_NM + '</a>' + '\n';
+                                if(data[i].LEAF=='N'){
+                                    _res += '<ul class="dep3">' + '\n';
+                                }
+                                data[i].OK = 'Y';
+                            } else if(data[i].MENU_LEVEL=='3'){
+                                _res += (data[i].SEL_MENU=='Y') ? '<li sel_level="3" sel_menu="' + data[i].MENU_ID + '">' : '<li>';
+                                _res += '<a href="' + _link_url + '" ' + target + ' >' + data[i].MENU_NM + '</a></li>' + '\n';
+                                data[i].OK = 'Y';
+                            }
+                        }
+                        var children = fnSub_CreateMenu(data, data[i].MENU_ID);
+                        if(children.length){
+                            //child yes
+                            data[i].children = children;
+                        }
+                        //child no
+                        if(data[i].MENU_LEVEL=='1'){
+                            if(data[i].LEAF=='N'){
+                                _res += '</ul>' + '\n';
+                            }
+                            _res += '</li>' + '\n';
+                        } else if(data[i].MENU_LEVEL=='2'){
+                            if(data[i].LEAF=='N'){
+                                _res += '</ul>' + '\n';
+                            }
+                            _res += '</li>' + '\n';
+                        }
+                        out.push(data[i]);
+                        _mecount ++;
+                    }
+                    if(_mecount == _memax) {
+                        //write html
+                        $('#all_menu').html('');
+                        //_res = '<h2 class="sr-only">전체메뉴</h2>' + _res;
+                        $('#all_menu').html(_res);
+                        //모바일 헤더 영역 전체 아코디언 메뉴
+                        $('.clfix').tendina({
+                            animate: true,
+                            speed: 100,
+                            onHover: false,
+                            hoverDelay: 300,
+                                openCallback: function(clickedEl){
+                                    $('#all_menu>li>a>em').text('선택하기');
+                                    $('#all_menu>li.selected>a>em').text('선택됨');
+                                    $('.sub_menu>li>a>em').text('메뉴 열기');
+                                    $('.sub_menu>li.dep_no>a>em').text('');
+                                    clickedEl.find('>a>em').text('선택됨');
+                                    if(clickedEl.has('>ul.dep3').length>0) {
+                                        clickedEl.find('>a>em').text('메뉴 닫기');			
+                                    }
+                                },
+                                closeCallback: function(clickedEl){
+                                    $('#all_menu>li>a>em').text('선택하기');
+                                    $('#all_menu>li.selected>a>em').text('선택됨');
+                                    $('.sub_menu>li>a>em').text('메뉴 열기');
+                                    $('.sub_menu>li.dep_no>a>em').text('');
+                                    if(clickedEl.has('>ul.dep3').length>0) {
+                                        clickedEl.find('>a>em').text('메뉴 열기');		
+                                    }
+                                }
+                        });
+                        // 모바일 전체메뉴 선택된 메뉴로 이동되게
+                        var inSet 	= function(tar){
+                            if(tar.attr('sel_level')=='1' || tar.attr('sel_level')=='2'){
+                                tar.addClass('selected');
+                            }else{
+                                tar.addClass('on');
+                            }
+                        }
+                        if(_selmenu){
+                            var tar		= $('[sel_menu=' + _selmenu + ']');
+                            inSet(tar);
+                            tar.parents('li').each(function(){
+                                inSet($(this));
+                            });
+                        } else {
+                            $('#all_menu').children('li').eq(0).addClass('selected')
+                            $('#all_menu').children('li').eq(0).children('ul').eq(0).show();
+                        }
+                        return;
+                    }
+                }
+                return out;
+            }
+            // 전체메뉴 가져오기
+            function fnSub_GetMenuList(){
+                var param = {'selmenu' : _selmenu};
+                 com.ajax({
+                     type		: "POST"
+                     ,url		: "/menu/menulist.do"
+                     ,data		: param
+                     ,success: function(sdata){
+                         _memax = Number(sdata.data_tot)
+                         fnSub_CreateMenu(sdata.data, 'ROOT');
+                         fnSub_MenuEvent();
+                     }
+                     ,error	: function(edata){
+                     }
+                 });			
+            }
+            // 전체메뉴 open / close
+            function fnSub_MenuEvent(){
+                //오픈 클릭, click() 메서드 안에 익명 함수를 사용
+                $('.btn_menu').click(function(e){
+                    //기본 동작 취소, form action, a href 등등
+                    e.preventDefault();
+                            $('html, body').addClass('menu-open');
+                    $('#skip, .logo, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  true); //2020-08-12 앱접근성 실태조사 수정
+                    //클래스 추가
+                    $('.gnb').addClass('on');
+                    $('.dim').addClass('on');
+                    $("#all_menu > li").each(function(e){
+                        if($(this).children("ul").length > 0){//하위 UL태그가 있다면		    		
+                        }else{//하위 UL태그가 없다면
+                            $(this).children("a").addClass("alone");
+                        }
+                    })		    
+                });
+                //닫기
+                $('.gnb .btn_close').click(function(e){
+                    e.preventDefault();
+                            $('html, body').removeClass('menu-open');
+                    $('#skip, .logo, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  false); //2020-08-12 앱접근성 실태조사 수정
+                    //닫기
+                    $('.gnb').removeClass('on');
+                    $('.dim').removeClass('on');
+                });
+            }
+            function fnSub_InitEvent(){
+                // 팝업창에서 탭클릭시 팝업 내에서만 탭 포커싱 이동되게..
+                var btnCategory = $('.info_cate > button');
+                var layerCategory = $('.info_detail');
+                front.btnClick(btnCategory, function($this) {
+                    front.showCallback(layerCategory, function() {
+                        layerCategory.addClass('on');
+                        var closeBtn = layerCategory.find('.btn_close');
+                        front.layerFocus(layerCategory, closeBtn);
+                        front.btnClick(closeBtn, function() {
+                            front.hideCallback(layerCategory, function() {
+                                $this.attr('tabindex', '0').focus();
+                            });
+                        });
+                    });
+                });
+                $('.btn_sch').click(function(){
+                    $('.search-line').slideToggle(100);
+                });
+                // 아이폰, 안드로이드 앱 & 브라이저 셋팅
+                var standalone = window.navigator.standalone, 
+                userAgent = window.navigator.userAgent.toLowerCase(),
+                safari = /safari/.test( userAgent ),
+                ios = /iphone|ipod|ipad/.test( userAgent ),
+                android = /android/.test( userAgent );
+                var appSettingUrl = "";
+                if( ios ) {
+                    if ( !standalone && safari ) {
+                    // 아이폰 브라우저 접속
+                     } else if ( standalone && !safari ) {
+                     // 아이폰 Standalone 
+                     } else if ( !standalone && !safari ) {
+                     // 아이폰 웹뷰
+                         appSettingUrl="setting://www.seoul.go.kr/";
+                     };
+                } else {
+                    //not iOS
+                    if(android) {
+                        if (typeof mobileseoulandroid === "undefined") {
+                            // 안드로이드 모바일서울 웹 뷰 아님
+                        } else {
+                            // 안드로이드 웹뷰
+                            appSettingUrl="javascript:mobileseoulandroid.openSetting()";
+                        }
+                    }
+                };		
+                if(appSettingUrl != "") {		
+                    $('#resubmenu_setting').click(function(e){
+                        e.preventDefault();
+                        location.href=appSettingUrl;
+                    });
+                } else {
+                    $('#resubmenu_setting').hide();	
+                }
+                //---------------------------------------		 
+            }
+            $(document).ready(function() {
+                $('.pc-view > ul.other > li > a')
+                //GNB 선택 2021.01(오른쪽 선택)
+                var gnbLeftTitle = $('h2.pc-view').text().replace(/ /gi,"");
+                var gnbTopArr = [0,1,2];
+                for(var i=0; i < gnbTopArr.length; i++ ){
+                    var gnbTopTitle =$('.pc-view > ul.other > li > a').eq(i).text().replace(/ /gi,"");
+                    if(gnbTopTitle == gnbLeftTitle || ("개인정보" == gnbLeftTitle && "나의서울" == gnbTopTitle)){
+                        $('.pc-view > ul.other > li').eq(i).addClass('on');
+                        break;
+                    }
+                }
+                fnSub_InitEvent();
+                fnSub_GetMenuList();
+                setTimeout(function(){
+                    /* $('#all_menu li a').append('<em class="sr-only"></em>');
+                    $('#all_menu>li.selected>a>em').text('선택됨');
+                    $('.sub_menu>li:not(.selected):not(dep_no)>a>em').text('메뉴 열기');
+                    $('.sub_menu>li.selected:not(.dep_no)>a>em').text('메뉴 닫기');
+                    $('.sub_menu>li.dep_no.selected>a>em').text('선택됨');
+                    $('.sub_menu>li.dep_no:not(.selected)>a>em').text('');
+                    $('.dep3>li.on>a>em').text('현재페이지'); */
+                    $('#all_menu li a').append('<em class="sr-only"></em>');
+                    $('#all_menu>li>a>em').text('선택하기');
+                    $('#all_menu>li.selected>a>em').text('선택됨');
+                    $('.sub_menu>li:not(.selected):not(.dep_no)>a>em').text('메뉴 열기');
+                    $('.sub_menu>li.selected:not(.dep_no)>a>em').text('메뉴 닫기');
+                    $('.sub_menu>li.dep_no.selected>a>em').text('선택됨');
+                    $('.sub_menu>li.dep_no:not(.selected)>a>em').text('');
+                    $('.dep3>li.on>a>em').text('현재페이지');
+                    $('#all_menu>li>a').attr('role', 'button');
+                    $('.sub_menu>li:not(.dep_no)>a').attr('role', 'button');
+                },500);
+            });
+        </script>
+        <!-- Gnb -->
+        <!-- Header -->
+        <!-- ######################################################################## -->
+        <!-- 
+        menu name: Pc Homepage Header
+    -->
+        <!-- ######################################################################## -->
+        <div class="search-line">
+            <div class="inner">
+                <h1 class="pc-view new">
+                <a href="//www.seoul.go.kr?tr_code=seoul_bi"><span class="sr-only">동행·매력 특별시 서울</span></a>
+                </h1>
+                <form id="fm_TopSearch" target="_self" method="get" accept-charset="utf-8" autocomplete="off">
+                    <div class="search" style="position: relative;">
+                        <input name="tr_code" id="tr_code" type="hidden" value="search">
+                        <label for="inp_TopSearch" class="sr-only">검색어를 입력해 주세요</label>
+                        <!-- 181025_접근성 수정 추가 -->
+                        <input type="text" id="inp_TopSearch" name="kwd" placeholder="검색어를 입력해 주세요" style="ime-mode:active;" class="konan-autocomplete-input" autocomplete="off"><img src="//newsearch.seoul.go.kr/ksearch/res_newseoul/images/search/keyboard.png" alt="입력도구" class="keyboardInputInitiator" title="Display keyboard interface"><span class="ui-icon-triangle-1-s" style="position: relative; top: 50px; left: 7px;"></span>
+                        <button id="btn_TopSearch" type="button" class="btn btn-search"><span class="sr-only">검색하기</span></button>
+                        <div class="auto-search" style="display: none;">
+                            <div class="konan-autocomplete-header">
+                            </div>
+                            <div class="column-left">
+                                <ul class="auto-lst ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0">
+                                </ul>
+                            </div>
+                            <div class="column-right">
+                                <ul class="auto-url">
+                                </ul>
+                            </div>
+                            <div class="column-bottom">
+                                <a href="javascript:void(0);">첫단어보기</a><a href="javascript:void(0);">끝단어보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 언어선택, 날씨정보는 메인에서만 나옴 메인 헤더는 index_new.html 참고-->
+                </form>
+            </div>
+        </div>
+        <script>
+        var _isPcHome = 'Y';
+        if(navigator.userAgent.match(/ipad|Tablet|Android|iphone|ipod/i)){
+            _isPcHome = "N";
+        }
+        function fnTopSearch(){
+            var params = { 
+                    'tr_code' 	: $('input[name=tr_code]').val(),
+                    'kwd'		: $('input[name=kwd]').val()
+            }
+            var url = "https://newsearch.seoul.go.kr/ksearch/search.do?tr_code=search&" + $.param(params);
+            if(_isPcHome != "Y"){
+                url = "https://newsearch.seoul.go.kr/ksearch/msearch.do";
+                historyForm.action=url;
+            }
+            com.submit('#fm_TopSearch', true, url);
+        }
+        $('#inp_TopSearch').keydown(function(key){
+            if(key.keyCode==13){
+                fnTopSearch();
+            }
+        });
+        $('#btn_TopSearch').click(function(e){
+            fnTopSearch();
+        });
+        $('#inp_cityLang').click(function(e){
+            var url = $("#cityLang").val();
+            window.open(url,'language','');
+        });
+        $('#btn_warn_close').click(function(){
+            $(this).closest(".layer_alert").slideUp(200);
+        });
+        // get html5 location
+        function fnGetGeoLocation(){
+            if('geolocation' in navigator){
+                console.log('[geoLocation info] 브라우저에서 HTML5 Geolocation을 지원하지 않습니다. !');
+                return null;
+            }
+            navigator.geolocation.getCurrentPosition(
+                    function(position){
+                        /* 서울시청 => 위도:Latitude:37.5666103 , 경도:Longitude:126.9783882  */
+                        var y = position.coords['latitude'];
+                        var x = position.coords['longitude'];
+                        console.log('[geoLocation info] 브라우저에서 위치정보 획득 성공 : ' + y + ' / ' + x);
+                        return {'y_lat':y, 'x_long':x};
+                    },
+                    function(err){
+                        var str = "";
+                        switch(err.code){
+                            case err.PERMISSION_DENTED: str = "사용자 거부"; break;
+                            case err.PERMISSION_UNAVAILABLE: str = "지리정보를 얻을 수 없음"; break;
+                            case err.TIMEOUT: str = "시간초과"; break;
+                            case err.UNKNOWN_ERROR: str = "사용자 거부"; break;
+                        }
+                        console.log('[geoLocation info] 브라우저에서 위치정보 획득 실패 :' + str);
+                        return null;
+                    },
+                    {
+                        enableHighAccuracy: false,
+                        maximumAge: 0,
+                        timeout: Infinity
+                    }
+            );
+        }
+        // create Weather Html
+        function fnCreateWeather(data){
+            // 온도, 날씨, 미세먼지등
+            var html 		= '';
+            var pty  		= data['weather_temp']['PTY'];
+            var sky  		= data['weather_temp']['SKY'];
+            var t1h  		= data['weather_temp']['T1H'];
+            var pm10		= data['weather_temp']['PM10'];
+            var pm10_value	= data['weather_temp']['PM10_VALUE'];
+            var pm25		= data['weather_temp']['PM25'];
+            var pm25_value	= data['weather_temp']['PM25_VALUE'];
+            var guname		= data['weather_temp']['guname'];
+            html += '<a href="https://news.seoul.go.kr/env/weather?tr_code=ind" target="_blank" title="새창으로 이동">';
+            if(pty=='0.0'){
+                if(sky=='1.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d0.png" alt="맑음">';
+                }else if(sky=='2.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d1.png" alt="구름조금">';
+                }else if(sky=='3.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d2.png" alt="구름많음">';
+                }else if(sky=='4.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d6.png" alt="흐림">';
+                }
+            }else if(pty=='1.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d3.png" alt="비">';
+            }else if(pty=='2.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d4.png" alt="비/눈">';
+            }else if(pty=='3.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d5.png" alt="눈">';
+            }else if(pty=='4.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d3.png" alt="소나기">';
+            }
+            html += '</a>';
+            $('#sec_temp_1').html('').html(html)
+            html = '';
+            html += '<p>';
+            html += '<a href="https://news.seoul.go.kr/env/weather?tr_code=ind" target="_blank" title="새창으로 이동">';
+            html += '<strong class="deg">' + t1h + '℃</strong>';
+            html += '<span class="w_txt1">' + guname + ' ';
+            if(pty=='0.0'){
+                if(sky=='1.0'){
+                    html += '맑음';
+                }else if(sky=='2.0'){
+                    html += '구름조금';
+                }else if(sky=='3.0'){
+                    html += '구름많음';
+                }else if(sky=='4.0'){
+                    html += '흐림';
+                }
+            }else if(pty=='1.0'){
+                html += '비';
+            }else if(pty=='2.0'){
+                html += '비/눈';
+            }else if(pty=='3.0'){
+                html += '눈';
+            }else if(pty=='4.0'){
+                html += '소나기';
+            }
+            html += '</span>';
+            html += '</a>';
+            html += '</p>';
+            html += '<p>';
+            html += '<a href="https://news.seoul.go.kr/env/airs?tr_code=ind" target="_blank" title="새창으로 이동">';
+            html += '<span class="w_txt2">';
+            html += (pm10_value) ? pm10_value + ' ' : '';
+            html += (pm25_value) ? pm25_value : '';
+            html += '</span>';
+            html += '</a>';
+            html += '</p>';
+            $('#sec_temp_2').html('').html(html)
+            // 기상특보
+            if(!(data['weather_warn'])){
+                $('#sec_warn').hide();
+                return;
+            }
+            $('#sec_warn').show();
+            html 			= '';
+            var title  		= data['weather_warn']['TITLE'];
+            var titleArr	= title.split('·');
+            var show_date	= data['weather_warn']['SHOW_DATE'];
+            html += '<h1>기상특보</h1>';
+            html += '<p class="tit">' + titleArr[0] + '</p>';
+            html += '<p class="date_area"><span>' + show_date + '</span></p>';
+            html += '<button class="btn_close"><span class="sr-only">닫기</span></button>';
+            $('#sec_warn').html('').html(html)
+        }
+        // get Weather
+        function fnCheckLocation(){
+            var getWeather = function(param){
+                com.ajax({
+                    type		: "POST"
+                    ,url		: "/weather/getTodayWeather.do"
+                    ,data		: param
+                    ,success: function(sdata){
+                        fnCreateWeather(sdata);
+                    }
+                    ,error	: function(edata){
+                        return;
+                    }
+                });					
+            }
+            var grid_x = $.cookie('GridX');
+            var grid_y = $.cookie('GridY');
+            var guname = $.cookie('GuName');
+            if(!(grid_x) || !(grid_y))
+            {
+                var obj = fnGetGeoLocation();
+                if(obj){
+                    obj['type'] = 'C';
+                    getWeather(obj);
+                } else {
+                    getWeather({'type':'A'});
+                }
+            } else {
+                var obj3 = {'grid_x':grid_x, 'grid_y':grid_y, 'guname':guname, 'type':'B'};
+                getWeather(obj3);
+            }
+        }
+        $(document).ready(function() {
+            if(_isPcHome){
+                setTimeout(function(){
+                    fnCheckLocation();
+                }, 5000);
+            }
+        });
+        </script>
+        <!-- Header -->
+        </header>
+        <!-- //header-->
+        <!-- container -->
+        <!-- 로그아웃 상태인 경우  -->
+        <!--  회원  -->
+        <section id="container">
+        <div class="inner">
+            <aside id="snb" class="snb">
+            <h2 class="pc-view">회원</h2>
+            <ul class="clfix2 tendina">
+                <li class="dep0 dep_no">
+                <a href="/member/board/information_use.do" target="_blank">이용안내</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/rule/rule.do">이용약관</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/join/regist01.do">회원가입</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/findId/findId.do">아이디 찾기</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/findPwd/findPwd.do">비밀번호 찾기</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/userlogin/loginCheck.do">회원로그인</a>
+                </li>
+            </ul>
+            </aside>
+            <!-- 20180816 모바일 버전 추가 -->
+            <div class="snb_m">
+                <ul class="snb_title clfix3 tendina">
+                    <li id="flexible_submenu" class="dep1"><a href="/member/join/memberCerti01Agree.do">회원가입<em class="sr-only">메뉴 열기</em></a>
+                    <ul>
+                        <li><a href="/member/board/information_use.do">이용안내</a></li>
+                        <li><a href="/member/rule/rule.do">이용약관</a></li>
+                        <li><a href="/member/join/regist01.do">회원가입</a></li>
+                        <li><a href="/member/findId/findId.do">아이디 찾기</a></li>
+                        <li><a href="/member/findPwd/findPwd.do">비밀번호 찾기</a></li>
+                        <li><a href="/member/userlogin/loginCheck.do">회원로그인</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                        function fnFlexibleSubMenu(oSel, url, exStr, tSel){
+                            var lastIdx = url.lastIndexOf("/");
+                            var strMenuPath = url.substring(0,lastIdx+1);
+                            var isok 	= false;
+                            var tar;
+                            $(oSel).find('a').each(function(){
+                                if($(this).attr('href').indexOf(strMenuPath) > -1){
+                                    isok 	= true;
+                                    tar 	= $(this);
+                                    return false;
+                                }
+                            })
+                            if(!isok) return;
+                            var temp = '';
+                            temp += '<a href="' + url +  '">' + tar.text().replace(exStr, '') + '</a>';
+                            temp += '<ul>';
+                            if(tar.parent('li').parent('ul').hasClass('clfix2')){
+                                //[step-1]
+                                tar.closest('.clfix2').children('li').each(function(){
+                                    if($(this).hasClass('dep_no')){
+                                        var tepa = $(this).children('a').eq(0);
+                                        temp += '<li>';
+                                        temp += '<a href="';
+                                        temp += tepa.attr('href') + '">';
+                                        temp += tepa.text();
+                                        temp += '</a>';
+                                        temp += '</li>';
+                                    }
+                                });
+                            } else {
+                                //[step-2,3]
+                                tar.closest('ul').find('li').each(function(){
+                                    temp += '<li>' + $(this).html().replace(exStr, '') + '</li>';
+                                });
+                            }
+                            temp += '</ul>';
+                            $(tSel).html(temp);
+                        }
+                        $(document).ready(function() {
+                            fnFlexibleSubMenu('.clfix2', '/member/join/memberCerti01Agree.do', '열림', '#flexible_submenu');
+                        });
+                    </script>
+            <div id="content" class="content">
+                <!-- content -->
+                <!-- 새로운 메일 서버의 이벤트 폼 시작 -->
+                <form name="mailUserFrom" method="post" action="https://citizen.seoul.kr/servlet/crinity">
+                    <input type="hidden" name="i_UserID" value="">
+                    <input type="hidden" name="i_UserDomain" value="">
+                    <input type="hidden" name="i_NameKor" value="">
+                    <input type="hidden" name="i_CellPhone" value="">
+                    <input type="hidden" name="i_BirthDay" value="">
+                    <input type="hidden" name="i_BirthDayFlag" value="">
+                    <input type="hidden" name="paction" value="">
+                    <input type="hidden" name="ptype" value="">
+                </form>
+                <!--  SERVER IP : 115.84.166.106  -->
+                <!-- 새로운 메일 서버의 이벤트 폼 끝 -->
+                <form name="userForm" id="userForm" method="post">
+                    <input type="hidden" name="div" value="mem">
+                    <input type="hidden" name="mem_div" value="DIV010">
+                    <input type="hidden" name="SITE_GB" value="GB001" id="SITE_GB">
+                    <input type="hidden" name="fNextVal" value="jsp/smem/regist01.jsp">
+                    <input type="hidden" name="sNextVal" value="jsp/smem/UserLoginOkSSL.jsp">
+                    <input type="hidden" name="sStaff" value="C">
+                    <input type="hidden" name="sMainVal" value="/member/info/mySeoul.do">
+                    <input type="hidden" name="refresh_url" value="/member/info/mySeoul.do" id="refresh_url">
+                    <input type="hidden" name="returnUrl" value="">
+                    <input type="hidden" name="version" value="renewal">
+                    <input type="hidden" name="parent_txtName" value="">
+                    <input type="hidden" name="M001_BUBLIC_GB" id="M001_BUBLIC_GB" value="0">
+                    <input type="hidden" name="smsYN" value="Y">
+                    <input type="hidden" name="re_use_id" value="">
+                    <input type="hidden" name="id_chk" value="">
+                    <input type="hidden" name="want_id" id="want_id" value="">
+                    <input type="hidden" name="user_birth1_t" id="user_birth1_t">
+                    <input type="hidden" name="user_birth2_t" id="user_birth2_t">
+                    <input type="hidden" name="user_birth3_t" id="user_birth3_t">
+                    <input type="hidden" name="addr_radio" id="addr_radio">
+                    <input type="hidden" name="txtName" id="txtName" value="황지연">
+                    <input type="hidden" name="user_tel" id="user_tel">
+                    <input type="hidden" name="check_gbn" id="check_gbn" value="checkPhone">
+                    <input type="hidden" name="mail_chk" id="mail_chk" value="">
+                    <input type="hidden" name="check_type" id="check_type" value="PHONE">
+                    <div class="title-wrap pc-view">
+                        <h3>회원가입</h3>
+                        <div class="path">
+                            <a href="/">HOME</a><span>&gt;</span><a href="#">회원</a><span>&gt;</span>회원가입
+                        </div>
+                        <div class="util">
+                            <a href="javascript:void(0);" onclick="window.print();return false;" title="현재 페이지">인쇄하기</a>
+                        </div>
+                    </div>
+                    <div class="join-process join-process-new">
+                        <ul class="clfix tendina">
+                            <li><em>1.</em> 약관동의</li>
+                            <li><em>2.</em> 본인확인</li>
+                            <li class="active"><em>3.</em> 회원정보 입력 <span class="sr-only">현재 단계</span></li>
+                            <li><em>4.</em> 부가서비스 신청</li>
+                        </ul>
+                    </div>
+                    <div class="join-info">
+                        <ul class="basic-list">
+                            <li>서울시 누리집은 회원의 개인정보보호문제를 신중하게 취급합니다.</li>
+                            <li>아이디/비밀번호 분실 등 본인 여부 확인이 필요할 경우를 위해 가급적 신분증에 기재된 이름, 생년월일을 입력해 주세요.</li>
+                        </ul>
+                    </div>
+                    <div class="join-form">
+                        <fieldset class="user-id">
+                            <legend class="sr-only">아이디 정보</legend>
+                            <div class="table-title">
+                                <h4>아이디 정보</h4>
+                                <span class="noti">필수 입력 항목입니다.</span>
+                            </div>
+                            <div class="dl-table">
+                                <dl class="table table-row first s-brT0">
+                                    <dt><label for="user_id" class="require">아이디</label></dt>
+                                    <dd class="recheck-wrap">
+                                    <span class="inp-btn">
+                                    <input type="text" name="user_id" id="user_id" maxlength="15" placeholder="최소5자 ~ 최대15자" title="최소5자 ~ 최대15자" value="">
+                                    <button type="button" class="btn btn-id-check" onclick="_check_id(document.userForm, 'user_id', $(this));"><span>중복확인</span></button>
+                                    <!-- 181025_접근성 수정 추가 -->
+                                    </span>
+                                    <p class="caution">
+                                        영문, 숫자만 가능합니다(5~15자)
+                                    </p>
+                                    </dd>
+                                </dl>
+                                <dl class="table table-row">
+                                    <dt><label for="user_pwd1" class="require">비밀번호</label></dt>
+                                    <dd>
+                                    <input type="password" name="user_pwd1" id="user_pwd1" placeholder="9~30자의 영문 대·소문자, 숫자, 특수문자를 조합하여 사용 가능합니다" title="9~30자의 영문 대·소문자, 숫자, 특수문자를 조합하여 사용 가능합니다" onkeypress="checklength();" maxlength="30">
+                                    <p class="caution">
+                                        특수문자는 `~`, `!`, `@`, `#`, `$`, `^`, `*`, `(`, `)`, `=`, `_`, `.`, `|` 만 사용가능합니다.
+                                    </p>
+                                    </dd>
+                                </dl>
+                                <dl class="table table-row">
+                                    <dt><label for="user_pwd2" class="require">비밀번호 확인</label></dt>
+                                    <dd><input type="password" name="user_pwd2" id="user_pwd2" maxlength="30"></dd>
+                                </dl>
+                                <!-- <dl class="table table-row">
+                                            <dt><label for="lineup" class="require">비밀번호 변경 열쇠 질문</label></dt>181023_접근성 수정 추가
+                                            <dd>
+                                                <select name="M001_Q_CD" id="lineup">
+                                                    <option value="">질문을 선택하세요</option>
+                                                    <option value="M001">인상 깊게 읽은 책 이름은?</option>
+                                                    <option value="M002">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                                                    <option value="M003">다시 태어나면 되고 싶은 것은?</option>
+                                                    <option value="M004">자신의 보물 제1호는?</option>
+                                                    <option value="M006">자신이 두번째로 존경하는 인물은?</option>
+                                                    <option value="M005">유년시절 가장 생각나는 친구 이름은?</option>
+                                                    <option value="M007">친구들에게 공개하지 않은 어릴 적 별명이 있다면?</option>
+                                                    <option value="M008">추억하고 싶은 날짜가 있다면?(예:1994/04/20)</option>
+                                                    <option value="M009">내가 좋아하는 캐릭터는?</option>
+                                                    <option value="M010">초등학교 때 기억에 남는 짝꿍 이름은?</option>
+                                                    <option value="M011">받았던 선물 중 기억에 남는 독특한 선물은?</option>
+                                                    <option value="M012">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+                                                    <option value="M013">기억에 남는 추억의 장소는?</option>
+                                                    <option value="M014">가장 기억에 남는 선생님 성함은?</option>
+                                                    <option value="M015">자신의 인생 좌우명은?</option>
+                                                    <option value="M017">좋아하는 음식은?</option>
+                                                    <option value="M018">가장 친한 친구 이름은?</option>
+                                                    <option value="M019">가장 좋아하는 색깔은？</option>
+                                                    <option value="M020">나의 별명은？</option>
+                                                </select>
+                                            </dd>
+                                        </dl>
+                                        <dl class="table table-row last">
+                                            <dt><label for="M001_ANSWER" class="require">변경 열쇠 답 입력</label></dt>
+                                            <dd><input type="text" name="M001_ANSWER" id="M001_ANSWER" maxlength="20"></dd>
+                                        </dl> -->
+                            </div>
+                        </fieldset>
+                        <fieldset class="user-info">
+                            <legend class="sr-only">개인 정보</legend>
+                            <div class="table-title">
+                                <h4>개인정보</h4>
+                                <span class="noti">필수 입력 항목입니다.</span>
+                            </div>
+                            <dl class="table table-row first">
+                                <dt><label for="txtNameText" class="require">이름</label></dt>
+                                <!-- 181023_접근성 수정 추가 -->
+                                <dd><input type="text" name="txtNameText" id="txtNameText" value="황지연" size="4" maxlength="4" disabled="disabled"></dd>
+                            </dl>
+                            <dl class="table table-row">
+                                <dt><b class="require">생년월일</b></dt>
+                                <dd class="birth">
+                                <input type="text" name="user_birth1" id="user_birth1" value="1996" readonly="" disabled="disabled" class="inp num" title="생년월일 중 년도 입력"><span class="in-text">년</span>
+                                <!-- 181023_접근성 수정 추가 -->
+                                <select id="user_birth2" name="user_birth2" title="월을 선택해 주세요" disabled="disabled" class="num">
+                                    <option value="01">01</option>
+                                    <option value="02" selected="">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <span class="in-text">월</span>
+                                <input type="text" id="user_birth3" name="user_birth3" value="16" readonly="" disabled="disabled" class="inp num" title="생년월일 중 일 입력"><span class="in-text day">일</span>
+                                <!-- 181023_접근성 수정 추가 -->
+                                <p class="p-info01">
+                                    아이디/비밀번호 분실 등 본인 여부 확인이 필요할 경우를 위해 가급적 신분증에 기재된 이름 생년월일을 입력해주세요. 허위정보를 입력하면 본인 확인할 수 없어 도움을 드릴 수가 없습니다.
+                                </p>
+                                </dd>
+                            </dl>
+                            <!-- 연락처 변경 : START -->
+                            <dl class="table table-row s-align-table">
+                                <dt><b class="require">연락처</b></dt>
+                                <dd class="ddtype2">
+                                <div class="contact-column2" style="display: block;">
+                                    <div class="contact-col" id="contact-col-03">
+                                        <span class="custom-input">
+                                        <input type="radio" id="contact_radio1" name="addr_radio_temp" value="03" checked=""><label for="contact_radio1"><span>휴대폰</span></label>
+                                        </span>
+                                        <select id="user_tel1" name="user_tel1" title="휴대폰 제일 첫자리 번호를 선택해 주세요" class="num">
+                                            <option value="010" selected="">010</option>
+                                        </select>
+                                        <span class="dash">-</span>
+                                        <input type="text" id="user_tel2" name="user_tel2" value="9772" class="inp num" maxlength="4" title="휴대폰 가운데자리 번호를 입력해 주세요" readonly="readonly">
+                                        <span class="dash">-</span>
+                                        <input type="text" id="user_tel3" name="user_tel3" value="0302" class="inp num" maxlength="4" title="휴대폰 마지막자리 번호를 입력해 주세요" readonly="readonly">
+                                        <button type="button" class="btn tiny" id="authbtn" onclick="fnTelGbnChg('03')"><span>본인확인</span></button>
+                                    </div>
+                                    <div class="contact-col" id="contact-col-01">
+                                        <span class="custom-input">
+                                        <input type="radio" id="contact_radio2" name="addr_radio_temp" value="01"><label for="contact_radio2"><span>집</span></label>
+                                        </span>
+                                        <select id="house_tel1" name="house_tel1" title="집 연락처 제일 첫자리 번호를 선택해 주세요" class="num" disabled="disabled">
+                                            <option value="02">02</option>
+                                            <option value="031">031</option>
+                                            <option value="032">032</option>
+                                            <option value="033">033</option>
+                                            <option value="041">041</option>
+                                            <option value="042">042</option>
+                                            <option value="043">043</option>
+                                            <option value="044">044</option>
+                                            <option value="051">051</option>
+                                            <option value="052">052</option>
+                                            <option value="053">053</option>
+                                            <option value="054">054</option>
+                                            <option value="055">055</option>
+                                            <option value="061">061</option>
+                                            <option value="062">062</option>
+                                            <option value="063">063</option>
+                                            <option value="064">064</option>
+                                            <option value="070">070</option>
+                                        </select>
+                                        <span class="dash">-</span>
+                                        <input type="text" id="house_tel2" name="house_tel1" value="" class="inp num" maxlength="4" title="집 연락처 가운데자리 번호를 입력해 주세요" onlynumber="" disabled="disabled">
+                                        <span class="dash">-</span>
+                                        <input type="text" id="house_tel3" name="house_tel1" value="" class="inp num" maxlength="4" title="집 연락처 마지막자리 번호를 입력해 주세요" onlynumber="" disabled="disabled">
+                                    </div>
+                                    <div class="contact-col" id="contact-col-02">
+                                        <span class="custom-input">
+                                        <input type="radio" id="contact_radio3" name="addr_radio_temp" value="02"><label for="contact_radio3"><span>직장</span></label>
+                                        </span>
+                                        <select id="office_tel1" name="office_tel1" title="직장 연락처 제일 첫자리 번호를 선택해 주세요" class="num" disabled="disabled">
+                                            <option value="02">02</option>
+                                            <option value="031">031</option>
+                                            <option value="032">032</option>
+                                            <option value="033">033</option>
+                                            <option value="041">041</option>
+                                            <option value="042">042</option>
+                                            <option value="043">043</option>
+                                            <option value="044">044</option>
+                                            <option value="051">051</option>
+                                            <option value="052">052</option>
+                                            <option value="053">053</option>
+                                            <option value="054">054</option>
+                                            <option value="055">055</option>
+                                            <option value="061">061</option>
+                                            <option value="062">062</option>
+                                            <option value="063">063</option>
+                                            <option value="064">064</option>
+                                            <option value="070">070</option>
+                                        </select>
+                                        <span class="dash">-</span>
+                                        <input type="text" id="office_tel2" name="office_tel1" value="" class="inp num" maxlength="4" title="직장 연락처 가운데자리 번호를 입력해 주세요" onlynumber="" disabled="disabled">
+                                        <span class="dash">-</span>
+                                        <input type="text" id="office_tel3" name="office_tel1" value="" class="inp num" maxlength="4" title="직장 연락처 마지막자리 번호를 입력해 주세요" onlynumber="" disabled="disabled">
+                                    </div>
+                                    <p class="info-txt" style="font-weight: 700;color: #0c82e9;padding-top: 5px;">
+                                        휴대폰 번호의 입력 또는 변경은 위의 본인확인 버튼을 눌러야만 가능합니다.<br>
+                                        (집, 직장은 직접 전화번호를 입력해 주시기 바랍니다.)
+                                    </p>
+                                </div>
+                                </dd>
+                            </dl>
+                            <script>  
+                                    $(document).ready(function(){
+                                        var chkContact = $("input[name='addr_radio_temp']:checked").val();
+                                        if (chkContact) {
+                                            $('.contact-col').find('input[type="text"]').attr('disabled', true);
+                                            $('.contact-col').find('select').attr('disabled', true);
+                                            $("#contact-col-" + chkContact).find('input[type="text"]').attr('disabled', false);
+                                            $("#contact-col-" + chkContact).find('select').attr('disabled', false);
+                                        }
+                                        $('input[name=addr_radio_temp]').on('click', function(){
+                                            var checked = $(this).val();
+                                            $('.contact-col').find('input[type="text"]').attr('disabled', true);
+                                            $('.contact-col').find('select').attr('disabled', true);
+                                            $("#contact-col-" + checked).find('input[type="text"]').attr('disabled', false);
+                                            $("#contact-col-" + checked).find('select').attr('disabled', false);
+                                            if(checked != "03"){//휴대폰 아닐때 휴대폰입력란 readonly삭제. 어차피 disabled
+                                                $("#user_tel2").attr("readonly",false);
+                                                $("#user_tel3").attr("readonly",false);
+                                            }else{
+                                                $("#user_tel2").attr("readonly",true);
+                                                $("#user_tel3").attr("readonly",true);
+                                            }
+                                        });
+                                    });
+                                </script>
+                            <!--// 연락처 변경 : END -->
+                            <dl class="table table-row">
+                                <dt><label for="name07" class="require">거주지 시/도</label></dt>
+                                <!-- 181023_접근성 수정 추가 -->
+                                <dd>
+                                <select name="sido" id="name07">
+                                    <option value="서울">서울특별시</option>
+                                    <option value="경기">경기도</option>
+                                    <option value="강원">강원도</option>
+                                    <option value="경남">경상남도</option>
+                                    <option value="경북">경상북도</option>
+                                    <option value="전남">전라남도</option>
+                                    <option value="전북">전라북도</option>
+                                    <option value="충남">충청남도</option>
+                                    <option value="충북">충청북도</option>
+                                    <option value="광주">광주광역시</option>
+                                    <option value="대구">대구광역시</option>
+                                    <option value="대전">대전광역시</option>
+                                    <option value="부산">부산광역시</option>
+                                    <option value="울산">울산광역시</option>
+                                    <option value="인천">인천광역시</option>
+                                    <option value="제주">제주특별자치도</option>
+                                    <option value="세종">세종특별자치시</option>
+                                </select>
+                                </dd>
+                            </dl>
+                            <dl class="table table-row last">
+                                <dt><b class="require">이메일</b></dt>
+                                <dd class="email-wrap">
+                                <div class="member-email-wrap">
+                                    <!-- 2019-07-24 -->
+                                    <span>
+                                    <input type="text" name="user_email1" id="name08" size="8" maxlength="30" class="inp email" placeholder="이메일" title="이메일 아이디 입력" value="">
+                                    <!-- 181023_접근성 수정 추가 -->
+                                    <span class="at">@</span>
+                                    <label for="name09" class="sr-only">이메일(도메인) 직접입력</label>
+                                    <input name="user_email2" type="text" class="input_top" id="name09" size="8" maxlength="30" title="이메일주소(도메인) 직접입력" value="" readonly="readonly">
+                                    </span>
+                                    <select name="temp_mail" class="email-compnay" id="lineup02" onchange="focus_mailtext();" title="이메일 도메인 선택">
+                                        <!-- 181023_접근성 수정 추가 -->
+                                        <option value="" selected="">선택하세요.</option>
+                                        <!-- <option value="citizen.seoul.kr">citizen.seoul.kr</option> -->
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="hotmail.com">hotmail.com</option>
+                                        <option value="dreamwiz.com">dreamwiz.com</option>
+                                        <option value="empal.com">empal.com</option>
+                                        <option value="write">직접입력</option>
+                                    </select>
+                                    <!-- 	<button type="button" class="btn btn-id-check btn-id-auth" id="auth1"><span>인증번호 받기</span></button> -->
+                                    <div id="sendcertimail" style="display:none;">
+                                    </div>
+                                    <p class="p-info01">
+                                        부가서비스(소식지, 행사강좌 등 정보) 수신용이므로 주로 사용하는 이메일 주소를 입력해 주시기 바랍니다.<br>
+                                        <!-- <b style="font-weight: 700; color: #ff0000;">※ 현재 본인이 주로 사용하고 있는, 다른 웹사이트(네이버, 구글, 다음 등)의 이메일 주소를 입력해주세요.</b> -->
+                                    </p>
+                                    <p class="p-info01">
+                                        <span class="custom-input"><input type="checkbox" name="go_cs_mail" id="go_cs_mail" value="1" onclick="go_cs_mail_check()">
+                                        <label for="go_cs_mail"><span>서울시 전자우편 신규 생성</span></label></span>
+                                    </p>
+                                    <input type="hidden" name="email_chk" value="N">
+                                </div>
+                                <!-- 2019-07-24 -->
+                                </dd>
+                            </dl>
+                        </fieldset>
+                    </div>
+                    <p style="color: #0c82e9;font-weight: bold;padding-top: 8px;">
+                        ※ 개인정보보호위원회의 권고에 따라 개인정보 유출을 방지하고자 '비밀번호 변경 힌트' 기능을 2020. 11. 17.(화)자로 삭제합니다.
+                    </p>
+                    <div class="btn-group half">
+                        <button type="button" class="btn large bg-point" onclick="goJoin();"><span>회원가입</span></button>
+                        <button type="button" class="btn large bg-white" onclick="goCancle();"><span>취소</span></button>
+                    </div>
+                </form>
+                <iframe name="commandFrm" style="display:none" title="실명인증확인처리프레임" src="//www.seoul.go.kr/blank.html">
+                </iframe>
+                <script>
+                    /**
+                     * ============================================================= 
+                     * 선언
+                     */
+                    var _param;        
+                    var w_win;
+                    var cnt=0;
+                    /**
+                     * ============================================================= 
+                     * function 구현
+                     */
+                     $(document).on('click', '#authCheck', function(){
+                         var certinum = 	$("#certNum").val();
+                        var email =document.userForm.user_email1.value+"@"+document.userForm.user_email2.value ;
+                        var data = {"email" : email	, "certinum" : certinum};
+                        com.ajax({
+                             type		: "POST"
+                             ,url		: "/member/join/certifyOk.do"
+                             ,data		: data
+                             ,success: function(data) {
+                                 if (data.returnValue.CertYn == 'Y') {
+                                     $("#mail_chk").val('Y');
+                                    alert("인증되었습니다");
+                                 }else{
+                                     alert("인증에 실패하였습니다.인증번호를 확인해 주세요.");
+                                 }
+                             }
+                             ,error	: function(edata) {
+                                 alert("조회하지 못했습니다.");
+                             }
+                         });
+                     });
+                  // 인증번호받기
+                     $("#auth1").click(function(e){
+                         var email =document.userForm.user_email1.value+"@"+document.userForm.user_email2.value ;
+                         if (document.userForm.user_email1.value == null || document.userForm.user_email1.value =="" || document.userForm.user_email2.value == null || document.userForm.user_email2.value =="") {
+                             alert("이메일을 정확히 입력해 주세요.");
+                             return false;
+                         }
+                         var data = {"email" : email	};
+                         $("#auth1").hide();
+                         com.ajax({
+                             type		: "POST"
+                             ,url		: "/member/join/authCode.do"
+                             ,data		: data
+                             ,success: function(data) {
+                                 if (data.returnValue.result == "00") {
+                                     var temp = '';
+                                        temp += '<p class="caution">※ ' + email + '로 발송된 인증번호를 입력 후 확인을 클릭하세요.</p>	';
+                                        temp += '<div class="recheck-wrap">';
+                                        temp += '	<span class="inp-btn">';
+                                        temp += '		<input name="certNum" type="text"  id="certNum" size="8" maxlength="30" title="이메일 인증번호 입력">';
+                                        temp += '		<button type="button" class="btn btn-id-check" id="authCheck"><span>확인</span></button>';
+                                        temp += '	</span>';
+                                        temp += '</div>';
+                                        $("#sendcertimail").html(temp);
+                                        $("#sendcertimail").attr("style","display:block");
+                                        $("#auth1").show();
+                                 }else if(data.returnValue == "noemail"){
+                                     alert("메일주소를 다시 확인해 주세요.");
+                                     $("#auth1").show();
+                                 }else{
+                                     alert("인증번호 메일 발송에 실패하였습니다. 메일주소를 다시 확인해 주세요.");
+                                     $("#auth1").show();
+                                 }
+                             }
+                             ,error	: function(edata) {
+                                 alert("조회하지 못했습니다.");
+                             }
+                         });
+                     });
+                    //나이스아이핀인증으로 들어온 경우 휴대폰번호 수정을 위한 휴대폰인증 성공 후 호출 
+                     function goGpin2(user_tel1, user_tel2, user_tel3){
+                         $("#user_tel1").val(user_tel1);
+                         $("#user_tel2").val(user_tel2);
+                         $("#user_tel3").val(user_tel3);
+                             var list = "";
+                         list += "<option value='"+user_tel1+"' selected>"+user_tel1+"</option>";
+                         $('#user_tel1').html(list); 
+                        // userForm.addr_radio_temp.value = '03';
+                        //$("#contact_radio1").trigger("click");
+                         $("input[name=user_tel1]").attr("readonly",true);
+                         $("input[name=user_tel2]").attr("readonly",true);
+                         $("input[name=user_tel3]").attr("readonly",true);
+                     }  
+                    function fnTelClick01(){
+                        if('PHONE' == 'PHONE'){
+                            alert('휴대폰 본인확인을 한경우 연락처를 수정할 수 없습니다.');
+                            return;
+                        }
+                    }
+                     function fnTelGbnChg(gbn){
+                          if(gbn == '03'){
+                              if(confirm("휴대폰번호를 입력하려면 휴대폰 본인확인이 필요합니다. 휴대폰 본인확인을 하시겠습니까?")){
+                                  $("#contact_radio1").trigger("click");
+                             //	 document.userForm.action = "/member/popup/memberCheckPhoneReq.do";
+                            //	 document.userForm.target = "commandFrm";
+                            //	 document.userForm = "post";
+                            //	 document.userForm.submit();
+                            var rUrl = $('#refresh_url').val();
+                             var sGb = $('#SITE_GB').val();
+                            url = "/member/popup/memberCheckPhoneReq.do?join_yn=Y&check_gbn=checkPhone&refresh_url="+rUrl+"&SITE_GB="+sGb;
+                              wWidth = 360;
+                              wHight = 120;
+                              wX = (window.screen.width - wWidth) / 2 - 100;
+                              wY = (window.screen.height - wHight) / 2 - 200;
+                              title = "gPinLoginWin";
+                              openOption = "directories=no,toolbar=no,scrollbars=yes,left="+wX+",top="+wY+",width="+420+",height="+520;
+                              w_win = window.open(url, title, openOption);  
+                              if(w_win == null || typeof(w_win) == 'undefined' || (w_win == null && w_win.outerWidth == 0) || (w_win != null && w_win.outerHeight ==0) || w_win.test == "undefined"){
+                                 alert("팝업 차단 기능이 설정되어 있습니다.\r\n차단 기능을 해제(팝업허용)한 후 다시 이용해 주십시오.\r\n만약 팝업차단 기능을 해제하지 않으면\r\n정상적인 회원가입이 이루어지지 않습니다.");
+                                 return;
+                               }
+                              /*
+                                    var frm = document.userForm;
+                                  frm.action = "/member/popup/memberCheckPhoneReq.do";
+                                  frm.target = "commandFrm";
+                                 frm.method = "post";
+                                  frm.submit();
+                                  */
+                             }
+                              return;
+                         }
+                        /*  var list = "";    
+                          if(gbn != '03'){
+                             list += "<option value='02'  >02</option>";
+                             list += "<option value='031'  >031</option>";
+                             list += "<option value='032' >032</option>";
+                             list += "<option value='033' >033</option>";
+                             list += "<option value='041' >041</option>";  
+                             list += "<option value='042' >042</option>";
+                             list += "<option value='043' >043</option>";
+                             list += "<option value='044' >044</option>";
+                             list += "<option value='051' >051</option>";
+                             list += "<option value='052' >052</option>";
+                             list += "<option value='053' >053</option>";
+                             list += "<option value='054' >054</option>";
+                             list += "<option value='055' >055</option>";
+                             list += "<option value='061' >061</option>";
+                             list += "<option value='062' >062</option>";
+                             list += "<option value='063' >063</option>";
+                             list += "<option value='064' >064</option>";
+                             list += "<option value='070' >070</option>";
+                               $("input[name=user_tel1]").attr("readonly",false);
+                              $("input[name=user_tel2]").attr("readonly",false);
+                              $("input[name=user_tel3]").attr("readonly",false);            	 
+                            }
+                         $('#user_tel1').html(list);
+                         if("" != "" && cnt < 1){
+                             $('#user_tel2').val("");
+                                $('#user_tel3').val("");
+                                cnt++;
+                         }else{
+                             $('#user_tel2').val("");
+                                $('#user_tel3').val(""); 	 
+                         } */
+                     }
+                     function fnTelGbnChgInit(){
+                         var list = "";
+                         var num1= "";
+                             var num2= "";
+                         var num3= "";
+                         if('PHONE' == 'PHONE'|| num1.substring(0,2) == "01"){
+                             if('' == 'Y'){
+                                 goGpin2(num1,num2,num3)   
+                             }else{
+                                 list += "<option value='010' selected>010</option>";
+                                 $('#user_tel1').html(list);
+                                  $("input[name=user_tel2]").attr("readonly",true);
+                                  $("input[name=user_tel3]").attr("readonly",true);    
+                             }
+                         }else{
+                             fnTelGbnChg('02');
+                         }
+                     }        
+                     function checklength()
+                     {
+                         var len;
+                         tcount = 0;
+                         var frm = document.userForm;
+                         temp = frm.user_pwd1.value;
+                         len  = temp.length;
+                        /*  if(len > 14) {
+                             alert("비밀번호는 15자를 초과 하실수 없습니다.\n비밀번호 입력란으로 이동합니다.");
+                             frm.user_pwd1.select();
+                             frm.user_pwd1.focus();
+            //     			 frm.user_pwd1.value = "":
+                             event.returnValue=false;
+                             return;
+                         } */
+                     }
+                     function focus_mailtext()
+                    {
+                        var temp_mail = document.userForm.temp_mail[document.userForm.temp_mail.selectedIndex].value;
+                        if(document.userForm.temp_mail.selectedIndex != 1){	// 서울시 메일 계정이 아니기 때문에 frm.cs_mail_check.checked 를 항상 false 로 한다.
+                            //document.userForm.go_cs_mail.checked=false;
+                            document.userForm.user_email1.readOnly=false;	// user_email1
+                            document.userForm.user_email2.readOnly=true; /* 2019-07-24 */
+                        }
+                        if (temp_mail=="write"){
+                            if(confirm('이메일 주소(이메일도메인)를 직접 입력하시겠습니까?')){
+                                document.userForm.user_email2.value="";
+                                document.userForm.user_email2.style.display="inline";
+            //    				document.userForm.temp_mail.style.display="none";
+                                alert("이메일 주소(이메일도메인) 입력란으로 이동합니다.");
+                                document.userForm.user_email2.readOnly=false; /* 2019-07-24 */
+                                document.userForm.user_email2.focus();
+                            }else{
+                                document.userForm.temp_mail[0].selected = true;
+                            }
+                        }else if(temp_mail=="citizen.seoul.kr"){
+                            alert("서울시 전자우편이 생성되어 있지 않을 경우 인증이 불가능 합니다.");
+                            document.userForm.user_email1.value = document.userForm.user_id.value;
+                            document.userForm.go_cs_mail.checked=true;
+                            document.userForm.user_email1.readOnly=true;	// user_email1
+                            document.userForm.email_chk.value = "Y";
+                            document.userForm.user_email2.value="citizen.seoul.kr";
+                            document.userForm.user_email2.readOnly=true; // 2019-07-24 
+                        }else
+                        {
+                            //document.userForm.user_email1.value="";
+                            //document.userForm.email_chk.value = "N";
+                            document.userForm.user_email2.value=document.userForm.temp_mail[document.userForm.temp_mail.selectedIndex].value;
+                            document.userForm.temp_mail.style.display="inline";
+                            document.userForm.user_email2.style.display="none";
+                        }
+                    }    
+                    function go_cs_mail_check(){
+                        var frm = document.userForm;
+                        if(frm.go_cs_mail.checked == false){
+                        //	frm.cs_mail_check.checked = false;
+                        //	frm.cs_mail_check.readOnly = false;
+                            frm.user_email1.readOnly=false;	// user_email1
+                            frm.email_chk.value = "N";
+                            //frm.temp_mail.selectedIndex = 0;
+                            //frm.user_email1.value="";
+                            //frm.user_email2.value="";
+                        }else if(frm.user_id.value < 1){
+                            alert("메일계정을 생성하시기 전에 아이디를 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            frm.user_id.focus();
+                            frm.go_cs_mail.checked = false;
+                            frm.email_chk.value = "N";
+                            return;
+                        }else if(frm.id_chk.value != "true"){
+                            alert("메일계정을 생성하시기 전에 아이디 중복확인을 하십시오.\n아이디 입력란으로 이동합니다.");
+                            frm.user_id.focus();
+                            frm.go_cs_mail.checked = false;
+                            frm.email_chk.value = "N";
+                            return;
+                        }else{
+                        //	frm.cs_mail_check.checked = true;
+                        //	frm.cs_mail_check.readOnly = true;
+                            //frm.user_email1.value = frm.user_id.value;
+                            //frm.user_email1.readOnly=true;	// user_email1
+                            //frm.temp_mail.selectedIndex = 1;
+                            frm.email_chk.value = "Y";
+                            //frm.user_email2.value="citizen.seoul.kr";
+                        }
+                    }
+                    function goCancle()
+                    {
+            //    		document.location.replace("/member/info/mySeoul.do");	
+                        $("#userForm").attr("action","/member/userlogin/loginCheck.do");
+                        $("#userForm").attr("target","_self");
+                        $("#userForm").submit();    			
+                    }
+                    //회원가입
+                    function goJoin(){
+                        var user_id = document.userForm.user_id.value;
+                        user_id = user_id.replace(/^[\s]+/g,"");
+                        user_id = user_id.replace(/[\s]+$/g,"");
+                        if(user_id == null || user_id.length < 1)
+                        {
+                            alert("아이디를 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            document.userForm.user_id.focus();
+                            return;
+                        }
+                        if (user_id.length < 5)//userForm.user_id.value
+                        {
+                            alert("아이디를 5자 이상 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            document.userForm.user_id.select();
+                            document.userForm.user_id.focus();
+                            return;
+                        }
+                        if (user_id.length > 15)//userForm.user_id.value
+                        {
+                            alert("아이디는 15자 이하로 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            document.userForm.user_id.select();
+                            document.userForm.user_id.focus();
+                            return;
+                        }
+                        if(!chkValidId(userForm))
+                        {
+                            document.userForm.id_chk.value = "";
+                            document.userForm.user_id.readOnly = false;
+                            return;
+                        }
+                        if(document.userForm.id_chk.value == null || document.userForm.id_chk.value != "true")
+                        {
+                            alert("아이디 중복확인을 하십시오.\n아이디 입력란으로 이동합니다.");
+                            document.userForm.user_id.focus();
+                            return;
+                        }
+                        if(!checkPW())
+                        {
+                            return;
+                        }
+                        /* if(document.userForm.M001_Q_CD.value == null || document.userForm.M001_Q_CD.value == "" )
+                        {
+                            alert("비밀번호 변경 열쇠 질문을 선택하세요\n비밀번호 변경 열쇠 질문 선택란으로 이동합니다.");
+                            document.userForm.M001_Q_CD.focus();
+                            return;
+                        }
+                        if(document.userForm.M001_ANSWER.value == null || document.userForm.M001_ANSWER.value.length <1 )
+                        {
+                            alert("비밀번호 변경 열쇠 답을 입력하세요.\n비밀번호 변경 열쇠 답을 입력란으로 이동합니다.");
+                            document.userForm.M001_ANSWER.focus();
+                            return;
+                        } */
+                        if($("#txtNameText").val() == null || $("#txtNameText").val() == "" ){
+                            alert("이름을 입력하세요.");
+                            $("#txtNameText").focus();
+                            return;
+                        }else{
+                            $("#txtName").val($("#txtNameText").val());
+                        }
+                        if($("#user_birth1").val() == null || $("#user_birth1").val() == "" ){
+                            alert("생년월일을 입력하세요.");
+                            $("#user_birth1").focus();
+                            return;
+                        }
+                        if($("#user_birth2").val() == null || $("#user_birth2").val() == ""){
+                            alert("생년월일을 입력하세요.");
+                            $("#user_birth2").focus();
+                            return;
+                        }
+                        var birth_month = $("#user_birth2").val();
+                        if(birth_month.length == 1){
+                            document.userForm.user_birth2.value = "0"+birth_month;
+                        }
+                        if($("#user_birth3").val()==null || $("#user_birth3").val() == ""){
+                            alert("생년월일을 입력하세요.");
+                            $("#user_birth3").focus();
+                            return;
+                        }
+                        var birth_date = $("#user_birth3").val();
+                        if(birth_date.length == 1){
+                            document.userForm.user_birth3.value = "0"+birth_date;
+                        }
+                        if($("#user_birth1").val().length != 4 || $("#user_birth1").val() < 1900 || $.isNumeric($("#user_birth1").val()) == false){
+                            alert("생년월일을 정확히 입력해주세요.");
+                            $("#user_birth1").focus();
+                            return;
+                        }
+                        if($("#user_birth2").val().length > 2 || $("#user_birth2").val() < 1 || $("#user_birth2").val() > 12 || $.isNumeric($("#user_birth2").val()) == false){
+                            alert("생년월일을 정확히 입력해주세요.");
+                            $("#user_birth2").focus();
+                            return;
+                        }
+                        if($("#user_birth3").val().length > 2 || $("#user_birth3").val() < 1 || $("#user_birth3").val() > 31 || $.isNumeric($("#user_birth3").val()) == false){
+                            alert("생년월일을 정확히 입력해주세요.");
+                            $("#user_birth3").focus();
+                            return;
+                        }
+                        if(!isNumber(document.userForm.user_birth1.value)) {
+                            alert("생년월일의 년은 숫자만 입력하세요");
+                            userForm.user_birth1.focus();
+                            return;
+                        }else if(!isNumber(document.userForm.user_birth3.value)) {
+                            alert("생년월일의 일은 숫자만 입력하세요");
+                            userForm.user_birth3.focus();
+                            return;
+                        }
+                        var checkGbn = $("input[name='addr_radio_temp']:checked").val();
+                        if(checkGbn == "01"){ //집
+                            if(document.userForm.house_tel2.value == null || document.userForm.house_tel3.value==null || document.userForm.house_tel2.value == "" || document.userForm.house_tel3.value=="" )
+                            {
+                                alert("집전화 번호를 입력하세요.\n연락처 입력란으로 이동합니다.");
+                                document.userForm.house_tel2.focus();
+                                return;
+                            }
+                            if(document.userForm.house_tel2.value.length < 3 ){
+                                alert("집전화번호(중간번호)는 최소 3자리 입니다.");
+                                document.userForm.house_tel2.focus();
+                                return;
+                            }
+                            if(document.userForm.house_tel3.value.length < 4 ){
+                                alert("집전화번호(끝번호)는 최소 4자리 입니다.");
+                                document.userForm.house_tel3.focus();
+                                return;
+                            }
+                            if(!isNumber(document.userForm.house_tel2.value)){
+                                alert("연락처는 숫자만 입력하세요");
+                                userForm.house_tel2.focus();
+                                return;
+                            }
+                            if(!isNumber(document.userForm.house_tel3.value)){
+                                alert("연락처는 숫자만 입력하세요");
+                                userForm.house_tel3.focus();
+                                return;
+                            }
+                        }else if(checkGbn == "02"){ //직장
+                            if(document.userForm.office_tel2.value == null || document.userForm.office_tel3.value==null || document.userForm.office_tel2.value == "" || document.userForm.office_tel3.value=="")
+                            {
+                                alert("직장전화번호를 입력하세요.\n연락처 입력란으로 이동합니다.");
+                                document.userForm.office_tel2.focus();
+                                return;
+                            }
+                            if(document.userForm.office_tel2.value.length < 3 ){
+                                alert("직장전화번호(중간번호)는 최소 3자리 입니다.");
+                                document.userForm.office_tel2.focus();
+                                return;
+                            }
+                            if(document.userForm.office_tel3.value.length < 4 ){
+                                alert("직장전화번호(끝번호)는 최소 4자리 입니다.");
+                                document.userForm.office_tel3.focus();
+                                return;
+                            }
+                            if(!isNumber(document.userForm.office_tel2.value)){
+                                alert("연락처는 숫자만 입력하세요");
+                                userForm.office_tel2.focus();
+                                return;
+                            }
+                            if(!isNumber(document.userForm.office_tel3.value)){
+                                alert("연락처는 숫자만 입력하세요");
+                                userForm.office_tel3.focus();
+                                return;
+                            }
+                        }else if(checkGbn == "03"){ //휴대폰
+                            if(document.userForm.user_tel2.value == null || document.userForm.user_tel3.value==null ||document.userForm.user_tel2.value.length < 1 || document.userForm.user_tel3.value.length < 1 )
+                            {
+                                alert("본인확인을 진행해주세요.");
+                                $("#authbtn").focus();
+                                return;
+                            }
+                        }
+                    /* 	else if(!isNumber(document.userForm.user_tel2.value)) {
+                            alert("연락처는 숫자만 입력하세요");
+                            userForm.user_tel2.focus();
+                            return;
+                        }else if(!isNumber(document.userForm.user_tel3.value)) {
+                            alert("연락처는 숫자만 입력하세요");
+                            userForm.user_tel3.focus();
+                            return;
+                        }
+                        if(document.userForm.user_tel1.value == null || document.userForm.user_tel2.value==null || document.userForm.user_tel3.value == null || document.userForm.user_tel1.value < 1 || document.userForm.user_tel2.value < 1 || document.userForm.user_tel3.value == "")
+                        {
+                            alert("연락처를 입력하세요.\n연락처 지역번호 입력란으로 이동합니다.");
+                            document.userForm.user_tel1.focus();
+                            return;
+                        }
+             */
+                        //user_email2  user_email1 temp_mail
+                        if(document.userForm.user_email1.value == null || document.userForm.user_email1.value== ""){
+                             alert("이메일을 입력하세요.\이메일 입력란으로 이동합니다.");
+                             document.userForm.user_email1.focus();
+                             return;
+                         }
+                         var temp_mail = document.userForm.temp_mail[document.userForm.temp_mail.selectedIndex].value;
+                          if(temp_mail == null || temp_mail == ""){
+                             alert("이메일 주소를 입력하세요.\이메일 주소 입력란으로 이동합니다.");
+                             document.userForm.temp_mail.focus();
+                             return;
+                         }else if(temp_mail == "write" && ( document.userForm.user_email2.value== null || document.userForm.user_email2.value== "")){
+                             alert("이메일 주소를 입력하세요.\이메일 주소 입력란으로 이동합니다.");
+                             document.userForm.user_email2.focus();
+                             return;
+                         }
+                         userForm.user_email1.value = userForm.user_email1.value.replace(/ /g,'');
+                        //20180104 add 이메일에 한글입력 되지 않도록
+                        //var mailexp = /[^A-Za-z0-9_.-]/; ^ 괄호안의 문자를 제외한 것
+                        var mailexp = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+                        var mailexp2 = /[^A-Za-z0-9_.-]/;
+                        //20180104 add 이메일에 한글입력 되지 않도록
+                        if(document.userForm.user_email1.value != "")
+                        {
+                            if(mailexp.test(document.userForm.user_email1.value)) {
+                                alert("이메일에 한글을 사용할수 없습니다.");
+                                userForm.user_email1.value = "";
+                                userForm.user_email1.focus();
+                                return;
+                            }
+                        }
+                        {
+                            if(mailexp2.test(document.userForm.user_email1.value)) {
+                                alert("이메일에 허용된 특수문자이외의 문자는 사용할수 없습니다.");
+                                userForm.user_email1.value = "";
+                                userForm.user_email1.focus();
+                                return;
+                            }
+                        }
+                        if(document.userForm.user_email2.value != "")
+                        {
+                            if(mailexp.test(document.userForm.user_email2.value)) {
+                                alert("이메일 도메인에 한글을 사용할수 없습니다.");
+                                userForm.user_email2.value = "";
+                                userForm.user_email2.focus();
+                                return;
+                            }
+                        }
+                        if(document.userForm.user_email2.value != "")
+                        {
+                            if(mailexp2.test(document.userForm.user_email2.value)) {
+                                alert("이메일 도메인에 허용된 특수문자이외의 문자는 사용할수 없습니다.");
+                                userForm.user_email2.value = "";
+                                userForm.user_email2.focus();
+                                return;
+                            }
+                        }
+                        if(userForm.email_chk.value == "Y"){
+                            if(confirm("'서울시 전자우편 신규 생성'에 체크하셨습니다. 동의하고 회원가입을 진행하시겠습니까?")){
+                                /* $("#user_birth1_t").val($("#user_birth1").val());
+                                $("#user_birth2_t").val($("#user_birth2").val());
+                                $("#user_birth3_t").val($("#user_birth3").val()); */
+                                $("#addr_radio").val($("input[name=addr_radio_temp]:checked").val());
+                                $("#userForm").attr("action","/member/join/userJoinApp.do");
+                                $("#userForm").attr("target","_self");
+                                var telnum ="";
+                                if(checkGbn == "01"){//집
+                                    telnum =  $("#house_tel1 option:selected").val() + "-" + document.userForm.house_tel2.value + "-" + document.userForm.house_tel3.value;
+                                }else if(checkGbn == "02"){//직장
+                                    telnum = $("#office_tel1 option:selected").val() + "-" + document.userForm.office_tel2.value + "-" + document.userForm.office_tel3.value;
+                                }else if(checkGbn == "03"){//휴대폰
+                                    telnum = $("#user_tel1 option:selected").val() + "-" + document.userForm.user_tel2.value + "-" + document.userForm.user_tel3.value;
+                                }
+                                document.userForm.user_tel.value = telnum
+                                if(confirm("입력하신 이메일주소는 "+userForm.user_email1.value+"@"+userForm.user_email2.value + "입니다.\n입력하신 이메일 주소가 맞습니까?")){
+                                    $("#userForm").submit();	
+                                }else return;
+                            }else{
+                                $("#go_cs_mail").focus();
+                            }
+                        }else{
+                            /* $("#user_birth1_t").val($("#user_birth1").val());
+                            $("#user_birth2_t").val($("#user_birth2").val());
+                            $("#user_birth3_t").val($("#user_birth3").val()); */
+                            $("#addr_radio").val($("input[name=addr_radio_temp]:checked").val());
+                            $("#userForm").attr("action","/member/join/userJoinApp.do");
+                            $("#userForm").attr("target","_self");
+                            var telnum ="";
+                            if(checkGbn == "01"){//집
+                                telnum =  $("#house_tel1 option:selected").val() + "-" + document.userForm.house_tel2.value + "-" + document.userForm.house_tel3.value;
+                            }else if(checkGbn == "02"){//직장
+                                telnum = $("#office_tel1 option:selected").val() + "-" + document.userForm.office_tel2.value + "-" + document.userForm.office_tel3.value;
+                            }else if(checkGbn == "03"){//휴대폰
+                                telnum = $("#user_tel1 option:selected").val() + "-" + document.userForm.user_tel2.value + "-" + document.userForm.user_tel3.value;
+                            }
+                            document.userForm.user_tel.value = telnum
+                            //document.userForm.user_tel.value = document.userForm.user_tel1.value + "-" + document.userForm.user_tel2.value + "-" + document.userForm.user_tel3.value;
+                            if(confirm("입력하신 이메일주소는 "+userForm.user_email1.value+"@"+userForm.user_email2.value + "입니다.\n입력하신 이메일 주소가 맞습니까?")){
+                                $("#userForm").submit();	
+                            }else return;		
+                        } 
+                    /* 	
+                        if(document.userForm.mail_chk.value != "Y"){
+                            alert("이메일 인증이 필요합니다.");
+                            return;
+                        }
+                         */
+                    }    	
+                    function _check_id(form1, name, opener)
+                    {
+                        var userId = "#"+name;
+                        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                        var str = $(userId).val();
+                        str = str.replace(/^[\s]+/g,"");
+                        str = str.replace(/[\s]+$/g,"");
+                        var flag = false;
+                        var nums = "0123456789";
+                        var numchk =0;
+                        for(var k = 0 ; k < str.length; k++){
+                            if(chars.indexOf(str.charAt(k)) == -1){
+                                flag = false;
+                                break;
+                            }else{
+                                flag = true;
+                            }
+                        }
+                        for(var k = 0 ; k < str.length; k++){
+                            if(nums.indexOf(str.charAt(k)) > -1){
+                                numchk++;
+                            }
+                        }
+                        if (str == "")//form1.user_id.value
+                        {
+                            alert("아이디를 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            $(userId).focus();
+                            return;
+                        }
+                        if(!flag){
+                            alert("회원 아이디에 특수문자는 사용할 수 없습니다.");
+                            $(userId).focus();
+                            return;
+                        }
+                        if(str.length == numchk){
+                            alert("아이디는 숫자로만 사용이 불가능합니다.");
+                            $(userId).focus();
+                            return;
+                        }
+                        if (str.length < 5)//form1.user_id.value
+                        {
+                            alert("아이디를 5자 이상 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            $(userId).select();
+                            $(userId).focus();
+                            return;
+                        }
+                        if (str.length > 15)//form1.user_id.value
+                        {
+                            alert("아이디는 15자 이하로 입력하세요.\n아이디 입력란으로 이동합니다.");
+                            $(userId).select();
+                            $(userId).focus();
+                            return;
+                        }
+                        $("#want_id").val(str);
+                        var param = com.util.getFormParam('#userForm');
+                        com.ajax({
+                            type		: "POST"
+                            ,url		: "/member/popup/CheckIDApp.do"
+                            ,data		: param
+                            ,success: function(sdata){
+                                $("#want_id").val(sdata.want_id);					
+                                closeLayer('modal01');
+                                closeLayer('modal02');
+                                closeLayer('modal03');
+                                if(sdata.check_id == "0"){
+                                    $("#wantId01").text(sdata.want_id);
+                                    $("#wantId001").text(sdata.want_id);						
+                                    openLayer('modal01', null, null, opener); //181023_접근성 수정 추가
+                                }else if(sdata.check_id == "9"){
+                                    $("#wantId02").text(sdata.want_id);
+                                    $("#wantId002").text(sdata.want_id);
+                                    openLayer('modal02', null, null, opener); //181023_접근성 수정 추가
+                                }else{
+                                    $("#wantId03").text(sdata.want_id);
+                                    $("#wantId003").text(sdata.want_id);
+                                    openLayer('modal03', null, null, opener); //181023_접근성 수정 추가
+                                }
+                                return;					
+                            }
+                            ,error	: function(edata){
+                                alert("중복체크 중 오류가 발생했습니다.");
+                                return;
+                            }
+                        });     		
+                        $(userId).val(str);
+                    }
+                    //숫자인지 체크
+                    function isNumber(sValue) {
+                        for ( var i =0; i < sValue.length; i++) {
+                            aChar = sValue.charAt(i);
+                            if( !isDigit(aChar) ) return false;
+                        }
+                        return true;
+                    }   	
+                    function isDigit(num) {
+                        return(num >= "0" && num <= "9") ? true : false;
+                    }    	
+                    function p_submit2(user_tel1, user_tel2, user_tel3){
+                        goGpin2(user_tel1, user_tel2, user_tel3);
+                    }   
+                    function p_close(){
+                        w_win.close();
+                    }
+                    function winOpen(URL, winName,features)
+                    {
+                //    	winRef = window.open('/admin/member/popup/unityMberLoginHisPopup.do?pk='+pk,'unityMberLoginHisPopup','resizable=NO,scrollbars=yes,toolbar=no,resizable=no,width=500,height=700,top=200');
+                        wmap = window.open(URL,winName , features);
+                        wmap.focus();
+                    }
+                    /**
+                     * =============================================================
+                     * Event Listener
+                     * 화면에서 사용될 이벤트 등록
+                     */
+                    function fnEventListener() {
+                        // 크롬 숫자만입력(휴대폰번호, 전화번호)
+                        $("input:text[onlyNumber]").on(
+                            'keyup',
+                            function() {
+                                $(this).val($(this).val().replace(/[^0-9]/g,''));
+                            }
+                        );
+                        fnTelGbnChgInit();
+                        if('' == 'Y'){
+                            //alert("9~30자의 영문 대·소문자, 숫자, 특수문자를 조합하여 사용 가능합니다.");
+                            alert("영문자, 숫자, 특수문자 중에 3가지 이상 문자조합 9~30자 이내로 비밀번호를 다시 설정하여 주시기 바랍니다.");
+                        }
+                        if('Y' != 'Y'){
+                            alert("SMS 인증을 해주세요.");
+                            location.href="/member/join/regist01.do";
+                        }
+                    };
+                    /**
+                     * =============================================================
+                     * 프로그램시작
+                     */
+                    function createComp() {
+                        fnEventListener();
+                    };
+                    $(document).ready(function() {
+                        // 초기실행 (필수)
+                        com.init(createComp);
+                        document.title="회원정보 입력 | " +   $('.title-wrap').find('> h3').html() + " | 서울특별시청"		//181025_접근성 수정 추가
+                    });        
+                </script>
+            </div>
+        </div>
+        </section>
+        <!-- container -->
+       
+    </div>
+</body>
+</html>
