@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans KR", "Malgun Gothic", AppleGothicNeoSD,
+    "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", arial,
+    sans-serif;
+    font-size: 16px;
+    background: #fff;
+    line-height: 1.5;
+    letter-spacing: -0.035em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
+    color: #535353;
+}
+
+a {
+    color: #666;
+}
+
+a {
+    color: rgb(247, 139, 76);
+    outline-offset: 1px;
+    text-decoration: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #222;
+}
+
+section {
+    display: block;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e3eaf4;
+    font-size: 15px;
+}
+
+body {
+    font-family: "Noto Sans KR", "Malgun Gothic", AppleGothicNeoSD,
+    "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", arial,
+    sans-serif;
+    font-size: 16px;
+    background: #fff;
+    line-height: 1.5;
+    letter-spacing: -0.035em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
+    color: #535353;
+}
+
+#body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+iframe,
+tr,
+tbody,
+thead,
+table,
+th,
+td,
+b,
+i,
+a,
+span,
+strong,
+em,
+label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0 none;
+    font-family: "Noto Sans KR", "sans-serif";
+    cursor: pointer;
+    background: transparent;
+    color: #666;
+}
+
+#img,
+fieldset,
+iframe,
+button {
+    border: 0 none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+    font-weight: normal;
+}
+
+.ui-acco-pnl ol,
+ul {
+    margin: 0;
+}
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+}
+
+.base-body {
+    z-index: 0;
+    min-height: 500px;
+    position: relative;
+}
+
+.base-tit {
+    width: 100%;
+    height: 70px;
+    background: #4a79c6
+    url(https://data.seoul.go.kr/resources/img/common/base_tit_bg.png) no-repeat
+    50% 0;
+}
+
+.base-tit-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.base-tit h1 {
+    float: left;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.tit-l {
+    color: #000;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.breadcrumbs {
+    float: right;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.breadcrumbs li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.base-tit-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrap-a {
+    width: 100%;
+    background-color: transparent;
+}
+
+.wrap-cont {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.login-wrap {
+    margin: 10% auto 10%;
+    width: 862px;
+    background: #fff;
+    border: 1px solid #cad0dd;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-box,
+.login-help {
+    width: 430px;
+    float: left;
+    height: 360px;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-wrap h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-wrap p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-wrap .inp-base {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.inp-base {
+    height: 33px;
+    border: 1px solid #b4bbcb;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.login-wrap .btn-base-b {
+    margin-top: 30px;
+}
+
+.btn-base-b {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.login-help {
+    background: #f2f5fb;
+    border-left: 1px solid #cad0dd;
+}
+
+.login-box,
+.login-help {
+    width: 430px;
+    float: left;
+    height: 360px;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-help-link {
+    margin-top: 50px;
+}
+
+.login-help-link a {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    margin: 0 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.login-help-link a:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(https://data.seoul.go.kr/resources/img/content/ico_login.png)
+    no-repeat 0 0;
+    margin-bottom: 10px;
+}
+
+.login-help-link a.n3:before {
+    background-position: 0 -100px;
+}
+
+.bgc-p3 {
+    background-color: #4d8dff !important;
+}
+
+[class*="btn-base"] span {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+    margin-top: -3px;
+}
+
+[class*="btn-base"] {
+    display: inline-block;
+    padding: 0 15px;
+    /* min-height: 30px; */
+    border: 0;
+    font-size: 15px;
+    text-align: center;
+    background: #5d6169;
+    vertical-align: top;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 3px;
+    min-width: 80px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+@media (max-width: 1000px) {
+    body {
+        background-color: #e3eaf4;
+        font-size: 12px;
+    }
+
+    .web-renewal .base-body {
+        padding-top: 130px;
+    }
+
+    .base-body {
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: 100px;
+        position: relative;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+
+    .base-tit {
+        height: 30px;
+        background: #4a79c6
+        url(https://data.seoul.go.kr/resources/img/common/base_tit_bg.png)
+        no-repeat 50% 0;
+        background-size: cover;
+        position: relative;
+    }
+
+    .base-tit-wrap {
+        width: 100%;
+    }
+
+    .base-tit h1 {
+        display: none;
+        float: left;
+        font-size: 26px;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+    .breadcrumbs {
+        float: left;
+        color: #fff;
+        margin-top: 5px;
+        padding-left: 15px;
+    }
+
+    .breadcrumbs li:first-child,
+    .breadcrumbs li:first-child::before {
+        display: none;
+    }
+
+    .breadcrumbs li {
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    .breadcrumbs li span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .breadcrumbs li:nth-child(2),
+    .breadcrumbs li:nth-child(3)::before {
+        display: none;
+    }
+
+    .base-tit-wrap:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .wrap-cont {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main .wrap-cont,
+    .wrap-cont {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .login-wrap {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .login-box,
+    .login-help {
+        width: 100%;
+        float: left;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .login-wrap h2 {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .login-wrap p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .login-wrap .inp-base {
+        width: 100%;
+        height: 32px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .login-wrap .btn-base-b {
+        margin-top: 5px;
+    }
+
+    .btn-base-b {
+        width: 100%;
+        min-height: 35px;
+        padding: 0 16px;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+
+    .login-help {
+        background: #f2f5fb;
+        border-left: 0;
+    }
+
+    .login-box,
+    .login-help {
+        width: 100%;
+        float: left;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .login-help-link {
+        margin-top: 20px;
+    }
+
+    .login-help-link a:before {
+        width: 60px;
+        height: 60px;
+        background: url(https://data.seoul.go.kr/resources/img/content/ico_login_m.png)
+        no-repeat 0 0;
+        background-size: 120px;
+        margin: 0 auto 10px;
+    }
+
+    .login-help-link a {
+        width: 80px;
+    }
+
+    .login-help-link a.n3:before {
+        background-position: 0 -60px;
+    }
+
+    .login-wrap:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* join css 시작 */
+}
+
+@media (max-width: 1000px) {
+    [class*="btn-base"] {
+        display: inline-block;
+        padding: 0 15px;
+        min-height: 30px;
+        border: 0;
+        font-size: 12px;
+        text-align: center;
+        background: #5d6169;
+        vertical-align: top;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 1;
+        border-radius: 3px;
+    }
+}

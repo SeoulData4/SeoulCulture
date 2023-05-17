@@ -1,0 +1,2396 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* outline: 0; */
+    font-size: 14px;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Nanum Gothic';
+    font-weight: 400;
+    color: #222;
+    font-style: normal;
+    line-height: 1.35em;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+
+input, select {
+    vertical-align: middle;
+    background: transparent;
+    border: 1px solid #ddd;
+}
+
+input, select, textarea {
+    font-family: 'Nanum Gothic';
+    color: #767676;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+
+#wrap {
+    position: relative;
+    min-width: 1152px;
+}
+
+#skip {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    font-size: 1.15em;
+    top: -10.5em;
+    left: 0;
+    z-index: 999;
+}
+
+.top-area {
+    height: 48px;
+    background: #fff;
+}
+
+.top-area .inner {
+    position: relative;
+}
+
+.inner {
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+h1.logo {
+    float: left;
+    width: 101px;
+    height: 27px;
+    margin-top: 8px;
+}
+
+h1.logo a {
+    display: block;
+    width: 105px;
+    height: 27px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/logo_m.png) no-repeat -5px -165px;
+}
+
+.mo-view {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.gnb {
+    float: left;
+    width: calc(100% - 101px);
+}
+
+.gnb > ul {
+    float: left;
+}
+
+.gnb > ul > li:first-child {
+    padding-left: 40px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.gnb > ul > li {
+    float: left;
+    margin-left: 20px;
+}
+
+.gnb > ul > li > a, .gnb > ul > li > button.btn_info_cate, .gnb > ul > li > button.btn-gothic {
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.top-area.new2021 .gnb > ul > li:first-child, .info_cate {
+    position: static;
+}
+
+.gnb ul.other {
+    float: right;
+}
+
+.gnb ul.other > li {
+    float: left;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.gnb.all_gnb {
+    display: none;
+}
+
+.gnb {
+    float: left;
+    width: calc(100% - 101px);
+}
+
+.inner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.search-line {
+    position: relative;
+    background: #0d82eb;
+    padding: 1.53em 0;
+    height: 100px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.sub .search-line > .inner > h1.new {
+    width: 133px;
+    height: 51px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/common/seoul-slogan-white.png) no-repeat 0 0;
+}
+
+.sub .search-line > .inner > h1 {
+    float: left;
+    width: 180px;
+    height: 52px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/logo_new_2019.png) no-repeat 0 -55px;
+    margin-top: 5px;
+}
+
+.sub .search-line > .inner > h1.new a {
+    width: 133px;
+    height: 51px;
+}
+
+.sub .search-line > .inner > h1 a {
+    display: inline-block;
+    width: 180px;
+    height: 52px;
+}
+
+.search-line .search {
+    width: 429px;
+    height: 42px;
+    float: left;
+    margin: 10px 0 0 200px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.search-line input[type='text'] {
+    height: 100%;
+    border: 0;
+    width: calc(100% - 65px);
+}
+
+input[type='password'], input[type='text'] {
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.keyboardInputInitiator {
+    margin-left: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 42px;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: -65px -16px;
+}
+
+.search-line .btn-search {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png) no-repeat -32px -95px;
+    float: right;
+}
+
+.btn {
+    margin: 0;
+    font-family: 'Nanum Gothic';
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.btn span {
+    display: block;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.auto-search {
+    width: 100% !important;
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 42px;
+    z-index: 11;
+    width: 408px;
+    min-height: 10px;
+    border: 1px solid #3599d5;
+    background: #fff;
+}
+
+.auto-search * {
+    box-sizing: border-box;
+}
+
+.auto-search .column-left {
+    float: left;
+    width: 60% !important;
+    padding-bottom: 0px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.auto-search .column-left .auto-lst {
+    margin: 5px 0px 2px 0px;
+}
+
+.auto-search .ui-widget.ui-widget-content {
+    border: 0;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+}
+
+.ui-widget-content {
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+
+.ui-widget {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    outline: 0;
+}
+
+.auto-search .column-right {
+    float: right;
+    width: 40% !important;
+    overflow: hidden;
+}
+
+.auto-search .column-right .auto-url {
+    margin: 0px 0px 0px 0px;
+}
+
+.auto-search .column-bottom {
+    clear: both;
+    border-top: 1px solid #eeeeee;
+    height: 27px;
+    background: #f5f5f5;
+    text-align: right;
+}
+
+.auto-search .column-bottom a {
+    display: inline-block;
+    padding: 0px 10px;
+    background: url(https://www.seoul.go.kr/assets/images/main/bg-lst-line.gif) no-repeat right center;
+    color: #888;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.auto-search .column-bottom a:last-child {
+    background: none;
+}
+
+#container > .inner {
+    position: relative;
+    z-index: 0;
+    background: url(https://www.seoul.go.kr/images/body_line.gif) repeat-y left top;
+    overflow: hidden;
+}
+
+.inner {
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+#snb {
+    position: relative;
+    float: left;
+    width: 200px;
+    padding: 55px 30px 100px 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#snb h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#snb > ul {
+    padding-top: 20px;
+    margin-top: 25px;
+    border-top: 2px solid #222;
+}
+
+#snb ul li a[target="_blank"], #all_menu a[target="_blank"] {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#snb > ul > li.dep_no a {
+    background: 0;
+    padding: 13px 10px 14px 10px;
+}
+
+#snb > ul > li > a {
+    display: block;
+    padding: 13px 22px 14px 10px;
+    color: #555;
+    font-size: 14px;
+    background-image: url(https://www.seoul.go.kr/images/bg_snb_down.png);
+    background-repeat: no-repeat;
+    background-position: 150px 20px;
+    letter-spacing: -1px;
+}
+
+.snb_m {
+    display: none;
+}
+
+.pc-view {
+    display: block !important;
+}
+
+#container > .inner {
+    position: relative;
+    z-index: 0;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/body_line.gif) repeat-y left top;
+    overflow: hidden;
+}
+
+#content {
+    float: right;
+    width: 912px;
+    padding: 52px 0 60px;
+    background: #fff;
+    min-height: 600px;
+}
+
+#content .title-wrap {
+    position: relative;
+}
+
+.join-process-new {
+    position: relative;
+    overflow: hidden;
+}
+
+.join-process {
+    margin-bottom: 40px;
+}
+
+#content .title-wrap h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#content .title-wrap .path {
+    margin-top: 18px;
+    margin-bottom: 58px;
+    text-align: center;
+    color: #555;
+}
+
+#content .title-wrap .path a {
+    color: #555;
+}
+
+#content .title-wrap .path span {
+    display: inline-block;
+    margin: 0 10px;
+    color: #aaaaaa;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_link2.png) no-repeat;
+    text-indent: -9999px;
+    width: 5px;
+    height: 9px;
+    vertical-align: middle;
+}
+
+#content .title-wrap .util {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#content .title-wrap .util a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png) no-repeat 5px -195px;
+    border: 1px solid #cccccc;
+    text-indent: -9999px;
+}
+
+.join-process-new:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.join-process-new ul {
+    border: 0;
+}
+
+.join-process ul {
+    border: 1px solid #ddd;
+}
+
+.join-process ul li.active {
+    background: #0c82e9;
+    color: #fff;
+    position: relative;
+    font-weight: 700;
+}
+
+.join-process ul li:first-child {
+    border-left: 0;
+}
+
+.join-process-new ul li {
+    position: relative;
+    height: 61px;
+    border: 0;
+    text-align: center;
+}
+
+.join-process ul li {
+    float: left;
+    background: #f4f6f7;
+    width: 25%;
+    font-size: 16px;
+    padding: 20px 18px 18px;
+    box-sizing: border-box;
+    border-left: 1px solid #dddddd;
+    color: #555;
+}
+
+.join-process ul li.active em {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.join-process ul li em {
+    font-size: 16px;
+    color: #555;
+}
+
+.clfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.join-process-new ul li:first-child:before, .join-process-new ul li:first-child:after {
+    display: none;
+}
+
+/* .join-process-new ul li.active + li:before, .join-process-new ul li.active + li:after {
+    border-left: 20px solid #0c82e9;
+} */
+
+.join-process-new ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 20px solid #dedede;
+    z-index: 1;
+}
+
+.join-process-new ul li:after, .join-process-new ul li.active:after {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin-left: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 20px solid #f4f6f7;
+    z-index: 1;
+}
+
+.join-process ul li.active:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    margin-left: -11px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+}
+
+.guide-box {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 30px 40px;
+    background: #f4f6f7;
+    font-size: 14px;
+}
+
+.guide-box-agree p {
+    color: #555;
+    font-size: 18px;
+}
+
+.guide-box-agree .check-all {
+    margin-top: 15px;
+}
+
+.custom-input {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-input input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.layer-popup input[type='radio'] + label, input[type='checkbox'] + label {
+    position: relative;
+    margin-right: 15px;
+}
+
+.guide-box-agree label, .rule-check-new label {
+    cursor: pointer;
+}
+
+input[type='checkbox'] + label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+}
+
+.guide-box-agree input[type='checkbox'] + label span {
+    font-size: 18px;
+}
+
+input[type='checkbox'] + label span {
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.check-all input[type='checkbox'] + label span {
+    font-size: 15px;
+    color: #222;
+    font-weight: bold;
+}
+
+.guide-box * {
+    font-size: 14px;
+}
+
+.rule-check-new h4.tit-agree {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+h4 {
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rule-check-new h4.tit-agree:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background: #0c82e9;
+}
+
+.rule-check-new h4.tit-agree span {
+    color: #0c82e9;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.rule-check-new .rule-box {
+    border: 1px solid #787878;
+}
+
+.rule-box {
+    border: 1px solid #dddddd;
+    margin-bottom: 40px;
+}
+
+.rule-check-new .rule-cont {
+    min-height: 220px;
+    max-height: 220px;
+    padding: 50px 25px;
+    box-sizing: border-box;
+}
+
+.rule-box .rule-cont {
+    overflow-y: scroll;
+    padding: 30px;
+    min-height: 168px;
+    max-height: 168px;
+}
+
+.rule-check-new article.rule {
+    margin-bottom: 0;
+}
+
+article.rule {
+    margin-bottom: 58px;
+}
+
+.rule-check-new .rule-box .rule-cont h4 {
+    font-size: 16px !important;
+    font-weight: 700;
+}
+
+.rule-box .rule-cont h4:first-child {
+    margin-top: 0;
+}
+
+.rule-box .rule-cont h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+}
+
+.rule-check-new .rule-box .rule-cont h5 {
+    font-weight: 700;
+}
+
+.rule-box .rule-cont h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    margin: 25px 0 5px;
+}
+
+article.rule h5 {
+    font-size: 15px;
+    margin: 40px 0 10px;
+}
+
+.rule-box .rule-cont article.rule p {
+    color: #767676;
+}
+
+article.rule p {
+    color: #555;
+    line-height: 23px;
+}
+
+.rule-check-new .rule-box .rule-cont h5 {
+    font-weight: 700;
+}
+
+.rule-box .rule-cont h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    margin: 25px 0 5px;
+}
+
+.rule-box .rule-cont article.rule ol li {
+    color: #767676;
+}
+
+article.rule ol > li {
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+article.rule li {
+    line-height: 1.6;
+    color: #555;
+    word-break: keep-all;
+}
+
+.rule-check-new .rule-footer {
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;
+}
+
+.rule-check-new .rule-footer .rule-footer-text {
+    padding: 30px 50px 30px;
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.rule-check-new .check-all {
+    padding: 14px 0 20px;
+    background: #f4f6f7;
+    text-align: center;
+}
+
+.rule-check-new .check-all .custom-input {
+    margin-top: 10px;
+}
+
+.custom-input {
+    position: relative;
+    display: inline-block;
+}
+
+.rule-check-new .check-all .custom-input strong {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.rule-check-new .check-all .custom-input strong:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #0c82e9;
+}
+
+.rule-check-new .rule-footer .check-all * {
+    font-size: 16px !important;
+}
+
+.custom-input input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.rule-check-new .check-all .custom-input input[type='radio'] + label {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+input[type='radio'] + label:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.rule-check-new .check-all .custom-input input[type='radio'] + label span {
+    font-weight: 700;
+}
+
+.mgT40 {
+    margin-top: 40px;
+}
+
+.table-col {
+    position: relative;
+}
+
+.table-col {
+    position: relative;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid #767676;
+    border-bottom: 1px solid #767676;
+}
+
+.table-col:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+}
+
+.table-col thead th {
+    background: #f4f6f7;
+    vertical-align: middle;
+}
+
+table th:first-child {
+    border-left: 0;
+}
+
+.table-col th, .table-col td {
+    border-left: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    padding: 7px 10px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    color: #222;
+    vertical-align: middle;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 700;
+    background: #f4f6f7;
+}
+
+.layer-popup .table-col th, .table-col td {
+    border-left: 1px solid #ddd;
+    text-align: center;
+}
+
+table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    color: #555;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+.rule-check-new .rule-box.rule-box-type1 .rule-cont table span.align {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 65px;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.rule-check-new .rule-box.rule-box-type1 .rule-cont {
+    min-height: 310px;
+    max-height: none;
+    overflow-y: hidden;
+}
+
+table td:first-child {
+    border-left: 0;
+}
+
+.btn-group {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn.bg-point {
+    background: #0c82e9;
+    border: 1px solid #0c82e9;
+}
+
+.btn.large {
+    padding: 15px;
+}
+
+.btn {
+    margin: 0;
+    font-family: 'Nanum Gothic';
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.btn.bg-point span {
+    color: #fff;
+}
+
+.btn.large span {
+    min-width: 108px;
+    font-size: 16px;
+}
+
+.btn span {
+    display: block;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.rule-check-new .rule-box .rule-cont2 {
+    min-height: 160px;
+    max-height: none;
+    overflow-y: hidden;
+}
+
+.rule-check-new .rule-cont {
+    min-height: 220px;
+    max-height: 220px;
+    padding: 50px 25px;
+    box-sizing: border-box;
+}
+
+.rule-box .rule-cont {
+    overflow-y: scroll;
+    padding: 30px;
+    min-height: 168px;
+    max-height: 168px;
+}
+
+.join-info {
+    padding: 30px 40px;
+    background: #f4f6f7;
+    margin-bottom: 40px;
+}
+
+.join-info li:first-child {
+    margin-top: 0;
+}
+
+ul.basic-list > li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.join-info li {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+ul.basic-list > li:before {
+    content: '-';
+    display: inline-block;
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+}
+
+.join-info li {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.user-id {
+    margin-bottom: 30px;
+}
+
+.table-title {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.table-title span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 14px;
+    color: #767676;
+}
+
+.table-title span::before {
+    content: '*';
+    display: inline-block;
+    color: #0c82e9;
+    margin-right: 6px;
+}
+
+.table-title span.noti {
+    font-size: 13px;
+    bottom: 10px;
+    top: 3px;
+    color: #0c82e9;
+}
+
+#content dl.table-row {
+    position: relative;
+    display: table-row;
+}
+
+#content dl.table-row.first dt, #content dl.table-row.first dd {
+    border-top: 1px solid #767676;
+}
+
+#content dl.table-row dt {
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+    background: #f4f6f7;
+    padding: 25px 20px;
+    /* font-size: 16px; */
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+#content dl.table-row dt label, #content dl.table-row dt b {
+    /* font-size: 16px; */
+    display: inline-block;
+    width: 100%;
+}
+
+.require {
+    position: relative;
+}
+
+.join-form .require:before {
+    content: '*';
+    display: inline-block;
+    color: #0c82e9;
+    margin-right: 3px;
+}
+
+.join-form .require:after {
+    content: '';
+}
+
+.require:after {
+    content: '*';
+    display: inline-block;
+    color: #0c82e9;
+    margin-left: 3px;
+}
+
+#content dl.table-row.first dt, #content dl.table-row.first dd {
+    border-top: 1px solid #767676;
+}
+
+#content dl.table-row dd {
+    display: table-cell;
+    width: 75%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+#content dl.table-row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.inp-btn {
+    position: relative;
+    width: 100%;
+}
+
+dl.table-row .caution {
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.caution {
+    color: #0c82e9 !important;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.join-form input[type="password"], .join-form input[type="text"], .join-form select {
+    width: 497px;
+    color: #555;
+    font-family: 'Nanum Gothic';
+    font-size: 14px;
+}
+
+.inp-btn input {
+    width: 229px;
+}
+
+input[type='password'], input[type='text'] {
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.inp-btn .btn {
+    border: 1px solid #767676;
+}
+
+.btn-id-check {
+    width: 84px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border: 1px solid #767676;
+}
+
+.inp-btn .btn span {
+    min-width: 52px;
+    font-size: 14px;
+}
+
+.table .btn span, table .btn span {
+    font-weight: 400;
+}
+
+.btn span {
+    display: block;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.join-form input.num, .join-form select.num {
+    width: 88px;
+}
+
+span.in-text {
+    display: inline-block;
+    width: 27px;
+    text-align: center;
+    color: #555;
+    margin-right: -4px;
+}
+
+.user-info dd p {
+    color: #767676;
+    line-height: 1.5em;
+}
+
+p.p-info01 {
+    margin: 10px 0 0;
+}
+
+#content dl.table-row dd {
+    display: table-cell;
+    width: 75%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+.ddtype2 {
+    position: relative;
+}
+
+.contact-column2 {
+    display: none;
+}
+
+.contact-column2 .contact-col:first-child {
+    margin-top: 0;
+}
+
+.contact-column2 .contact-col {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.contact-column2 .contact-col .custom-input {
+    width: 15%;
+}
+
+input[type='radio']:checked + label:before {
+    border: 1px solid #797979;
+    background: #fff url(https://www.seoul.go.kr/res_newseoul/images/bg_radio_checked.png) no-repeat center center;
+}
+
+.join-form input.num, .join-form select.num {
+    width: 88px;
+}
+
+input[type='radio'] + label span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.join-form input.num, .join-form select.num {
+    width: 88px;
+}
+
+.contact-column2 .contact-col span.dash {
+    margin-right: 0;
+}
+
+span.dash {
+    display: inline-block;
+    width: 27px;
+    text-align: center;
+    margin-right: -4px;
+}
+
+.contact-column2 .contact-col button {
+    margin-left: 5px;
+}
+
+.btn.tiny {
+    padding: 12px 15px 12px;
+    border: 1px solid #767676;
+}
+
+/* #content dl.table-row.last dt, #content dl.table-row.last dd {
+    border-bottom: 1px solid #767676;
+} */
+
+.join-form .member-email-wrap input.email {
+    width: 160px;
+}
+
+.join-form input.email {
+    width: 202px;
+}
+
+.join-form .member-email-wrap input#name09:read-only {
+    background: #f8f8f8;
+}
+
+.join-form .member-email-wrap input#name09 {
+    width: 170px;
+    display: inline-block !important;
+}
+
+.join-form .member-email-wrap select.email-compnay {
+    width: 170px;
+}
+
+.join-form select.email-compnay {
+    width: 266px;
+}
+
+.btn.bg-white {
+    border: 1px solid #dddddd;
+    background: #fff;
+}
+
+/* 1155================================================= */
+
+@media (max-width: 600px) {
+    .join-form .member-email-wrap * {
+        vertical-align: middle;
+    }
+
+    .join-form .member-email-wrap input.email {
+        width: 31%;
+    }
+
+    .join-form .member-email-wrap span.at {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 5%;
+    }
+
+    .join-form .member-email-wrap input#name09 {
+        width: 31%;
+    }
+
+    .join-form .member-email-wrap select.email-compnay {
+        width: 31%;
+    }
+}
+
+
+@media (max-width: 501px) {
+
+
+    .join-process.join-process-new ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1152px) {
+    .contact-column2 .contact-col select {
+        width: 21%;
+    }
+
+    .contact-column2 .contact-col span.dash {
+        width: 5%;
+    }
+
+    .contact-column2 .contact-col input[type="text"] {
+        width: 27%;
+    }
+
+    .contact-column2 .contact-col button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85px;
+        padding-left: 5px;
+        padding-right: 5px;
+        flex-shrink: 0;
+    }
+    
+}
+
+
+@media (max-width: 1151px) {
+
+    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+        font-size: 16px;
+        font-family: 'Nanum Barun Gothic';
+        font-weight: 400;
+    }
+
+    select, input {
+        font-size: 14px;
+    }
+
+    input, select, textarea {
+        font-family: 'Nanum Barun Gothic';
+        color: #767676;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    #wrap {
+        min-width: 100%;
+    }
+
+    .sub #header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 45px;
+        background-color: #0d82eb;
+        z-index: 10;
+    }
+
+    .sub .top-area {
+        height: 45px;
+        position: relative;
+        background: transparent;
+    }
+
+    .sub .top-area .inner {
+        box-sizing: border-box;
+        position: relative;
+        height: 45px;
+    }
+
+    .inner {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .sub .top-area h1.logo {
+        float: none;
+        margin: auto;
+        width: 97.5px;
+        height: 18.5px;
+        padding: 14px 0 0 0;
+    }
+
+    .sub .top-area h1 {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .sub .top-area h1.logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(https://www.seoul.go.kr/res_newseoul/images/logo_m.png) no-repeat;
+        background-size: 97.5px auto;
+    }
+
+    .sub .top-area .btn_menu {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        width: 30px;
+        height: 30px;
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_menu.png) no-repeat 50% 50%;
+        background-size: 21px auto;
+    }
+
+    .mo-view {
+        display: block !important;
+    }
+
+    .sub .top-area .btn_sch {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        width: 30px;
+        height: 30px;
+        background: url(https://www.seoul.go.kr/res_newseoul/images/ico_sch.png) no-repeat 50% 50%;
+        background-size: 20px 20px;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .gnb > ul > li:first-child {
+        padding-left: 0;
+    }
+
+    .gnb.all_gnb {
+        display: none;
+    }
+
+    .gnb.all_gnb .txt_login {
+        height: 45px;
+        /* line-height: 45px; */
+        font-size: 18px;
+        background: #0d82e9;
+        color: #fff;
+        /* font-weight: 700; */
+        box-sizing: border-box;
+        border-bottom: 1px solid #1f97ff;
+        padding-left: 17px;
+    }
+
+    .gnb.all_gnb > .clfix {
+        height: calc(100% - 92px);
+        overflow-y: auto;
+        position: relative;
+        width: 100%;
+        background: #fff url(https://www.seoul.go.kr/res_newseoul/images/bg_mobile_menu.jpg) repeat-y 0 0;
+    }
+
+    .gnb.all_gnb > .clfix > li:first-child {
+        position: static;
+    }
+
+    .gnb.all_gnb > .clfix > li {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .gnb.all_gnb > .clfix > li.selected > a {
+        position: relative;
+        background-color: #fff;
+        color: #0c82e9;
+        z-index: 2;
+    }
+
+    .gnb.all_gnb > .clfix > li > a {
+        width: 121px;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 13px 10px 11px 14px;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+        letter-spacing: -1px;
+        position: relative;
+        height: auto;
+        line-height: 100%;
+    }
+
+    .gnb.all_gnb a {
+        display: block;
+    }
+
+    .gnb.all_gnb > .clfix li.selected .sub_menu {
+        display: block !important;
+    }
+
+    .gnb.all_gnb > .clfix .sub_menu {
+        /* width: 60%; */
+        position: absolute;
+        top: 0;
+        left: 122px;
+        right: 0;
+        bottom: 4.5rem;
+        background: #fff;
+        padding: 0 17px;
+        box-sizing: border-box;
+        z-index: 1;
+        height: 100%;
+        min-height: 540px;
+        overflow-y: auto;
+    }
+
+    .gnb.all_gnb .view_all {
+        background-color: #6496C2;
+        color: #fff;
+        font-size: 15px;
+        padding: 13px;
+        text-align: center;
+        font-weight: 400;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    .search-line {
+        height: 45px;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+
+    .search-line .inner {
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .inner {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .search-line .search {
+        background-color: #fff;
+        width: 100%;
+        height: 39px;
+        margin: auto;
+        border-radius: 4px;
+    }
+
+    .search-line .search input[type='text'] {
+        border: 0;
+        /* width: calc(100% - 6rem); */
+        height: 100%;
+        line-height: 100%;
+        padding: 0 1rem;
+        font-size: 13px;
+        color: #767676;
+    }
+
+    .search-line .search .btn-search {
+        width: 39px;
+        height: 39px;
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_magnify.png) no-repeat 50% 50%;
+        float: right;
+        background-size: 15px 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    #container {
+        background: #f4f6f7;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #container > .inner {
+        background-image: none;
+    }
+
+    .inner {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #snb {
+        float: none;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        margin-bottom: 10px;
+        border: 0;
+        display: none;
+    }
+
+    #snb h2 {
+        display: none;
+    }
+
+    #snb > ul {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #snb > ul > li {
+        position: relative;
+        width: 100%;
+    }
+
+    #snb > ul > li > a {
+        background: url(https://www.seoul.go.kr/images/bg_snb_down.png) no-repeat right 20px center;
+    }
+
+    #snb a {
+        font-weight: 700;
+        font-size: 18px;
+        color: #222;
+        box-sizing: border-box;
+        background: transparent;
+    }
+
+    .snb_m {
+        position: fixed;
+        display: block;
+        left: 0;
+        top: 45px;
+        width: 100%;
+        /* margin-top: -10px; */
+        background: #fff;
+        z-index: 9;
+    }
+
+    .snb_m .dep1 {
+        position: relative;
+    }
+
+    .snb_m .dep1 > a {
+        position: relative;
+        display: block;
+        line-height: 45px;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0 15px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+
+    .snb_m .dep1 > a:after {
+        display: block;
+        content: '';
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        right: 15px;
+        top: 18px;
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_arrow_down.png) no-repeat left top;
+        background-size: 12px 7px;
+    }
+
+    .snb_m .dep1 ul {
+        background: #f4f6f7;
+        padding: 0 15px;
+        top: 46px;
+        display: none;
+        border-bottom: 1px solid #0d82eb;
+        box-shadow: rgba(0,0,0,0.3) 3px 0 3px;
+    }
+
+    .snb_m .dep1 ul li a {
+        display: block;
+        font-size: 16px;
+        color: #555;
+        line-height: 35px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .pc-view {
+        display: none !important;
+    }
+
+    #container {
+        background: #f4f6f7;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #container > .inner {
+        background-image: none;
+    }
+
+    .inner {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #content {
+        position: relative;
+        display: block;
+        float: none;
+        top: 100px;
+        width: 100%;
+        min-height: auto;
+        padding: 16px 15px 110px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+
+    #content .title-wrap {
+        display: none;
+    }
+
+    .join-process {
+        margin-bottom: 20px;
+    }
+
+    #content .title-wrap h3 {
+        font-size: 20px;
+    }
+
+    .join-process ul {
+        margin: 0 -15px;
+        border-width: 1px 0 1px 0;
+    }
+
+    .join-process ul li {
+        font-size: 13px;
+        text-align: center;
+        color: #555;
+        padding: 11px 0;
+    }
+
+    .join-process ul li em {
+        display: none;
+    }
+
+    .join-process ul li.active::after {
+        border-width: 6px;
+        margin-left: -6px;
+    }
+
+    .guide-box {
+    padding: 17px 9px;
+    margin-bottom: 20px;
+    }
+
+    input[type='checkbox'] + label:before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .check-all input[type="checkbox"] + label span {
+        font-size: 14px;
+        font-weight: 700;
+        padding-left: 0 !important;
+        vertical-align: middle !important;
+    }
+
+    #content h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .rule-check-new h4.tit-agree {
+        padding-left: 15px;
+    }
+
+    .rule-check-new h4.tit-agree:before {
+        top: 6px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+    }
+
+    .rule-check .rule-box .rule-cont {
+        padding: 17px 9px;
+    }
+
+    #content article.rule {
+        margin-bottom: 25px;
+    }
+
+    .rule {
+        overflow-y: auto;
+    }
+
+    #content .rule-box .rule-cont h4 {
+        font-size: 14px;
+        /* margin-top: 0; */
+    }
+
+    #content article.rule h4 {
+        font-size: 18px;
+        /* margin-top: 25px; */
+    }
+
+    #content .rule-box .rule-cont h5 {
+        font-size: 14px;
+    }
+
+    #content article.rule h5 {
+        font-size: 14px;
+        margin: 18px 0 7px;
+    }
+
+    #content article.rule p {
+        font-size: 14px;
+        line-height: 1.5em;
+        letter-spacing: -0.5px;
+    }
+
+    .rule-box .rule-cont article.rule p {
+        font-size: 14px;
+    }
+
+    #content article.rule h5 {
+        font-size: 14px;
+        margin: 18px 0 7px;
+    }
+
+    #content article.rule li {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    article.rule ol > li {
+        padding-left: 16px;
+        text-indent: -16px;
+    }
+
+    #content article.rule h5 {
+        font-size: 14px;
+        margin: 18px 0 7px;
+    }
+
+    .rule-check-new .rule-footer .rule-footer-text {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .rule-check-new .check-all {
+        padding: 9px 10px 12px;
+    }
+
+    .rule-check-new .rule-footer .check-all * {
+        font-size: 14px !important;
+    }
+
+    input[type='radio'] + label::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #dedede;
+        border-radius: 50%;
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+    }
+
+    .rule-check-new .check-all .custom-input input[type='radio'] + label span {
+        color: #222;
+    }
+
+    .table th {
+        font-size: 14px;
+        font-weight: 700;
+        color: #222;
+        padding: 9px 9px 8px !important;
+    }
+
+    table th {
+        font-size: 14px;
+    }
+
+    .table td {
+        font-size: 14px;
+        color: #555;
+        padding: 9px 10px 8px !important;
+    }
+
+    table td {
+        font-size: 14px;
+    }
+
+    .btn-group {
+        margin-top: 20px;
+    }
+
+    .btn-group.full .btn {
+        width: 100%;
+        padding: 0;
+        height: 50px;
+        line-height: 100%;
+    }
+
+    .btn.large {
+        padding: 15px 40px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .btn-group.full .btn span {
+        font-size: 16px !important;
+    }
+
+    .btn-group.full .btn span {
+        font-size: 16px;
+    }
+
+    .rule-check-new .rule-box .rule-cont2 {
+        min-height: 50px;
+        padding: 25px 25px 0;
+    }
+
+    .rule-check .rule-box .rule-cont {
+        padding: 17px 9px;
+    }
+
+    .join-info {
+        padding: 17px 9px;
+        margin-bottom: 25px;
+    }
+
+    .table-title {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #767676;
+        /* margin-bottom: 10px; */
+    }
+
+    .table-title span.noti {
+        font-size: 13px;
+        bottom: 10px;
+        top: 3px;
+        color: #0c82e9;
+    }
+
+    .table-title span.noti {
+        font-size: 13px;
+        bottom: 10px;
+        top: 3px;
+        color: #0c82e9;
+    }
+
+    #content dl.table-row {
+        display: block;
+    }
+
+    .s-brT0 {
+        border-top: 0 !important;
+    }
+
+    #content dl.table-row.first dt, #content dl.table-row.first dd {
+        border-top: 0 !important;
+    }
+
+    #content dl.table-row dt {
+        float: none;
+        display: block;
+        width: 100%;
+        position: static;
+        padding: 0;
+        font-size: 14px;
+        border-bottom: 0;
+        color: #555;
+        margin-top: 20px;
+        padding: 6px 7px 4px;
+    }
+
+    #content dl.table-row dt label {
+        width: auto;
+        padding-right: 12px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    #content dl.table-row.first dt, #content dl.table-row.first dd {
+        border-top: 0 !important;
+    }
+
+    #content dl.table-row dd {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 5px 0 0;
+        border-bottom: 0;
+        overflow: hidden;
+    }
+
+    #content dl.table-row:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .join-form .recheck-wrap > span {
+        position: relative;
+        display: block;
+        padding-right: 80px;
+        box-sizing: border-box;
+    }
+
+    .inp-btn {
+        display: block;
+        width: 100%;
+        padding-right: 76px;
+        box-sizing: border-box;
+    }
+
+    dl.table-row .caution {
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+
+    .join-form .caution {
+        font-size: 12px;
+    }
+
+    .join-form input[type="password"], .join-form input[type="text"], .join-form select {
+        width: 100%;
+        height: 50px;
+        line-height: 48px;
+        font-size: 14px;
+        font-family: 'Nanum Barun Gothic';
+    }
+
+    .inp-btn input {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    input[type="password"], input[type="text"], select {
+        width: 100%;
+        height: 50px;
+        line-height: 48px;
+        font-size: 14px;
+        padding: 0 7px;
+    }
+
+    .join-form .recheck-wrap .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 76px;
+        height: 50px;
+    }
+
+    .inp-btn .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-left: 9px;
+        padding-right: 9px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .join-form .recheck-wrap .btn span {
+        font-size: 14px;
+    }
+
+    .table .btn span, table .btn span {
+        font-size: 16px;
+    }
+
+    .join-form dd.birth input[type="text"] {
+        width: 26%;
+    }
+
+    .join-form dd.birth .in-text {
+        width: 6%;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .birth span.in-text {
+        margin: 0;
+        width: 6%;
+    }
+
+    .user-info dd p.p-info01 {
+        padding-top: 10px;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .user-info dd p {
+        color: #555;
+        font-size: 14px;
+    }
+
+    .user-info p {
+        display: none;
+        display: block;
+        clear: both;
+    }
+
+    .contact-column2 .contact-col {
+        padding-right: 90px;
+        justify-content: space-between;
+    }
+
+    .contact-column2 .contact-col .custom-input {
+        width: 15%;
+        flex-shrink: 0;
+    }
+
+    input[type='radio'] + label {
+        padding-left: 20px;
+    }
+
+    input[type='radio']:checked + label::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        vertical-align: middle;
+        background: #fff url(https://www.seoul.go.kr/res_newseoul/images/bg_radio_checked.png) no-repeat center center;
+    }
+
+    .contact-column2 .contact-col select {
+        width: 21%;
+    }
+
+    input[type='radio'] + label span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0px;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .btn.tiny {
+        height: 50px;
+        line-height: 100%;
+    }
+
+    #content dl.table-row.last dd {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #222;
+    }
+
+    .join-form .member-email-wrap * {
+        vertical-align: middle;
+    }
+
+    .join-form .member-email-wrap input.email {
+        width: 24%;
+    }
+
+    .join-form .email-wrap .email {
+        width: 48%;
+        float: left;
+    }
+
+    .join-form .member-email-wrap input#name09 {
+        width: 24%;
+        margin-top: -1px;
+    }
+
+    .join-form .member-email-wrap select.email-compnay {
+        width: 24%;
+        float: none;
+    }
+
+    .join-form select.email-compnay {
+        width: 42%;
+        float: right;
+        display: inline-block;
+    }
+    
+
+    /* 1155 */
+}
+
+@media (max-width: 501px) {
+    .join-process.join-process-new ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .join-process.join-process-new ul li:first-child {
+        padding-left: 10px;
+        width: 60px;
+    }
+    
+    .join-process.join-process-new ul li {
+        float: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 22px;
+        flex-grow: 1;
+        word-break: keep-all;
+    }
+
+    .join-process.join-process-new ul li:nth-child(2) {
+        width: 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .rule-check-new .check-all .custom-input strong, .additional-new .custom-input-new strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .rule table {
+        width: 640px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .contact-column2 .contact-col:first-child {
+        padding-bottom: 55px;
+    }
+
+    .contact-column2 .contact-col {
+        padding-right: 0;
+    }
+
+    .contact-column2 .contact-col .custom-input {
+        width: 70px;
+    }
+
+    .contact-column2 .contact-col button {
+        width: calc(100% - 70px);
+        top: 55px;
+        left: 70px;
+        margin-left: 0;
+    }
+
+
+}
+
+
+@media (min-width: 501px) and (max-width: 1151px) {
+    .join-process-new ul {
+        margin: 0;
+        border: 0;
+    }
+
+    .join-process-new ul li {
+        height: 41px;
+    }
+
+    .join-process-new ul li.active + li:before, .join-process-new ul li.active + li:after {
+        border-left: 13px solid #0c82e9;
+    }
+
+    .join-process-new ul li:before {
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 13px solid #dedede;
+    }
+
+    .join-process-new ul li:after, .join-process-new ul li.active:after {
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 13px solid #f4f6f7;
+    }
+}
+
+
+
+
+
+

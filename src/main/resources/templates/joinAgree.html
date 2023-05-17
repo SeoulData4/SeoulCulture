@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="joinAgree.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <div id="skip">
+            <a href="#content">본문 내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <header id="header">
+        <!-- Gnb -->
+        <!-- ######################################################################## -->
+        <!-- 
+        menu name: Pc Homepage Gnb
+    -->
+        <!-- ######################################################################## -->
+        <!-- serverTestContent -->
+        <!-- ######################################################################## -->
+        <!-- 
+        menu name: serverTestContent
+    -->
+        <!-- ######################################################################## -->
+        <div id="divTestOnOff" style="position: relative;width:100%;text-align:center;background: orange;display:none;">
+            <section style="margin: 0 auto;padding:10px 0;">
+            <h2 id="h2TestName" style="font-size: 20px;color: #f4f6f7;font-weight: 700;">서울특별시</h2>
+            </section>
+        </div>
+        <script>
+        var divTestOnOff = $('#divTestOnOff');
+    if(divTestOnOff){
+    }
+        </script>
+        <!-- serverTestContent -->
+        <!-- PC homepage GNB  -->
+        <!-- SUB화면 GNB  -->
+        <div class="top-area">
+            <div class="inner">
+                <h1 class="logo">
+                <a href="//www.seoul.go.kr?tr_code=gnb_seoul" title="메인페이지 바로가기"><span class="sr-only">서울특별시 로고</span></a>
+                </h1>
+                <button class="btn_menu mo-view"><span class="sr-only">전체메뉴 열기</span></button>
+                <button class="btn_sch mo-view"><span class="sr-only">검색하기</span></button>
+                <!--gnb pc-view-->
+                <div class="gnb pc-view">
+                    <ul>
+                        <li><a href="/realmnews/in/list.do?tr_code=gnb_news">서울소식</a></li>
+                        <li><a href="/citizen/citizen.do?top_menu05">시민참여</a></li>
+                        <li class="info_cate"><a href="//news.seoul.go.kr" target="_blank" onclick="action_logging({tr_code:'top_menu05'});">분야별정보</a>
+                        <!-- <button type="button" title="분야정보 열기" class="btn_info_cate">분야정보</button> -->
+                        <!--
+                                  <section class="info_detail" id="info_detail_wrap">
+                                      <h2>분야별 정보</h2>
+                                      <ul>
+                                           <li class="house">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/citybuild/?tr_code=gnb_more">주택</a></p>
+                                           </li>
+                                           <li class="economy">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/economy/?tr_code=gnb_more">경제</a></p>
+                                           </li>
+                                           <li class="traffic">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/traffic/?tr_code=gnb_more">교통</a></p>
+                                           </li>
+                                           <li class="environment">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/env/?tr_code=gnb_more">환경</a></p>
+                                           </li>
+                                           <li class="welfare">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/welfare/?tr_code=gnb_more">복지</a></p>
+                                           </li>
+                                           <li class="safty">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/safe/?tr_code=gnb_more">안전</a></p>
+                                           </li>
+                                           <li class="culture">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/culture/?tr_code=gnb_more">문화</a></p>
+                                           </li>
+                                           <li class="work">
+                                               <p class="m_tit"><a target="_blank" href="http://news.seoul.go.kr/gov/?tr_code=gnb_more">행정</a></p>
+                                           </li>                                      
+                                      </ul>
+                                      <p class="view_all"><a href="/service/all.do">서비스 전체보기</a></p>
+                                      <button class="btn_close"><span class="sr-only">닫기</span></button>
+                                  </section>
+                                  -->
+                        </li>
+                        <li><a href="/seoul/seoul.do?tr_code=top_menu04">서울소개</a></li>
+                        <li><a href="//org.seoul.go.kr?tr_code=top_menu06">부서안내</a></li>
+                        <li><a href="//opengov.seoul.go.kr" target="_blank" title="새창열림">정보공개</a></li>
+                        <li><a href="//eungdapso.seoul.go.kr?tr_code=gnb_eungdapso" target="_blank" title="새창열림">응답소</a></li>
+                        <!-- <li><a href="/seoul/newoffice.do?tr_code=top_menu07">청사안내</a></li> -->
+                    </ul>
+                    <ul class="other">
+                        <li><a href="/member/userlogin/loginCheck.do?tr_code=top_menu01">로그인</a></li>
+                        <li><a href="/member/info/mySeoul.do?tr_code=top_menu02">나의서울</a></li>
+                        <!-- <li><a href="https://citizen.seoul.kr?tr_code=top_menu03" target="_blank">전자우편ㅅㅅ</a></li> -->
+                        <li><a href="javascript:void(0)" onclick="checkMailUserYn(); return false;" target="_blank" title="새창열림">전자우편</a></li>
+                    </ul>
+                </div>
+                <!--//gnb pc-view pc일때 gnb-->
+                <!--gnb mo-view width 1152 미만 일때 gnb-->
+                <div class="gnb all_gnb">
+                    <div class="txt_login">
+                        <a href="/member/userlogin/loginCheck.do?tr_code=top_menu01">로그인</a>
+                        <div class="btn_area">
+                            <button class="btn_setting" style="display: none;"><span class="sr-only">설정</span></button>
+                            <button class="btn_close"><span class="sr-only">전체메뉴 닫기</span></button>
+                        </div>
+                    </div>
+                    <!--로그인 후 텍스트 바뀜
+                    <div class="txt_login">반갑습니다. 김서울님
+                        <div class="btn_area">
+                            <button class="btn_setting"><span class="sr-only">설정</span></button>
+                            <button class="btn_close"><span class="sr-only">전체메뉴 닫기</span></button>
+                        </div>
+                    </div>
+                    -->
+                    <!-- 전체메뉴  -->
+                    <ul id="all_menu" class="clfix tendina">
+                        <li class="selected"><a href="#" role="button">나의서울<em class="sr-only">선택됨</em></a>
+                        <ul class="sub_menu" style="display: block;">
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/member/info/mySeoul.do">나의서울<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/member/board/information_use.do">이용안내<em class="sr-only"></em></a>
+                            </li>
+                            <li><a href="#" role="button">개인정보<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/member/info/userInfoRenewal.do" target="_blank">회원정보 변경<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/member/info/userPwdRenewal.do" target="_blank">비밀번호 변경<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/member/info/userUnregistConf.do" target="_blank">회원탈퇴<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/member/info/reAgreeInfoApp.do" target="_blank">회원정보 재동의<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">마일리지<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://mileage.seoul.go.kr/main/NoticeList.do" target="_blank">마일리지 공지<em class="sr-only"></em></a></li>
+                                <li><a href="https://mileage.seoul.go.kr/main/MileageInfo.do" target="_blank">마일리지 적립안내<em class="sr-only"></em></a></li>
+                                <li><a href="https://mileage.seoul.go.kr/main/MyInfoMain.do" target="_blank">나의 마일리지 현황<em class="sr-only"></em></a></li>
+                                <li><a href="https://mileage.seoul.go.kr/main/CultureMain.do" target="_blank">마일리지 사용<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">나의 민원정보<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://eungdapso.seoul.go.kr/mpg/complaint/complaint_lis.do" target="_blank">나의상담/신고조회<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="https://citizen.seoul.kr" target="_blank">나의 메일<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://citizen.seoul.kr" target="_blank" role="button">전자우편<em class="sr-only">선택하기</em></a>
+                        </li>
+                        <li><a href="#" role="button">서울소식<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li><a href="#" role="button">새소식<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/realmnews/in/list.do">분야별 새소식<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/thismteventfstvl/list.do">이달의 행사 및 축제<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/eventreqst/list.do">이벤트 신청<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/rssboard/list.do">자치구 주요뉴스<em class="sr-only"></em></a></li>
+                                <li><a href="https://sll.seoul.go.kr/" target="_blank">강좌 교육<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_position.do">인사발령<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/seoul/mediahub.do">서울시 정책 뉴스<em class="sr-only"></em></a>
+                            </li>
+                            <li><a href="#" role="button">공고<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/news/news_tender.do">입찰공고<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_contract.do">수의계약내역<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_employ.do">채용시험<em class="sr-only"></em></a></li>
+                                <li><a href="https://event.seoul.go.kr/seoulsibo/list.do">서울시보<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_notice.do">고시공고<em class="sr-only"></em></a></li>
+                                <li><a href="https://urban.seoul.go.kr/view/html/PMNU4010000000" target="_blank">도시관리계획안 열람공고<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/rssboard/asbList.do">석면해체ㆍ제거일정<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">보도ㆍ해명자료<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/news/news_report.do">보도자료<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/news/news_explanation.do">해명자료<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="http://mediahub.seoul.go.kr/main" target="_blank">내 손안에 서울<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://event.seoul.go.kr/publication/seoul/seoul.jsp">서울사랑<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://event.seoul.go.kr/publication/friend/friend.jsp">내친구서울<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://www.seoul.go.kr/seoul/seoul.do" role="button">서울소개<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li><a href="#" target="_blank" role="button">시청안내<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://org.seoul.go.kr/org/orgChart.do">조직도<em class="sr-only"></em></a></li>
+                                <li><a href="https://org.seoul.go.kr/bonbu/orgChart.do">본부ㆍ사업소<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/pubcorp.do">공사ㆍ출연기관<em class="sr-only"></em></a></li>
+                                <li><a href="https://org.seoul.go.kr/smc/orgChart.do">시의회<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/autonomy.do">자치구<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/autonomy_sub.do">자치구별 동 현황<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/map.do">찾아오시는 길<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/newoffice.do">청사안내<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울의 상징물(조례)<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/seoul/emblem.do">휘장<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/symbol.do">캐릭터(해치)<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/flower.do">꽃, 나무, 새<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울의 상징<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="/seoul/slogan.do?selmenu=M00000069">슬로건<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/color.do">색<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/font.do">서체<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울정보<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.si.re.kr/infographics" target="_blank">인포그래픽스<em class="sr-only"></em></a></li>
+                                <li><a href="http://www.seoul.go.kr/storyw/intro/list.do">스토리인서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://data.si.re.kr/data" target="_blank">데이터로 본 서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://data.si.re.kr/photo" target="_blank">사진으로 본 서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/movie.do">영상으로 본 서울<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/seoulStat.do">서울 통계<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" role="button">서울의 역사<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/seoul/history.do">서울의 역사<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/seoul/mayor.do">역대서울시장<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.smc.seoul.kr/main/councilHistory.do?menuId=001001002002&amp;period=10" target="_blank">시의회변천<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/gov/prize_award_introduce" target="_blank">시민상ㆍ시민표창<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/gov/seoul_honorary_ambassador" target="_blank">서울홍보대사<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://www.seoul.go.kr/seoul/playerInfo.do">서울시청 선수단 소개<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://org.seoul.go.kr?tr_code=top_menu06" role="button">부서안내<em class="sr-only">선택하기</em></a>
+                        </li>
+                        <li><a href="https://www.seoul.go.kr/citizen/monitor.do" role="button">시민참여<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li><a href="undefined" role="button">시민청원/제안<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="http://democracy.seoul.go.kr/front/index.do" target="_blank">시민제안(상상대로 서울)<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/freeboard/participation.do">공공언어 개선제안<em class="sr-only"></em></a></li>
+                                <li><a href="http://yesan.seoul.go.kr/yw/yw0101.do" target="_blank">예산낭비신고센터<em class="sr-only"></em></a></li>
+                                <li><a href="https://event.seoul.go.kr/proposal/declaration.do">불합리한 규제 신고센터<em class="sr-only"></em></a></li>
+                                <li><a href="https://event.seoul.go.kr/proposal/regForm.do">규제 입증 요청<em class="sr-only"></em></a></li>
+                                <li><a href="http://legal.seoul.go.kr/legal/front/page/lawSystemImprovement.html?pAct=intro" target="_blank">참여입법<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="http://ombudsman.seoul.go.kr" target="_blank">시민감사옴부즈만위원회<em class="sr-only"></em></a>
+                            </li>
+                            <li><a href="undefined" role="button">시민의견<em class="sr-only">메뉴 열기</em></a>
+                            <ul class="dep3" style="display: none;">
+                                <li><a href="https://www.seoul.go.kr/freeboard/freeboard.do">자유게시판<em class="sr-only"></em></a></li>
+                                <li><a href="https://www.seoul.go.kr/freeboard/praiseboard.do">칭찬합시다<em class="sr-only"></em></a></li>
+                            </ul>
+                            </li>
+                            <li class="dep_no"><a href="http://research.seoul.go.kr/main.do" target="_blank">온라인여론조사<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://mediahub.seoul.go.kr/competition/competitionList.do" target="_blank">공모전<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="http://volunteer.seoul.go.kr/" target="_blank">서울시자원봉사센터<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="#" role="button">분야별정보<em class="sr-only">선택하기</em></a>
+                        <ul class="sub_menu" style="display: none;">
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/citybuild/" target="_blank">주택<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/economy/" target="_blank">경제<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/traffic/" target="_blank">교통<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/env/" target="_blank">환경<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/welfare/" target="_blank">복지<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/safe/" target="_blank">안전<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/culture/" target="_blank">문화<em class="sr-only"></em></a>
+                            </li>
+                            <li class="dep_no"><a href="https://news.seoul.go.kr/gov/" target="_blank">행정<em class="sr-only"></em></a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="https://opengov.seoul.go.kr/" target="_blank" role="button">정보공개<em class="sr-only">선택하기</em></a>
+                        </li>
+                        <li><a href="https://eungdapso.seoul.go.kr/" target="_blank" role="button">응답소<em class="sr-only">선택하기</em></a>
+                        </li>
+                    </ul>
+                    <a class="view_all" href="https://news.seoul.go.kr/gov/site" target="_blank">서비스 전체보기</a>
+                </div>
+                <div class="dim">
+                </div>
+            </div>
+            <!--//gnb mo-view width 1152 미만 일때 gnb-->
+            <!-- //top-area -->
+        </div>
+        <script>
+        var openNewWindow;
+        function myCallback(data){
+                    if(data.success == "true"){
+                        openNewWindow=window.open("about:blank");
+                        openNewWindow.location.href="https://citizen.seoul.kr?tr_code=top_menu03";
+                        location.reload();
+                    }else {
+                        alert("전자메일 생성중 에러가 발생했습니다. \r\n다시 시도해 주세요...");
+                        return;
+                    }
+                }
+        function checkMailUserYn(){
+            var delYN='';
+            var islogin="N";
+            var pk = '';
+            if(islogin == "Y"){
+                if(delYN=="Y"){
+                    if(confirm("서울시 전자우편을 신규로 생성하시겠습니까?")){
+                        $.ajax({
+                            dataType   : "jsonp"
+                             ,url		: "//www.seoul.go.kr/member/info/seoulMailUseUpdate.do"
+                             ,data		: {"pk" : pk,
+                                            "M00101_DEL_YN" : "N"
+                             }
+                             ,jsonpCallback: "myCallback"
+                             ,error	: function(edata){
+                                 alert("전자메일 생성중 에러가 발생했습니다. \r\n다시 시도해 주세요......");
+                                 return;
+                             }				
+                         }); 
+                    }else{
+                        return;
+                    }
+                }else if(delYN == "N"){
+                    openNewWindow=window.open("about:blank");
+                    openNewWindow.location.href="https://citizen.seoul.kr?tr_code=top_menu03";
+                }else {
+                    alert("해당 쿠키가 존재하지 않습니다. 로그아웃 후 재 로그인 해주세요.");
+                     return;
+                }	
+            }else{
+                openNewWindow=window.open("about:blank");
+                openNewWindow.location.href="//www.seoul.go.kr/member/userlogin/loginCheck.do?SITE_GB=GB002&refresh_url=https://citizen.seoul.kr";
+            }
+        };
+            // 팝업창에서 탭클릭시 팝업 내에서만 탭 포커싱 이동되게..
+            var btnCategory = $('.info_cate > button');
+            var layerCategory = $('.info_detail');
+            front.btnClick(btnCategory, function($this) {
+                front.showCallback(layerCategory, function() {
+                    layerCategory.addClass('on');
+                    var closeBtn = layerCategory.find('.btn_close');
+                    front.layerFocus(layerCategory, closeBtn);
+                    front.btnClick(closeBtn, function() {
+                        front.hideCallback(layerCategory, function() {
+                            $this.attr('tabindex', '0').focus();
+                        });
+                    });
+                });
+            });
+            //오픈 클릭, click() 메서드 안에 익명 함수를 사용
+            $('.btn_menu').click(function(e){
+                //기본 동작 취소, form action, a href 등등
+                e.preventDefault();
+                    $('html, body').addClass('menu-open');
+                $('#skip, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  true); //2019-08-26 앱접근성 실태조사 수정
+                //클래스 추가		
+                $('.gnb').addClass('on');
+                $('.dim').addClass('on');
+                $('.txt_login>a').focus();
+            });
+            //닫기
+            $('.gnb .btn_close').click(function(e){
+                e.preventDefault();
+                    $('html, body').removeClass('menu-open');
+                $('#skip, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  false); //2019-08-26 앱접근성 실태조사 수정
+                //닫기
+                $('.gnb').removeClass('on');
+                $('.dim').removeClass('on');
+                $('.btn_menu').focus();	
+            });
+            $('.btn_sch').click(function(){
+                $('.search-line').slideToggle(100);
+            });
+            $(function() {
+                // beast000
+                var standalone = window.navigator.standalone, 
+                userAgent = window.navigator.userAgent.toLowerCase(),
+                safari = /safari/.test( userAgent ),
+                ios = /iphone|ipod|ipad/.test( userAgent ),
+                android = /android/.test( userAgent );
+                var appSettingUrl = "";
+                if( ios ) {
+                    if ( !standalone && safari ) {
+                    // 아이폰 브라우저 접속
+                     } else if ( standalone && !safari ) {
+                     // 아이폰 Standalone 
+                     } else if ( !standalone && !safari ) {
+                     // 아이폰 웹뷰
+                         appSettingUrl="setting://www.seoul.go.kr/"; // ??? 아이폰 설정 창 뜨는지 확인
+                     };
+                } else {
+                    //not iOS
+                    if(android) {
+                        if (typeof mobileseoulandroid === "undefined") {
+                            // 안드로이드 모바일서울 웹 뷰 아님
+                        } else {
+                            // 안드로이드 웹뷰
+                            appSettingUrl="javascript:mobileseoulandroid.openSetting()";
+                        }
+                    }
+                };
+                if(appSettingUrl != "") {		
+                    $('.gnb .btn_setting').click(function(e){
+                        e.preventDefault();
+                        location.href=appSettingUrl;
+                    });
+                } else {
+                    $('.gnb .btn_setting').hide();	
+                }
+            });
+            var _mecount 	= 0;
+            var _memax 		= 0;
+            var _res 		= '';
+            var _selmenu	= '';
+            var _patt1		= /http/gi;
+            var _patt2		= /\?/gi;
+            var _link_url	= '';
+            function fnSub_CreateMenu(data, parent){
+                var out		= [];
+                var target	= '';
+                var cls1    = '';
+                for(var i in data)
+                {
+                    if(data[i].UPPER_MENU_ID == parent)
+                    {
+                        if(data[i].OK == 'N')
+                        {
+                            // find inner link
+                            _link_url = data[i].LINK_URL + "";
+                            if((_link_url.indexOf("http")==-1) && _link_url != '#' && (_link_url) && _link_url != "undefined" ){
+                                _link_url = (!_patt2.test(_link_url)) ? _link_url + '?selmenu=' + data[i].MENU_ID : _link_url + '&selmenu=' + data[i].MENU_ID ;
+                            }
+                            target = (data[i].NEW_WIN_YN=='Y') ? ' target="_blank" ' : '';
+                            if(data[i].MENU_LEVEL=='1'){
+                                _res += (data[i].SEL_MENU=='Y') ? '<li sel_level="1" sel_menu="' + data[i].MENU_ID + '">' : '<li>';
+                                _res += '<a href="' + _link_url + '" ' + target + ' >' + data[i].MENU_NM + '</a>' + '\n';
+                                if(data[i].LEAF=='N'){
+                                    _res += '<ul class="sub_menu">' + '\n';
+                                }
+                                data[i].OK = 'Y';
+                            } else if(data[i].MENU_LEVEL=='2'){
+                                cls1 = (data[i].LEAF=='Y') ? ' class="dep_no" ' : '';
+                                _res += (data[i].SEL_MENU=='Y') ? '<li sel_level="2" sel_menu="' + data[i].MENU_ID + '" ' + cls1 + '>' : '<li' + cls1 + '>';
+                                _res += '<a href="' + _link_url + '" ' + target + ' >' + data[i].MENU_NM + '</a>' + '\n';
+                                if(data[i].LEAF=='N'){
+                                    _res += '<ul class="dep3">' + '\n';
+                                }
+                                data[i].OK = 'Y';
+                            } else if(data[i].MENU_LEVEL=='3'){
+                                _res += (data[i].SEL_MENU=='Y') ? '<li sel_level="3" sel_menu="' + data[i].MENU_ID + '">' : '<li>';
+                                _res += '<a href="' + _link_url + '" ' + target + ' >' + data[i].MENU_NM + '</a></li>' + '\n';
+                                data[i].OK = 'Y';
+                            }
+                        }
+                        var children = fnSub_CreateMenu(data, data[i].MENU_ID);
+                        if(children.length){
+                            //child yes
+                            data[i].children = children;
+                        }
+                        //child no
+                        if(data[i].MENU_LEVEL=='1'){
+                            if(data[i].LEAF=='N'){
+                                _res += '</ul>' + '\n';
+                            }
+                            _res += '</li>' + '\n';
+                        } else if(data[i].MENU_LEVEL=='2'){
+                            if(data[i].LEAF=='N'){
+                                _res += '</ul>' + '\n';
+                            }
+                            _res += '</li>' + '\n';
+                        }
+                        out.push(data[i]);
+                        _mecount ++;
+                    }
+                    if(_mecount == _memax) {
+                        //write html
+                        $('#all_menu').html('');
+                        //_res = '<h2 class="sr-only">전체메뉴</h2>' + _res;
+                        $('#all_menu').html(_res);
+                        //모바일 헤더 영역 전체 아코디언 메뉴
+                        $('.clfix').tendina({
+                            animate: true,
+                            speed: 100,
+                            onHover: false,
+                            hoverDelay: 300,
+                                openCallback: function(clickedEl){
+                                    $('#all_menu>li>a>em').text('선택하기');
+                                    $('#all_menu>li.selected>a>em').text('선택됨');
+                                    $('.sub_menu>li>a>em').text('메뉴 열기');
+                                    $('.sub_menu>li.dep_no>a>em').text('');
+                                    clickedEl.find('>a>em').text('선택됨');
+                                    if(clickedEl.has('>ul.dep3').length>0) {
+                                        clickedEl.find('>a>em').text('메뉴 닫기');			
+                                    }
+                                },
+                                closeCallback: function(clickedEl){
+                                    $('#all_menu>li>a>em').text('선택하기');
+                                    $('#all_menu>li.selected>a>em').text('선택됨');
+                                    $('.sub_menu>li>a>em').text('메뉴 열기');
+                                    $('.sub_menu>li.dep_no>a>em').text('');
+                                    if(clickedEl.has('>ul.dep3').length>0) {
+                                        clickedEl.find('>a>em').text('메뉴 열기');		
+                                    }
+                                }
+                        });
+                        // 모바일 전체메뉴 선택된 메뉴로 이동되게
+                        var inSet 	= function(tar){
+                            if(tar.attr('sel_level')=='1' || tar.attr('sel_level')=='2'){
+                                tar.addClass('selected');
+                            }else{
+                                tar.addClass('on');
+                            }
+                        }
+                        if(_selmenu){
+                            var tar		= $('[sel_menu=' + _selmenu + ']');
+                            inSet(tar);
+                            tar.parents('li').each(function(){
+                                inSet($(this));
+                            });
+                        } else {
+                            $('#all_menu').children('li').eq(0).addClass('selected')
+                            $('#all_menu').children('li').eq(0).children('ul').eq(0).show();
+                        }
+                        return;
+                    }
+                }
+                return out;
+            }
+            // 전체메뉴 가져오기
+            function fnSub_GetMenuList(){
+                var param = {'selmenu' : _selmenu};
+                 com.ajax({
+                     type		: "POST"
+                     ,url		: "/menu/menulist.do"
+                     ,data		: param
+                     ,success: function(sdata){
+                         _memax = Number(sdata.data_tot)
+                         fnSub_CreateMenu(sdata.data, 'ROOT');
+                         fnSub_MenuEvent();
+                     }
+                     ,error	: function(edata){
+                     }
+                 });			
+            }
+            // 전체메뉴 open / close
+            function fnSub_MenuEvent(){
+                //오픈 클릭, click() 메서드 안에 익명 함수를 사용
+                $('.btn_menu').click(function(e){
+                    //기본 동작 취소, form action, a href 등등
+                    e.preventDefault();
+                            $('html, body').addClass('menu-open');
+                    $('#skip, .logo, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  true); //2020-08-12 앱접근성 실태조사 수정
+                    //클래스 추가
+                    $('.gnb').addClass('on');
+                    $('.dim').addClass('on');
+                    $("#all_menu > li").each(function(e){
+                        if($(this).children("ul").length > 0){//하위 UL태그가 있다면		    		
+                        }else{//하위 UL태그가 없다면
+                            $(this).children("a").addClass("alone");
+                        }
+                    })		    
+                });
+                //닫기
+                $('.gnb .btn_close').click(function(e){
+                    e.preventDefault();
+                            $('html, body').removeClass('menu-open');
+                    $('#skip, .logo, .btn_menu, .btn_sch, #container, #footer').attr('aria-hidden',  false); //2020-08-12 앱접근성 실태조사 수정
+                    //닫기
+                    $('.gnb').removeClass('on');
+                    $('.dim').removeClass('on');
+                });
+            }
+            function fnSub_InitEvent(){
+                // 팝업창에서 탭클릭시 팝업 내에서만 탭 포커싱 이동되게..
+                var btnCategory = $('.info_cate > button');
+                var layerCategory = $('.info_detail');
+                front.btnClick(btnCategory, function($this) {
+                    front.showCallback(layerCategory, function() {
+                        layerCategory.addClass('on');
+                        var closeBtn = layerCategory.find('.btn_close');
+                        front.layerFocus(layerCategory, closeBtn);
+                        front.btnClick(closeBtn, function() {
+                            front.hideCallback(layerCategory, function() {
+                                $this.attr('tabindex', '0').focus();
+                            });
+                        });
+                    });
+                });
+                $('.btn_sch').click(function(){
+                    $('.search-line').slideToggle(100);
+                });
+                // 아이폰, 안드로이드 앱 & 브라이저 셋팅
+                var standalone = window.navigator.standalone, 
+                userAgent = window.navigator.userAgent.toLowerCase(),
+                safari = /safari/.test( userAgent ),
+                ios = /iphone|ipod|ipad/.test( userAgent ),
+                android = /android/.test( userAgent );
+                var appSettingUrl = "";
+                if( ios ) {
+                    if ( !standalone && safari ) {
+                    // 아이폰 브라우저 접속
+                     } else if ( standalone && !safari ) {
+                     // 아이폰 Standalone 
+                     } else if ( !standalone && !safari ) {
+                     // 아이폰 웹뷰
+                         appSettingUrl="setting://www.seoul.go.kr/";
+                     };
+                } else {
+                    //not iOS
+                    if(android) {
+                        if (typeof mobileseoulandroid === "undefined") {
+                            // 안드로이드 모바일서울 웹 뷰 아님
+                        } else {
+                            // 안드로이드 웹뷰
+                            appSettingUrl="javascript:mobileseoulandroid.openSetting()";
+                        }
+                    }
+                };		
+                if(appSettingUrl != "") {		
+                    $('#resubmenu_setting').click(function(e){
+                        e.preventDefault();
+                        location.href=appSettingUrl;
+                    });
+                } else {
+                    $('#resubmenu_setting').hide();	
+                }
+                //---------------------------------------		 
+            }
+            $(document).ready(function() {
+                $('.pc-view > ul.other > li > a')
+                //GNB 선택 2021.01(오른쪽 선택)
+                var gnbLeftTitle = $('h2.pc-view').text().replace(/ /gi,"");
+                var gnbTopArr = [0,1,2];
+                for(var i=0; i < gnbTopArr.length; i++ ){
+                    var gnbTopTitle =$('.pc-view > ul.other > li > a').eq(i).text().replace(/ /gi,"");
+                    if(gnbTopTitle == gnbLeftTitle || ("개인정보" == gnbLeftTitle && "나의서울" == gnbTopTitle)){
+                        $('.pc-view > ul.other > li').eq(i).addClass('on');
+                        break;
+                    }
+                }
+                fnSub_InitEvent();
+                fnSub_GetMenuList();
+                setTimeout(function(){
+                    /* $('#all_menu li a').append('<em class="sr-only"></em>');
+                    $('#all_menu>li.selected>a>em').text('선택됨');
+                    $('.sub_menu>li:not(.selected):not(dep_no)>a>em').text('메뉴 열기');
+                    $('.sub_menu>li.selected:not(.dep_no)>a>em').text('메뉴 닫기');
+                    $('.sub_menu>li.dep_no.selected>a>em').text('선택됨');
+                    $('.sub_menu>li.dep_no:not(.selected)>a>em').text('');
+                    $('.dep3>li.on>a>em').text('현재페이지'); */
+                    $('#all_menu li a').append('<em class="sr-only"></em>');
+                    $('#all_menu>li>a>em').text('선택하기');
+                    $('#all_menu>li.selected>a>em').text('선택됨');
+                    $('.sub_menu>li:not(.selected):not(.dep_no)>a>em').text('메뉴 열기');
+                    $('.sub_menu>li.selected:not(.dep_no)>a>em').text('메뉴 닫기');
+                    $('.sub_menu>li.dep_no.selected>a>em').text('선택됨');
+                    $('.sub_menu>li.dep_no:not(.selected)>a>em').text('');
+                    $('.dep3>li.on>a>em').text('현재페이지');
+                    $('#all_menu>li>a').attr('role', 'button');
+                    $('.sub_menu>li:not(.dep_no)>a').attr('role', 'button');
+                },500);
+            });
+        </script>
+        <!-- Gnb -->
+        <!-- Header -->
+        <!-- ######################################################################## -->
+        <!-- 
+        menu name: Pc Homepage Header
+    -->
+        <!-- ######################################################################## -->
+        <div class="search-line">
+            <div class="inner">
+                <h1 class="pc-view new">
+                <a href="//www.seoul.go.kr?tr_code=seoul_bi"><span class="sr-only">동행·매력 특별시 서울</span></a>
+                </h1>
+                <form id="fm_TopSearch" target="_self" method="get" accept-charset="utf-8" autocomplete="off">
+                    <div class="search" style="position: relative;">
+                        <input name="tr_code" id="tr_code" type="hidden" value="search">
+                        <label for="inp_TopSearch" class="sr-only">검색어를 입력해 주세요</label>
+                        <!-- 181025_접근성 수정 추가 -->
+                        <input type="text" id="inp_TopSearch" name="kwd" placeholder="검색어를 입력해 주세요" style="ime-mode:active;" class="konan-autocomplete-input" autocomplete="off"><img src="//newsearch.seoul.go.kr/ksearch/res_newseoul/images/search/keyboard.png" alt="입력도구" class="keyboardInputInitiator" title="Display keyboard interface"><span class="ui-icon-triangle-1-s" style="position: relative; top: 50px; left: 7px;"></span>
+                        <button id="btn_TopSearch" type="button" class="btn btn-search"><span class="sr-only">검색하기</span></button>
+                        <div class="auto-search" style="display: none;">
+                            <div class="konan-autocomplete-header">
+                            </div>
+                            <div class="column-left">
+                                <ul class="auto-lst ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0">
+                                </ul>
+                            </div>
+                            <div class="column-right">
+                                <ul class="auto-url">
+                                </ul>
+                            </div>
+                            <div class="column-bottom">
+                                <a href="javascript:void(0);">첫단어보기</a><a href="javascript:void(0);">끝단어보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 언어선택, 날씨정보는 메인에서만 나옴 메인 헤더는 index_new.html 참고-->
+                </form>
+            </div>
+        </div>
+        <script>
+        var _isPcHome = 'Y';
+        if(navigator.userAgent.match(/ipad|Tablet|Android|iphone|ipod/i)){
+            _isPcHome = "N";
+        }
+        function fnTopSearch(){
+            var params = { 
+                    'tr_code' 	: $('input[name=tr_code]').val(),
+                    'kwd'		: $('input[name=kwd]').val()
+            }
+            var url = "https://newsearch.seoul.go.kr/ksearch/search.do?tr_code=search&" + $.param(params);
+            if(_isPcHome != "Y"){
+                url = "https://newsearch.seoul.go.kr/ksearch/msearch.do";
+                historyForm.action=url;
+            }
+            com.submit('#fm_TopSearch', true, url);
+        }
+        $('#inp_TopSearch').keydown(function(key){
+            if(key.keyCode==13){
+                fnTopSearch();
+            }
+        });
+        $('#btn_TopSearch').click(function(e){
+            fnTopSearch();
+        });
+        $('#inp_cityLang').click(function(e){
+            var url = $("#cityLang").val();
+            window.open(url,'language','');
+        });
+        $('#btn_warn_close').click(function(){
+            $(this).closest(".layer_alert").slideUp(200);
+        });
+        // get html5 location
+        function fnGetGeoLocation(){
+            if('geolocation' in navigator){
+                console.log('[geoLocation info] 브라우저에서 HTML5 Geolocation을 지원하지 않습니다. !');
+                return null;
+            }
+            navigator.geolocation.getCurrentPosition(
+                    function(position){
+                        /* 서울시청 => 위도:Latitude:37.5666103 , 경도:Longitude:126.9783882  */
+                        var y = position.coords['latitude'];
+                        var x = position.coords['longitude'];
+                        console.log('[geoLocation info] 브라우저에서 위치정보 획득 성공 : ' + y + ' / ' + x);
+                        return {'y_lat':y, 'x_long':x};
+                    },
+                    function(err){
+                        var str = "";
+                        switch(err.code){
+                            case err.PERMISSION_DENTED: str = "사용자 거부"; break;
+                            case err.PERMISSION_UNAVAILABLE: str = "지리정보를 얻을 수 없음"; break;
+                            case err.TIMEOUT: str = "시간초과"; break;
+                            case err.UNKNOWN_ERROR: str = "사용자 거부"; break;
+                        }
+                        console.log('[geoLocation info] 브라우저에서 위치정보 획득 실패 :' + str);
+                        return null;
+                    },
+                    {
+                        enableHighAccuracy: false,
+                        maximumAge: 0,
+                        timeout: Infinity
+                    }
+            );
+        }
+        // create Weather Html
+        function fnCreateWeather(data){
+            // 온도, 날씨, 미세먼지등
+            var html 		= '';
+            var pty  		= data['weather_temp']['PTY'];
+            var sky  		= data['weather_temp']['SKY'];
+            var t1h  		= data['weather_temp']['T1H'];
+            var pm10		= data['weather_temp']['PM10'];
+            var pm10_value	= data['weather_temp']['PM10_VALUE'];
+            var pm25		= data['weather_temp']['PM25'];
+            var pm25_value	= data['weather_temp']['PM25_VALUE'];
+            var guname		= data['weather_temp']['guname'];
+            html += '<a href="https://news.seoul.go.kr/env/weather?tr_code=ind" target="_blank" title="새창으로 이동">';
+            if(pty=='0.0'){
+                if(sky=='1.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d0.png" alt="맑음">';
+                }else if(sky=='2.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d1.png" alt="구름조금">';
+                }else if(sky=='3.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d2.png" alt="구름많음">';
+                }else if(sky=='4.0'){
+                    html += '<img src="/res_newseoul/images/weather/weathericon_new_d6.png" alt="흐림">';
+                }
+            }else if(pty=='1.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d3.png" alt="비">';
+            }else if(pty=='2.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d4.png" alt="비/눈">';
+            }else if(pty=='3.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d5.png" alt="눈">';
+            }else if(pty=='4.0'){
+                html += '<img src="/res_newseoul/images/weather/weathericon_new_d3.png" alt="소나기">';
+            }
+            html += '</a>';
+            $('#sec_temp_1').html('').html(html)
+            html = '';
+            html += '<p>';
+            html += '<a href="https://news.seoul.go.kr/env/weather?tr_code=ind" target="_blank" title="새창으로 이동">';
+            html += '<strong class="deg">' + t1h + '℃</strong>';
+            html += '<span class="w_txt1">' + guname + ' ';
+            if(pty=='0.0'){
+                if(sky=='1.0'){
+                    html += '맑음';
+                }else if(sky=='2.0'){
+                    html += '구름조금';
+                }else if(sky=='3.0'){
+                    html += '구름많음';
+                }else if(sky=='4.0'){
+                    html += '흐림';
+                }
+            }else if(pty=='1.0'){
+                html += '비';
+            }else if(pty=='2.0'){
+                html += '비/눈';
+            }else if(pty=='3.0'){
+                html += '눈';
+            }else if(pty=='4.0'){
+                html += '소나기';
+            }
+            html += '</span>';
+            html += '</a>';
+            html += '</p>';
+            html += '<p>';
+            html += '<a href="https://news.seoul.go.kr/env/airs?tr_code=ind" target="_blank" title="새창으로 이동">';
+            html += '<span class="w_txt2">';
+            html += (pm10_value) ? pm10_value + ' ' : '';
+            html += (pm25_value) ? pm25_value : '';
+            html += '</span>';
+            html += '</a>';
+            html += '</p>';
+            $('#sec_temp_2').html('').html(html)
+            // 기상특보
+            if(!(data['weather_warn'])){
+                $('#sec_warn').hide();
+                return;
+            }
+            $('#sec_warn').show();
+            html 			= '';
+            var title  		= data['weather_warn']['TITLE'];
+            var titleArr	= title.split('·');
+            var show_date	= data['weather_warn']['SHOW_DATE'];
+            html += '<h1>기상특보</h1>';
+            html += '<p class="tit">' + titleArr[0] + '</p>';
+            html += '<p class="date_area"><span>' + show_date + '</span></p>';
+            html += '<button class="btn_close"><span class="sr-only">닫기</span></button>';
+            $('#sec_warn').html('').html(html)
+        }
+        // get Weather
+        function fnCheckLocation(){
+            var getWeather = function(param){
+                com.ajax({
+                    type		: "POST"
+                    ,url		: "/weather/getTodayWeather.do"
+                    ,data		: param
+                    ,success: function(sdata){
+                        fnCreateWeather(sdata);
+                    }
+                    ,error	: function(edata){
+                        return;
+                    }
+                });					
+            }
+            var grid_x = $.cookie('GridX');
+            var grid_y = $.cookie('GridY');
+            var guname = $.cookie('GuName');
+            if(!(grid_x) || !(grid_y))
+            {
+                var obj = fnGetGeoLocation();
+                if(obj){
+                    obj['type'] = 'C';
+                    getWeather(obj);
+                } else {
+                    getWeather({'type':'A'});
+                }
+            } else {
+                var obj3 = {'grid_x':grid_x, 'grid_y':grid_y, 'guname':guname, 'type':'B'};
+                getWeather(obj3);
+            }
+        }
+        $(document).ready(function() {
+            if(_isPcHome){
+                setTimeout(function(){
+                    fnCheckLocation();
+                }, 5000);
+            }
+        });
+        </script>
+        <!-- Header -->
+        </header>
+        <!-- //header-->
+        <!-- container -->
+        <!-- 로그아웃 상태인 경우  -->
+        <!--  회원  -->
+        <section id="container">
+        <div class="inner">
+            <aside id="snb" class="snb">
+            <h2 class="pc-view">회원</h2>
+            <ul class="clfix2 tendina">
+                <li class="dep0 dep_no">
+                <a href="/member/board/information_use.do" target="_blank">이용안내</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/rule/rule.do">이용약관</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/join/regist01.do">회원가입</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/findId/findId.do">아이디 찾기</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/findPwd/findPwd.do">비밀번호 찾기</a>
+                </li>
+                <li class="dep0 dep_no ">
+                <a href="/member/userlogin/loginCheck.do">회원로그인</a>
+                </li>
+            </ul>
+            </aside>
+            <!-- 20180816 모바일 버전 추가 -->
+            <div class="snb_m">
+                <ul class="snb_title clfix3 tendina">
+                    <li id="flexible_submenu" class="dep1"><a href="/member/join/memberCerti01Agree.do">회원가입<em class="sr-only">메뉴 열기</em></a>
+                    <ul>
+                        <li><a href="/member/board/information_use.do">이용안내</a></li>
+                        <li><a href="/member/rule/rule.do">이용약관</a></li>
+                        <li><a href="/member/join/regist01.do">회원가입</a></li>
+                        <li><a href="/member/findId/findId.do">아이디 찾기</a></li>
+                        <li><a href="/member/findPwd/findPwd.do">비밀번호 찾기</a></li>
+                        <li><a href="/member/userlogin/loginCheck.do">회원로그인</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                        function fnFlexibleSubMenu(oSel, url, exStr, tSel){
+                            var lastIdx = url.lastIndexOf("/");
+                            var strMenuPath = url.substring(0,lastIdx+1);
+                            var isok 	= false;
+                            var tar;
+                            $(oSel).find('a').each(function(){
+                                if($(this).attr('href').indexOf(strMenuPath) > -1){
+                                    isok 	= true;
+                                    tar 	= $(this);
+                                    return false;
+                                }
+                            })
+                            if(!isok) return;
+                            var temp = '';
+                            temp += '<a href="' + url +  '">' + tar.text().replace(exStr, '') + '</a>';
+                            temp += '<ul>';
+                            if(tar.parent('li').parent('ul').hasClass('clfix2')){
+                                //[step-1]
+                                tar.closest('.clfix2').children('li').each(function(){
+                                    if($(this).hasClass('dep_no')){
+                                        var tepa = $(this).children('a').eq(0);
+                                        temp += '<li>';
+                                        temp += '<a href="';
+                                        temp += tepa.attr('href') + '">';
+                                        temp += tepa.text();
+                                        temp += '</a>';
+                                        temp += '</li>';
+                                    }
+                                });
+                            } else {
+                                //[step-2,3]
+                                tar.closest('ul').find('li').each(function(){
+                                    temp += '<li>' + $(this).html().replace(exStr, '') + '</li>';
+                                });
+                            }
+                            temp += '</ul>';
+                            $(tSel).html(temp);
+                        }
+                        $(document).ready(function() {
+                            fnFlexibleSubMenu('.clfix2', '/member/join/memberCerti01Agree.do', '열림', '#flexible_submenu');
+                        });
+                    </script>
+            <div id="content" class="content">
+                <!-- content -->
+                <form name="userForm" method="post">
+                    <input type="hidden" name="mem_div" id="mem_div" value="01">
+                    <input type="hidden" name="agreeYN" id="agreeYN" value="">
+                    <input type="hidden" name="check_type" id="check_type" value="">
+                    <input type="hidden" name="SSN_CHK" id="SSN_CHK" value="false">
+                    <!-- 실명인증 체크 또는 GPIN 체크 -->
+                    <input type="hidden" name="p_realname_check" id="p_realname_check" value="">
+                    <!-- <input type="hidden" name="agreeYN" id="agreeYN" value=""> -->
+                    <input type="hidden" name="smsYN" id="smsYN" value="">
+                    <input type="hidden" name="SITE_GB" id="SITE_GB" value="GB071">
+                    <input type="hidden" name="refresh_url" id="refresh_url" value="/member/info/mySeoul.do">
+                    <div class="title-wrap pc-view">
+                        <h3>회원가입</h3>
+                        <div class="path">
+                            <a href="/">HOME</a><span>&gt;</span><a href="#">회원</a><span>&gt;</span>회원가입
+                        </div>
+                        <div class="util">
+                            <a href="javascript:void(0);" onclick="window.print();return false;" title="현재 페이지">인쇄하기</a>
+                        </div>
+                    </div>
+                    <div class="join-process join-process-new">
+                        <ul class="clfix tendina">
+                            <li class="active"><em class="num">1.</em> 약관동의<span class="sr-only">현재 단계</span></li>
+                            <li><em class="num">2.</em> 본인확인</li>
+                            <li><em class="num">3.</em> 회원정보 입력</li>
+                            <li><em class="num">4.</em> 부가서비스 신청</li>
+                        </ul>
+                    </div>
+                    <div class="guide-box guide-box-agree">
+                        <p class="text-center">
+                            서울시는 「서울시 누리집」 통합회원 가입 및 서비스 이용을 위하여 이용약관, 개인정보 수집·이용 내역에 대한 동의를 받고자 합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.
+                        </p>
+                        <div class="text-center check-all">
+                            <span class="custom-input"><input type="checkbox" name="agreeall" id="agreeall" onclick="funcAgreeAllCheck('Y');"><label for="agreeall"><span>모두 동의합니다.</span></label></span>
+                        </div>
+                    </div>
+                    <div class="rule-check rule-check-new">
+                        <h4 class="tit-agree"><strong>이용약관 <span>(필수사항)</span></strong></h4>
+                        <div class="rule-box" style="margin-bottom:10px">
+                            <div class="rule-cont" tabindex="0">
+                                <!-- 181025_접근성 수정 추가 -->
+                                <article class="rule">
+                                <h4>제1장 총칙</h4>
+                                <h5 id="rule01">제1조 (목적) </h5>
+                                <p>
+                                    이 약관은 서울특별시 (이하 "서울시"라 합니다) 누리집이 제공하는 통합회원 서비스(이하 "서비스"라 합니다)를 이용함에 있어 이용자와 서울시간의 권리·의무 및 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
+                                </p>
+                                <h5 id="rule02">제2조 (약관의 효력 및 변경)</h5>
+                                <ol>
+                                    <li>① 이 약관은 서비스 화면에 게시하거나 기타의 방법으로 공지함으로써 이용자에게 공시하고, 이에 동의한 이용자가 서비스에 가입함으로써 효력이 발생합니다.</li>
+                                    <li>② 서울시는 필요하다고 인정되는 경우 이 약관의 내용을 변경할 수 있으며, 변경된 약관은 서비스 화면에 공지함으로써 이용자가 직접 확인할 수 있도록 할 것입니다.</li>
+                                    <li>③ 이용자는 변경된 약관에 동의하지 않으실 경우 서비스 이용을 중단하고 본인의 회원등록을 취소할 수 있으며, 계속 사용하시는 경우에는 약관 변경에 동의한 것으로 간주되며 변경된 약관은 전항과 같은 방법으로 효력이 발생합니다.</li>
+                                    <li>④ 이용자가 이 약관의 내용에 동의하는 경우 서울시의 서비스 제공행위 및 이용자의 서비스 이용행위에는 이 약관이 우선적으로 적용될 것입니다. 이 약관에 명시되지 않은 사항에 대해서는 전기통신기본법, 전기통신사업법, 정보통신망이용촉진및정보보호등에관한법률, 방송통신심의위원회 심의규정, 정보통신 윤리강령, 프로그램 보호법 등 기타 대한민국의 관련법령과 상관습에 의합니다.</li>
+                                </ol>
+                                <h5 id="rule03">제3조 (용어의 정의)</h5>
+                                <ol>
+                                    <li>① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                                    <ol>
+                                        <li>1. 이용자 : 서비스에 접속하여 서울시가 제공하는 서비스를 받는 회원 및 비회원</li>
+                                        <li>2. 회원 : 서비스에 접속하여 이 약관에 동의하고, ID(고유번호)와 PASSWORD(비밀번호)를 발급 받아 문자 인증 등 확인 절차를 거친 자</li>
+                                        <li>3. 비회원 : 회원가입을 하지 않고 서울시가 제공하는 서비스를 이용하는 자</li>
+                                        <li>4. ID(고유번호) : 회원 식별과 회원의 서비스 이용을 위하여 이용자가 선정하고 서울시가 승인하는 영문자와 숫자의 조합</li>
+                                        <li>5. PASSWORD(비밀번호) : 회원의 정보 보호를 위해 이용자 자신이 설정한 문자와 숫자의 조합</li>
+                                        <li>6. 이용해지 : 서울시 또는 회원이 서비스 이용 이후 그 이용계약을 종료시키는 의사표시</li>
+                                    </ol>
+                                    </li>
+                                    <li>② 이 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계법령 및 서비스별 안내에서 정하는 바에 의합니다.</li>
+                                </ol>
+                                <h4>제2장 서비스 이용계약</h4>
+                                <h5 id="rule04">제4조 (이용계약의 성립) 이용계약은 이용자의 약관내용에 대한 동의와 이용자의 이용신청에 대한 서울시의 승낙으로 성립합니다.</h5>
+                                <h5 id="rule05">제5조 (이용신청) 이용신청은 서비스의 회원정보 화면에서 이용자가 서울시에서 요구하는 가입신청 양식에 개인의 신상정보를 기록하는 방식으로 신청합니다.</h5>
+                                <h5 id="rule06">제6조 (이용신청의 수락과 거절)</h5>
+                                <ol>
+                                    <li>① 서울시는 제5조에서 정한 사항을 정확히 기재하여 이용신청을 하였을 경우 특별한 사정이 없는 한 서비스 이용신청을 수락합니다.
+                                    <ol>
+                                        <li>1. 내용이 허위(차명 등)인 것으로 판명되거나, 그러하다고 의심할만한 합리적인 사유가 발생할 경우</li>
+                                        <li>2. 기타 서울시가 필요하다고 인정되는 경우</li>
+                                    </ol>
+                                    </li>
+                                    <li>② 서울시는 다음 각 호에 해당하는 경우에 대하여는 그 신청에 대한 제한 사유가 해소될 때까지 일부 서비스 이용을 제한할 수 있습니다.
+                                    <ol>
+                                        <li>1. 내용이 허위(차명 등)인 것으로 판명되거나, 그러하다고 의심할만한 합리적인 사유가 발생할 경우</li>
+                                        <li>2. 기타 서울시가 필요하다고 인정되는 경우</li>
+                                    </ol>
+                                    </li>
+                                    <li>③ 서울시는 다음에 해당하는 경우에는 이용신청을 제한할 수 있습니다.
+                                    <ol>
+                                        <li>1. 다른 사람의 명의를 사용하여 신청하였을 때</li>
+                                        <li>2. 신청서의 내용을 허위로 기재하였을 때</li>
+                                        <li>3. 사회의 안녕 질서 또는 미풍양속을 저해할 목적으로 신청하였을 때</li>
+                                        <li>4. 기타 서울시가 정한 이용신청 요건이 미비 되었을 때</li>
+                                    </ol>
+                                    </li>
+                                </ol>
+                                <h5 id="rule07">제7조 (계약사항의 변경) 회원은 회원정보관리를 통해 언제든지 자신의 정보를 열람하고 수정할 수 있습니다. 회원은 이용신청 시 기재한 사항이 변경되었을 때에는 수정을 하여야 하며, 수정하지 아니하여 발생하는 문제의 책임은 회원에게 있습니다.</h5>
+                                <h4>제3장 서비스 제공 및 이용</h4>
+                                <h5 id="rule08">제8조 (서비스 이용)</h5>
+                                <ol>
+                                    <li>① 서울시는 회원의 이용신청을 수락한 때부터 서비스를 개시합니다. 단, 일부 서비스의 경우에는 지정된 일자부터 서비스를 개시합니다.</li>
+                                    <li>② 서울시의 업무상 또는 기술상의 장애로 인하여 서비스를 개시하지 못하는 경우에는 누리집에 공시하거나 회원에게 이를 통지합니다.</li>
+                                    <li>③ 서비스의 이용은 연중무휴 1일 24시간을 원칙으로 합니다. 다만, 서울시의 업무상 또는 기술상의 이유로 서비스가 일시 중지될 수 있고, 또한 정기점검 등 운영상의 목적으로 서울시가 정한 기간에는 서비스가 일시 중지될 수 있습니다. 이러한 경우 서울시는 사전 또는 사후에 이를 공지합니다.</li>
+                                    <li>④ 회원에 가입한 후라도 일부 서비스 이용 시 서비스 제공자의 요구에 따라 특정 회원에게만 서비스를 제공할 수도 있습니다.</li>
+                                    <li>⑤ 서울시는 서비스를 일정범위로 분할하여 각 범위별로 이용가능 시간을 별도로 정할 수 있습니다. 이 경우 그 내용을 사전에 공지합니다.</li>
+                                </ol>
+                                <h5 id="rule09">제9조 (서비스의 변경, 중지 및 정보의 저장과 사용)</h5>
+                                <ol>
+                                    <li>① 회원은 본 서비스에 보관되거나 전송된 메시지 및 기타 통신 메시지 등의 내용이 국가의 비상사태, 정전, 서울시의 관리범위 외의 서비스 설비 장애 및 기타 불가항력에 의하여 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실에 대해 서울시가 아무런 책임을 지지 않음에 동의합니다.</li>
+                                    <li>② 서울시가 정상적인 서비스 제공의 어려움으로 인하여 일시적으로 서비스를 중지하여야 할 경우에는 서비스 중지 1주일전에 고지 후 서비스를 중지할 수 있으며, 이 기간동안 회원이 고지내용을 인지하지 못한데 대하여 서울시는 책임을 부담하지 아니합니다. 상당한 이유가 있을 경우 위 사전 고지기간은 감축되거나 생략될 수 있습니다. 또한 위 서비스 중지에 의하여 본 서비스에 보관되거나 전송된 메시지 및 기타 통신 메시지 등의 내용이 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 대하여도 서울시는 책임을 부담하지 아니합니다.</li>
+                                    <li>③ 서울시의 사정으로 서비스를 영구적으로 중단하여야 할 경우 제2항을 준용합니다. 다만, 이 경우 사전 고지기간은 1개월로 합니다.</li>
+                                    <li>④ 서울시는 사전 고지 후 서비스를 일시적으로 수정, 변경 및 중단할 수 있으며, 이에 대하여 회원 또는 제3자에게 어떠한 책임도 부담하지 아니합니다.</li>
+                                    <li>⑤ 서울시는 회원이 이 약관의 내용에 위배되는 행동을 한 경우, 임의로 서비스 사용을 중지할 수 있습니다. 이 경우 서울시는 회원의 접속을 금지할 수 있으며, 회원이 게시한 내용의 전부 또는 일부를 임의로 삭제할 수 있습니다.</li>
+                                    <li>⑥ 장기간 휴면 회원인 경우 안내 메일 또는 공지사항 발표 후 1주일간의 통지 기간을 거쳐 서비스 사용을 중지할 수 있습니다.</li>
+                                </ol>
+                                <h5 id="rule10">제10조 (정보의 제공 및 광고의 게재)</h5>
+                                <ol>
+                                    <li>① 서울시는 회원이 서비스 이용 중 필요가 있다고 인정되는 다양한 정보 및 광고에 대해서는 전자우편이나 서신우편, SMS(휴대폰 문자메시지), DM, 메신저 등의 방법으로 회원에게 제공할 수 있으며, 만약 원치 않는 정보를 수신한 경우 회원은 이를 수신거부 할 수 있습니다.</li>
+                                    <li>② 서울시는 서비스의 운용과 관련하여 서비스화면, 누리집, 전자우편 등에 광고 등을 게재할 수 있으며, 서울시는 서비스를 이용하고자 하는 회원이 이 광고게재에 대하여 동의하는 것으로 간주합니다.</li>
+                                    <li>③ 서울시는 서비스 상에 게재되어 있거나 서비스를 통한 광고주와의 판촉활동에 회원이 참여하거나 교신 또는 거래의 결과로서 발생하는 모든 손실 또는 손해에 대해 책임을 지지 않습니다</li>
+                                </ol>
+                                <h5 id="rule11">제11조 (게시물 또는 내용물의 삭제)</h5>
+                                <ol>
+                                    <li>① 서울시는 회원이 게시하거나 등록하는 서비스 내의 모든 내용물이 다음 각 호의 경우에 해당된다고 판단되는 경우 사전 통지 없이 삭제할 수 있으며, 이에 대해 서울시는 어떠한 책임도 지지 않습니다.
+                                    <ol>
+                                        <li>1. 서울시, 다른 회원 또는 제3자를 비방하거나 중상 모략으로 명예를 손상시키는 내용인 경우</li>
+                                        <li>2. 공공질서 및 미풍양속에 위반되는 내용인 경우</li>
+                                        <li>3. 범죄적 행위에 결부된다고 인정되는 내용일 경우</li>
+                                        <li>4. 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우</li>
+                                        <li>5. 서비스 성격에 부합하지 않는 정보의 경우</li>
+                                        <li>6. 기타 관계 법령 및 서울시에서 정한 규정 등에 위배되는 경우</li>
+                                    </ol>
+                                    </li>
+                                    <li>② 서울시는 서비스에 게시된 내용을 사전 통지된 지 3일 이후 편집, 이동, 삭제할 수 있는 권리를 보유하며, 게시된 내용이 이 약관에 위배되거나 상용 또는 비합법적, 불건전한 내용일 경우 및 해지 회원이 게시한 게시물은 사전통보 없이 삭제할 수 있습니다.</li>
+                                    <li>③ 서울시는 게시된 내용이 일정기간 이상 경과되어, 게시물로써의 효력을 상실하여 그 존치 목적이 불분명한 경우 공지사항 발표 후 1주일간의 통지기간을 거쳐 해당 게시물을 삭제할 수 있습니다.</li>
+                                </ol>
+                                <h5 id="rule12">제12조 (게시물의 저작권)</h5>
+                                <ol>
+                                    <li>① 회원이 서비스 내에 게시한 게시물의 저작권은 회원에게 있으며, 서울시는 다른 서비스에서의 개재 등 활용할 수 있습니다.</li>
+                                    <li>② 회원의 게시물이 타인의 저작권, 프로그램 저작권 등을 침해함으로써 발생하는 민, 형사상의 책임은 전적으로 회원이 부담하여야 합니다.</li>
+                                    <li>③ 회원은 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 상업적으로 사용할 수 없습니다.</li>
+                                </ol>
+                                <h5 id="rule13">제13조 (서울시의 소유권)</h5>
+                                <ol>
+                                    <li>① 서울시가 제공하는 서비스, 그에 필요한 소프트웨어, 이미지, 마크, 로고, 디자인, 서비스명칭, 정보 및 상표 등과 관련된 지적재산권 및 기타권리는 서울시에게 소유권이 있습니다.</li>
+                                    <li>② 회원은 서울시가 명시적으로 승인한 경우를 제외하고는 제1항 소정의 각 재산에 대한 전부 또는 일부의 수정, 대여, 대출, 판매, 배포, 제작, 양도, 재라이센스, 담보권 설정행위, 상업적 이용행위를 할 수 없으며, 제3자로 하여금 이와 같은 행위를 하도록 허락할 수 없습니다.</li>
+                                </ol>
+                                <h4>제4장 계약 당사자의 의무</h4>
+                                <h5 id="rule14">제14조 (회원의 의무 및 정보보안)</h5>
+                                <ol>
+                                    <li>① 회원은 서비스 이용을 위해 가입할 경우 현재의 사실과 일치하는 완전한 정보(이하 "가입정보"라 한다)를 제공하셔야 합니다. 또한 가입정보에 변경이 발생할 경우 즉시 갱신하셔야 합니다.</li>
+                                    <li>② 회원이 서비스 사용을 위한 가입절차를 완료하시면 아이디와 비밀 번호를 받게 됩니다. 회원의 아이디, 비밀번호 관리를 위해
+                                    <ol>
+                                        <li>1. 회원의 승인 없이 비밀번호, 아이디가 사용되는 문제가 발생되면 즉시 서울시에 신고하셔야 하고</li>
+                                        <li>2. 매 접속 종료 시 확실히 로그아웃을 하셔야 합니다.</li>
+                                    </ol>
+                                    </li>
+                                    <li>③ 회원은 서비스를 이용하면서 다음과 같은 행위를 하지 않기로 동의합니다.
+                                    <ol>
+                                        <li>1. 타인(소수를 포함)에게 위해를 가하는 행위</li>
+                                        <li>가. 타인의 ID, PASSWORD 및 타인으로 가장하는 행위</li>
+                                        <li>나. 타인과의 관계를 허위로 명시하는 행위</li>
+                                        <li>다. 타인을 비방할 목적으로 사실 또는 허위의 사실을 적시하여 명예를 훼손하는 행위</li>
+                                        <li>라. 자기 또는 타인에게 재산상의 이익을 주거나 타인에게 손해를 가할 목적으로 허위의 정보를 유통시키는 행위</li>
+                                        <li>마. 수치심이나 혐오감 또는 공포심을 일으키는 말이나 음향, 글이나 화상 또는 영상을 계속하여 상대방에게 도달하게 하여 상대방의 일상적 생활을 방해하는 행위</li>
+                                        <li>바. 서울시의 사전 승낙 없이 서비스를 이용한 영리행위</li>
+                                        <li>사. 타인의 정보통신서비스 이용명의를 도용하여 사용하는 행위</li>
+                                        <li>2. 불필요하거나 승인되지 않은 광고, 판촉물을 게재하거나, "정크 메일(junk mail)", "스팸(spam)", "행운의 편지(chain letters)", "도배글", "피라미드 조직" 등을 권유하거나 게시, 게재 또는 전자우편으로 보내는 행위</li>
+                                        <li>3. 저속 또는 음란한 데이터, 텍스트, 소프트웨어, 음악, 사진, 그래픽, 비디오 메시지 등(이하 "콘텐츠")을 게시, 게재 또는 전자우편으로 보내는 행위</li>
+                                        <li>4. 권리(지적재산권을 포함한 모든 권리)가 없는 콘텐츠를 게시, 게재 또는 전자우편으로 보내는 행위</li>
+                                        <li>5. 컴퓨터 소프트웨어, 하드웨어, 전기통신 장비를 파괴, 방해 또는 기능을 제한하기 위한 소프트웨어 바이러스를 게시, 게재 또는 전자우편으로 보내는 행위</li>
+                                        <li>6. 다른 컴퓨터 코드, 파일, 프로그램을 포함하고 있는 자료를 게시, 게재, 전자우편으로 보내는 행위 등 다른 사용자의 개인정보를 수집 또는 저장하는 행위</li>
+                                        <li>7. 재물을 걸고 도박하거나 사행행위를 하는 행위</li>
+                                        <li>8. 윤락행위를 알선하거나 음행을 매개하는 내용의 정보를 유통시키는 행위</li>
+                                        <li>9. 기타 불법적이거나 부당한 행위</li>
+                                    </ol>
+                                    </li>
+                                    <li>④ 회원은 이 약관 및 관계법령에서 규정한 사항을 준수하여야 합니다.</li>
+                                </ol>
+                                <h5 id="rule15">제15조 (서울시의 의무)</h5>
+                                <ol>
+                                    <li>① 서울시는 특별한 사정이 없는 한 회원이 신청한 서비스 제공 개시일에 서비스를 이용할 수 있도록 합니다.</li>
+                                    <li>② 서울시는 이 약관에서 정한 바에 따라 계속적, 안정적으로 서비스를 제공할 의무가 있습니다.</li>
+                                    <li>③ 서울시가 제공하는 서비스로 인하여 회원에게 손해가 발생한 경우 그러한 손해가 서울시의 고의나 중과실에 기해 발생한 경우에 한하여 서울시에서 책임을 부담하며, 그 책임의 범위는 통상손해에 한합니다.</li>
+                                    <li>④ 서울시는 회원으로부터 제기되는 의견이나 불만이 정당하다고 인정할 경우에는 신속히 처리하여야 합니다. 다만, 신속한 처리가 곤란한 경우에는 회원에게 그 사유와 처리일정을 통보하여야 합니다.</li>
+                                    <li>⑤ 서울시는 관련법령이 정하는 바에 따라서 회원 등록정보를 포함한 회원의 개인정보를 보호하기 위하여 노력합니다. 회원의 개인정보보호에 관해서는 관련법령 및 제 16조에 제시된 내용을 지킵니다.</li>
+                                </ol>
+                                <h5 id="rule16">제16조 (개인정보보호정책)</h5>
+                                <ol>
+                                    <li>① 서울시는 이용 신청 시 회원이 제공하는 정보를 통하여 회원에 관한 정보를 수집하며, 회원의 개인정보는 본 이용계약의 이행과 본 이용계약상의 서비스제공을 위한 목적으로 이용합니다.</li>
+                                    <li>② 서울시는 서비스 제공과 관련하여 취득한 회원의 정보를 본인의 승낙 없이 제3자에게 누설 또는 배포할 수 없으며 상업적 목적으로 사용할 수 없습니다. 다만, 다음의 각 호의 경우에는 그러하지 아니합니다.
+                                    <ol>
+                                        <li>1.관계 법령에 의하여 수사상의 목적으로 관계기관으로부터 요구가 있는 경우</li>
+                                        <li>2.방송통신심의위원회의 요청이 있는 경우</li>
+                                        <li>3.기타 관계법령에서 정한 절차에 따른 요청이 있는 경우</li>
+                                    </ol>
+                                    </li>
+                                </ol>
+                                <h4>제5장 계약해지</h4>
+                                <h5 id="rule17">제17조 (계약해지 및 이용제한)</h5>
+                                <ol>
+                                    <li>① 회원이 이용계약을 해지하고자 하실 때에는 회원 본인이 직접 인터넷을 통해 당 누리집에 해지 신청을 하여야 합니다.</li>
+                                    <li>② 서울시는 보안 및 아이디 정책, 서비스의 원활한 제공 등과 같은 이유로 회원의 ID 및 PASSWORD 변경을 요구하거나 변경 할 수 있습니다.</li>
+                                    <li>③ 서울시는 회원이 다음 각 호에 해당하는 행위를 하였을 경우 사전통지 없이 이용계약을 해지할 수 있습니다.
+                                    <ol>
+                                        <li>1. 회원이 제공한 데이터가 허위임이 판명된 경우</li>
+                                        <li>2. 범죄적 행위에 관련되는 경우</li>
+                                        <li>3. 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행할 경우</li>
+                                        <li>4. 타인의 서비스 아이디 및 비밀 번호를 도용한 경우</li>
+                                        <li>5. 타인의 명예를 손상시키거나 불이익을 주는 경우</li>
+                                        <li>6. 서비스에 위해를 가하는 등 서비스의 건전한 이용을 저해하는 경우</li>
+                                        <li>7. 기타 관련법령이나 서울시가 정한 이용조건에 위배되는 경우</li>
+                                    </ol>
+                                    </li>
+                                </ol>
+                                <h4>제6장 기타</h4>
+                                <h5 id="rule18">제18조 (요금 및 유료정보)</h5>
+                                <p>
+                                    서비스 이용은 기본적으로 무료입니다. 단, 서비스에서 정한 별도의 유료 정보와 유료서비스에 대해서는 그러하지 아니합니다.
+                                </p>
+                                <h5 id="rule19">제19조 (양도금지)</h5>
+                                <p>
+                                    회원은 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.
+                                </p>
+                                <h4>제7장 손해배상 등</h4>
+                                <h5 id="rule20">제20조 (손해배상) 서울시는 무료로 제공되는 서비스와 관련하여 회원에게 어떠한 손해가 발생하더라도 동 손해가 서울시의 중대한 과실에 의한 경우를 제외하고 이에 대하여 책임을 부담하지 아니합니다.</h5>
+                                <h5 id="rule21">제21조 (면책조항)</h5>
+                                <ol>
+                                    <li>① 서울시는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.</li>
+                                    <li>② 서울시는 회원의 귀책사유로 인한 서비스이용의 장애에 대하여 책임을 지지 않습니다.</li>
+                                    <li>③ 서울시는 회원이 서비스를 이용하여 기대하는 이익이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 않습니다.</li>
+                                    <li>④ 서울시는 회원이 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등의 내용에 관하여는 책임을 지지 않습니다.</li>
+                                </ol>
+                                <h5 id="rule22">제22조 (관할법원)</h5>
+                                <ol>
+                                    <li>① 서비스 이용과 관련하여 서울시와 회원 사이에 분쟁이 발생한 경우, 서울시와 회원은 발생한 분쟁을 원만하게 해결하기 위하여 필요한 모든 노력을 하여야 합니다</li>
+                                    <li>② 제1항의 규정에도 불구하고 서비스 이용으로 발생한 분쟁에 대하여 소송이 제기될 경우 서울시 소재지를 관할하는 법원을 관할법원으로 합니다.</li>
+                                </ol>
+                                <h4>제8장 마일리지</h4>
+                                <h5 id="rule23">제23조 (마일리지)</h5>
+                                <ol>
+                                    <li>① 서울시는 회원의 누리집 참여 실적에 따라 그에 해당하는 누적 점수를 부여할 수 있으며 이를 마일리지라고 합니다.</li>
+                                    <li>② 서울시는 회원이 자신의 마일리지를 쉽게 확인할 수 있도록 합니다.</li>
+                                    <li>③ 서울시는 마일리지 제공 서비스를 선정하며 사전공지를 통해 마일리지의 종류 및 이용방법 등에 대한 변경을 할 수 있습니다. 단, 마일리지 서비스 일부 변경시 소급하여 적용되지는 않습니다.</li>
+                                    <li>④ 회원은 마일리지 점수에 따라 명시된 혜택을 사용할 수 있습니다.</li>
+                                    <li>⑤ 적립된 마일리지를 사용하면 해당 마일리지만큼 차감되며, 차후 이용 실적에 따라 계속 적립이 이루어집니다.</li>
+                                    <li>⑥ 서울시 마일리지는 적립일을 기준으로 2년동안 유효하며 2년이 지난 이후에는 자동소멸 됩니다. 자동소멸된 마일리지는 환원이 불가능합니다.</li>
+                                </ol>
+                                <h4 id="rule24">부 칙</h4>
+                                <h5>(시행일) 이 약관은 2019년 12월 15일부터 적용합니다.</h5>
+                                </article>
+                            </div>
+                            <!--// .rule-cont -->
+                            <div class="rule-footer">
+                                <div class="rule-footer-text rule-footer-text2">
+                                     위의 이용약관에 대한 <strong>동의를 거부할 권리</strong>가 있습니다. 그러나 동의를 거부할 경우 원활한 서울시 누리집 통합회원 서비스 제공에 일부 제한을 받을 수 있습니다.
+                                </div>
+                                <div class="check-all">
+                                    <span class="custom-input">
+                                    <strong>위와 같이 이용약관에 동의하십니까?</strong>
+                                    <input type="radio" name="agree01" id="agree01" value="Y" onclick="funcEachCheck();"><label for="agree01"><span>동의</span></label>
+                                    <input type="radio" name="agree01" id="disagree01" value="N" onclick="funcEachCheck();"><label for="disagree01"><span>미동의</span></label>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--// .rule-footer -->
+                        </div>
+                        <!--// .rule-box -->
+                        <h4 class="tit-agree mgT40"><strong>개인정보 수집·이용 내역 <span>(필수사항)</span></strong></h4>
+                        <div class="rule-box rule-box-type1" style="margin-bottom: 10px">
+                            <div class="rule-cont" tabindex="0">
+                                <!-- 211103 수정 추가 -->
+                                <article class="rule">
+                                <h5 class="sr-only">개인정보 수집‧이용 내역 필수사항 표</h5>
+                                <table class="table table-col">
+                                <caption class="sr-only">개인정보 수집‧이용 내역 - 수집항목, 수집·이용 목적, 보유기간으로 구성</caption>
+                                <colgroup>
+                                <col style="width: 12%;">
+                                <col>
+                                <col>
+                                <col style="width: 10%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">
+                                        수 집 항 목
+                                    </th>
+                                    <th scope="col">
+                                        수집·이용 목적
+                                    </th>
+                                    <th scope="col">
+                                        보유기간
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                         일반회원
+                                    </td>
+                                    <td style="text-align: left !important;">
+                                        <span class="align">아이디, 비밀번호, 연락처, 거주지 시/도, 이메일 주소, 이름, 생년월일, 성별, 중복가입확인정보(DI)</span>
+                                    </td>
+                                    <td rowspan="2" style="text-align: left !important;">
+                                         서울시 누리집 통합회원 관리,<br>
+                                        서울시 누리집 통합회원 중복가입 방지,<br>
+                                        서울시 누리집 서비스 및 콘텐츠 제공<br>
+                                         (민원 신청‧처리, 공지사항 전달, 게시물 등록, 자료 다운로드, 공공서비스 예약, 전자민원 접수, 교육강좌 신청, 공공데이터 이용, 시정연구지원 신청, 빅데이터 캠퍼스 이용, 박물관 교육 신청, 주민사랑방 사용신청, 상권분석서비스 이용, 집수리 아카데미 신청, 시민제안‧토론 참여, 서울청년정책 신청, 서울주거정책 신청, 감사 청구, 1인가구 맞춤정보 제공 포함)
+                                    </td>
+                                    <td rowspan="2">
+                                        <span class="point">2년</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        자동수집
+                                    </td>
+                                    <td style="text-align: left !important;" class="align">
+                                        <span class="align">접속 로그, 쿠키, 접속 IP 정보, 가입경로</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </article>
+                            </div>
+                            <!--// .rule-cont -->
+                            <div class="rule-footer">
+                                <div class="rule-footer-text">
+                                     위의 개인정보 수집·이용에 대한 <strong>동의를 거부할 권리</strong>가 있습니다. 그러나 동의를 거부할 경우 원활한 서울시 누리집 통합회원 서비스 제공에 일부 제한을 받을 수 있습니다.
+                                </div>
+                                <div class="check-all">
+                                    <span class="custom-input">
+                                    <strong>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</strong>
+                                    <input type="radio" name="agree02" id="agree02" value="Y" onclick="funcEachCheck();"><label for="agree02"><span>동의</span></label>
+                                    <input type="radio" name="agree02" id="disagree02" value="N" onclick="funcEachCheck();"><label for="disagree02"><span>미동의</span></label>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--// .rule-footer -->
+                        </div>
+                        <!--// .rule-box -->
+                        <h4 class="tit-agree mgT40"><strong>개인정보 수집·이용 내역 <span>(선택사항, 동의거부 가능)</span></strong></h4>
+                        <div class="rule-box" style="margin-bottom: 10px">
+                            <div class="rule-cont rule-cont2" tabindex="0">
+                                <!-- 211103 수정 추가 -->
+                                <article class="rule">
+                                <h5 class="sr-only">개인정보 수집‧이용 내역 선택사항 표</h5>
+                                <table class="table table-col">
+                                <caption class="sr-only">개인정보 수집·이용 내역(선택사항, 동의거부 가능) - 항목, 수집ㆍ이용 목적, 보유기간으로 구성</caption>
+                                <colgroup>
+                                <col style="width: 50%;">
+                                <col>
+                                <col style="width: 10%;" class="mob-period">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">
+                                        항 목
+                                    </th>
+                                    <th scope="col">
+                                        수집·이용 목적
+                                    </th>
+                                    <th scope="col">
+                                        보유기간
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        이메일 주소, 신청여부
+                                    </td>
+                                    <td>
+                                        웹 소식지 발송
+                                    </td>
+                                    <td>
+                                        <span class="point">2년</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </article>
+                            </div>
+                            <!--// .rule-cont -->
+                            <div class="rule-footer">
+                                <div class="rule-footer-text">
+                                     위의 개인정보 수집·이용에 대한 <strong>동의를 거부할 권리</strong>가 있습니다. 그러나 동의를 거부할 경우 원활한 서울시 누리집 통합회원 서비스 제공에 일부 제한을 받을 수 있습니다.
+                                </div>
+                                <div class="check-all">
+                                    <span class="custom-input">
+                                    <strong>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</strong>
+                                    <input type="radio" name="agree03" id="agree03" value="Y" onclick="funcEachCheck();"><label for="agree03"><span>동의</span></label>
+                                    <input type="radio" name="agree03" id="disagree03" value="N" onclick="funcEachCheck();"><label for="disagree03"><span>미동의</span></label>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--// .rule-footer -->
+                        </div>
+                        <!--// .rule-box -->
+                        <h4 class="tit-agree mgT40"><strong>개인정보 수집·이용 내역 <span>(선택사항, 동의거부 가능)</span></strong></h4>
+                        <div class="rule-box" style="margin-bottom: 10px">
+                            <div class="rule-cont rule-cont2" tabindex="0">
+                                <!-- 211103 수정 추가 -->
+                                <article class="rule">
+                                <table class="table table-col">
+                                <caption class="sr-only">개인정보 수집·이용 내역(선택사항, 동의거부 가능) - 항목, 수집·이용 목적, 보유기간으로 구성</caption>
+                                <colgroup>
+                                <col style="width: 50%;">
+                                <col>
+                                <col style="width: 10%;" class="mob-period">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">
+                                        항 목
+                                    </th>
+                                    <th scope="col">
+                                        수집·이용 목적
+                                    </th>
+                                    <th scope="col">
+                                        보유기간
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        이메일 주소, 신청여부
+                                    </td>
+                                    <td>
+                                        행사강좌 등 정보 발송
+                                    </td>
+                                    <td>
+                                        <span class="point">2년</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </article>
+                            </div>
+                            <div class="rule-footer">
+                                <div class="rule-footer-text">
+                                     위의 개인정보 수집·이용에 대한 <strong>동의를 거부할 권리</strong>가 있습니다. 그러나 동의를 거부할 경우 원활한 서울시 누리집 통합회원 서비스 제공에 일부 제한을 받을 수 있습니다.
+                                </div>
+                                <div class="check-all">
+                                    <span class="custom-input">
+                                    <strong>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</strong>
+                                    <input type="radio" name="agree04" id="agree04" value="Y" onclick="funcEachCheck();"><label for="agree04"><span>동의</span></label>
+                                    <input type="radio" name="agree04" id="disagree04" value="N" onclick="funcEachCheck();"><label for="disagree04"><span>미동의</span></label>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--// .rule-footer -->
+                        </div>
+                        <!--// .rule-box -->
+                        <h4 class="tit-agree mgT40"><strong>개인정보 수집·이용 내역 <span>(선택사항, 동의거부 가능)</span></strong></h4>
+                        <div class="rule-box" style="margin-bottom: 10px">
+                            <div class="rule-cont rule-cont2" tabindex="0">
+                                <!-- 211103 수정 추가 -->
+                                <article class="rule">
+                                <table class="table table-col">
+                                <caption class="sr-only">개인정보 수집·이용 내역(선택사항, 동의거부 가능) - 항목, 수집·이용 목적, 보유기간으로 구성</caption>
+                                <colgroup>
+                                <col style="width: 50%;">
+                                <col>
+                                <col style="width: 10%;" class="mob-period">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">
+                                        항 목
+                                    </th>
+                                    <th scope="col">
+                                        수집·이용 목적
+                                    </th>
+                                    <th scope="col">
+                                        보유기간
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        이메일 주소, 신청여부
+                                    </td>
+                                    <td>
+                                        설문조사 요청
+                                    </td>
+                                    <td>
+                                        <span class="point">2년</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </article>
+                            </div>
+                            <!--// .rule-cont -->
+                            <div class="rule-footer">
+                                <div class="rule-footer-text">
+                                     위의 개인정보 수집·이용에 대한 <strong>동의를 거부할 권리</strong>가 있습니다. 그러나 동의를 거부할 경우 원활한 서울시 누리집 통합회원 서비스 제공에 일부 제한을 받을 수 있습니다.
+                                </div>
+                                <div class="check-all">
+                                    <span class="custom-input">
+                                    <strong>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</strong>
+                                    <input type="radio" name="agree05" id="agree05" value="Y" onclick="funcEachCheck();"><label for="agree05"><span>동의</span></label>
+                                    <input type="radio" name="agree05" id="disagree05" value="N" onclick="funcEachCheck();"><label for="disagree05"><span>미동의</span></label>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--// .rule-footer -->
+                        </div>
+                        <!--// .rule-box -->
+                        <!-- <div class="rule-box">
+                                <div class="rule-head s-custom-check">
+                                    <span class="custom-input"><input type="checkbox" name="agree03" id="agree03" onclick="funcEachCheck()"><label for="agree03"><span><strong>개인정보 처리 및 위탁에 관한 안내</strong>에 동의 (필수)</span></label></span>
+                                </div>
+                                <div class="rule-cont" tabindex="0">181025_접근성 수정 추가
+                                    <article class="rule">
+                                        <p>서울시 누리집에서는 아래의 경우 개인정보보호법 제26조에 의거 귀하의 개인정보를 외부에 위탁하여 처리하고자 합니다. I-PIN/휴대폰 본인인증시에 제공하는 개인정보는 개인정보보호법 제22조 제2항에 따라 정보주체와의 계약체결 등을 위하여 정보주체의 동의 없이 처리할 수 있는 개인정보로 지정 합니다.</p>
+                                        <h4>가. 서울시 개인정보 처리 위탁 개인정보파일 목록</h4>
+                                        <table class="table table-col">
+                                            <caption class="sr-only">연번, 개인정보파일(처리시스템)명, 위탁하는 업무의 내용, 위탁받는 자, 계약기간, 비고 포함하는 수입하는 개인정보의 항목입니다.</caption>181025_접근성 수정 추가
+                                            <colgroup>
+                                                <col style="width: 6%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: 19%;">
+                                                <col style="width: 19%;">
+                                                <col >
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>연번</th>
+                                                    <th>개인정보파일(처리시스템)명</th>
+                                                    <th>위탁하는 업무의 내용</th>
+                                                    <th>위탁받는 자</th>
+                                                    <th>계약기간</th>
+                                                    <th>비고</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>교통위반 운수사업관리시스템</td>
+                                                    <td>교통위반 운수사업관리시스템 운영 및 유지관리</td>
+                                                    <td>(주)엑스아이티</td>
+                                                    <td>‘20.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>과태료관리시스템</td>
+                                                    <td>과태료관리시스템</td>
+                                                    <td>(주)엑스아이티</td>
+                                                    <td>‘20.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>자동자번호판영치시스템</td>
+                                                    <td>자동자번호판영치시스템</td>
+                                                    <td>(주)제이컴모빌피아</td>
+                                                    <td>‘20.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>세이프약국 운영 정보관리시스템</td>
+                                                    <td>세이프약국 운영 정보관리시스템 유지보수 용역</td>
+                                                    <td>(주)비타소프트</td>
+                                                    <td>‘21.3.30 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>보육교사교육원관리시스템</td>
+                                                    <td>보육교사교육원관리시스템 유지보수</td>
+                                                    <td>(주)온앤온정보시스템</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>블록체인 서비스</td>
+                                                    <td>블록체인 서비스 유지관리</td>
+                                                    <td>(주)유라클</td>
+                                                    <td>‘21.6.21 ~‘22.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>응답소 및 서식민원관리시스템</td>
+                                                    <td>응답소 및 서식민원관리시스템 운영 유지관리</td>
+                                                    <td>(주)에스알포스트</td>
+                                                    <td>‘21.1.1 ~’ 21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>서울청년포털</td>
+                                                    <td>서울청년포털 고도화 및 연간유지관리 </td>
+                                                    <td>(주)아사달</td>
+                                                    <td>‘21.2.22 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>에코마일리지시스템</td>
+                                                    <td>에코마일리지시스템 운영 및 유지보수 용역</td>
+                                                    <td>(주)아사달</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>시민건강포인트 정보관리시스템</td>
+                                                    <td>2020년 시민건강포인트 정보관리시스템 유지보수 용역</td>
+                                                    <td>(주)헬스맥스</td>
+                                                    <td>‘20.12.31 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>서울임신출산</td>
+                                                    <td>서울임신출산 운영 및 유지관리</td>
+                                                    <td>(주)아사달</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>불법주정차 통합플랫폼</td>
+                                                    <td>불법주정차 통합플랫폼 운영 및 유지관리</td>
+                                                    <td>(주)씨씨미디어/<br>(주)유앤피플</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>참여예산관리시스템</td>
+                                                    <td>참여예산관리시스템 운영 및 유지관리 용역</td>
+                                                    <td>(주)그루기술</td>
+                                                    <td>‘20.12 ~‘21.12</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>서울시민카드</td>
+                                                    <td>서울시민카드 유지관리</td>
+                                                    <td>(주)혁산정보시스템</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>승용차마일리지 및 요일제 시스템</td>
+                                                    <td>승용차마일리지 및 요일제 시스템 유지보수 용역사업</td>
+                                                    <td>(주)피엘시스템즈</td>
+                                                    <td>‘21.1.4 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>서울일자리포털</td>
+                                                    <td>시스템운영 및 실명확인 유지관리</td>
+                                                    <td>젬백스링크(주)/<br>나이스평가정보(주)</td>
+                                                    <td>‘20.10.12 ~‘21.10.11</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>서울시 ETAX</td>
+                                                    <td>서울시 운영 및 유지관리</td>
+                                                    <td>(주)신한은행</td>
+                                                    <td>‘18.12.31 ~</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>생활복지통합정보시스템</td>
+                                                    <td>생활복지통합정보시스템 운영 및 유지관리</td>
+                                                    <td>(주)아사달</td>
+                                                    <td>‘21.1.1 ~ ’21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>지방재정관리시스템</td>
+                                                    <td>지방재정관리시스템</td>
+                                                    <td>한국지역정보개발원</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>서울시 대표 홈페이지 </td>
+                                                    <td>서울시 홈페이지 운영 및 유지관리</td>
+                                                    <td>(주)피씨엔</td>
+                                                    <td>‘21.1.1 ~‘21.12.31</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>정보주체는 개인정보 처리 및 위탁에 관한 동의 처리를 거부할 수 있으며, 동의 거부시 서울시 홈페이지에 회원가입이 되지 않으며, 서울시 홈페이지에서 제공하는 서비스를 이용할 수 없습니다.</p>
+                                    </article>
+                                </div>
+                            </div> -->
+                    </div>
+                    <!--// .rule-check -->
+                    <div class="btn-group full">
+                        <button type="button" class="btn large bg-point" onclick="goAgreeYN('Y');"><span>다음단계</span></button>
+                    </div>
+                </form>
+                <script>
+            /**
+             * ============================================================= 
+             * 선언
+             */
+            var _param;        
+            /**
+             * ============================================================= 
+             * function 구현
+             */
+            //회원가입 약관동의 중 모든(필수)사항이 checked 되었을때 전체필수 약관동의란에 checked 부여
+           /* function changeAgreeChk(nm , val){
+               var valnm ;
+                if(val == "Y"){//동의 눌렀을때 미동의 체크 해제하기
+                     valnm = "disagree"+nm;
+                     $('#'+valnm).prop('checked',false);
+                }else if(val == "N"){ //미동의 눌렀을때 모두 동의, 동의 체크 해제하기
+                    valnm = "agree"+nm;
+                     $('#'+valnm).prop('checked',false);
+                     $('#agreeall').prop('checked',false);
+                }
+                funcEachCheck();
+            } */
+            function funcEachCheck(){
+                if(($("input[name='agree01']:checked").val() == "Y") && ($("input[name='agree02']:checked").val() == "Y") && ($("input[name='agree03']:checked").val() == "Y")&& ($("input[name='agree04']:checked").val() == "Y")&& ($("input[name='agree05']:checked").val() == "Y")){
+                    document.userForm.agreeall.checked = true;
+                    //document.userForm.notagreeall.checked = false;
+                }
+                else{
+                    document.userForm.agreeall.checked = false;
+                }
+            }
+            //checkbox All checked 부여
+             function funcAgreeAllCheck(flag){
+                 if(flag == "Y"){
+                    if(document.userForm.agreeall.checked == false){ //전체동의 해제
+                         $("#agree01").prop("checked",false);
+                         $("#agree02").prop("checked",false);
+                         $("#agree03").prop("checked",false);
+                         $("#agree04").prop("checked",false);
+                         $("#agree05").prop("checked",false);
+                     }else{ //전체동의
+                         $("#agree01").prop("checked",true);
+                         $("#agree02").prop("checked",true);
+                         $("#agree03").prop("checked",true);
+                         $("#agree04").prop("checked",true);
+                         $("#agree05").prop("checked",true);
+                     }		
+                }else{
+                    document.userForm.agreeall.checked = false;
+                    document.userForm.agree01.checked = false;
+                     document.userForm.agree02.checked = false;
+                     document.userForm.agree03.checked = false;
+                } 
+             }
+             function goAgreeYN(yn){
+                 $("#agreeYN").attr("value","N");
+                 var mem_div = $("#mem_div").val();
+                 var chktype = $("#check_type").val();
+                 if(yn == "Y"){
+                     /* if($("input[name='notagreeall']")[0].checked == true){
+                         alert("통합회원 필수 약관 및 이용 제공에 동의하셔야 회원가입이 가능합니다.");
+                         return false;
+                     } */
+                     if($("input[name='agree01']:checked").val() != "Y"){
+                         alert("이용약관에 동의하셔야 합니다.");
+                         $("#agree01").focus();
+                         return false;
+                     }
+                     if($("input[name='agree02']:checked").val() != "Y"){
+                         alert("개인정보 수집·이용 필수항목에 동의하셔야 합니다.");
+                         $("#agree02").focus();
+                         return false;
+                     }
+                     if(typeof $("input[name='agree03']:checked").val() == "undefined"){
+                         alert("개인정보 수집·이용 선택항목에 동의 또는 미동의 하셔야 합니다.");
+                         $("#agree03").focus();
+                         return false;
+                     }
+                     if(typeof $("input[name='agree04']:checked").val() == "undefined"){
+                         alert("개인정보 수집·이용 선택항목에 동의 또는 미동의 하셔야 합니다.");
+                         $("#agree04").focus();
+                         return false;
+                     }
+                     if(typeof $("input[name='agree05']:checked").val() == "undefined"){
+                         alert("개인정보 수집·이용 선택항목에 동의 또는 미동의 하셔야 합니다.");
+                         $("#agree05").focus();
+                         return false;
+                     }
+                     /* if($("input[name='agree03']")[0].checked != true){
+                         alert("개인정보 처리 및 위탁에 동의하셔야 합니다.");
+                         return false;
+                     } */
+                     //일반-01, 외국인-02, 기업-03, 어린이-04
+                    if(mem_div != "") {
+                        if(mem_div=="02"){
+                            mem_div = "01";
+                        }
+                        userForm.action = "/member/join/memberCerti"+mem_div+".do";
+                        userForm.submit();
+                    }
+                 /*     if($("#mem_div").val() == "DIV030"){
+                         userForm.action = "/member/join/member03Input.do";            	
+                     }else{
+                         userForm.action = "/member/join/member01Input.do";
+                     }
+                     userForm.submit();
+                      */
+                 }else{
+                     userForm.action = "/member/info/mySeoul.do";
+                     userForm.submit();
+                 }
+             }        
+            /**
+             * =============================================================
+             * Event Listener
+             * 화면에서 사용될 이벤트 등록
+             */
+            function fnEventListener() {
+            };
+            /**
+             * =============================================================
+             * 프로그램시작
+             */
+            function createComp() {
+                fnEventListener();
+            };
+            $(document).ready(function() {
+                // 초기실행 (필수)
+                com.init(createComp);
+                document.title= "약관 동의 | " + $('.title-wrap').find('> h3').html() + " | 서울특별시청"		//181025_접근성 수정 추가
+            });        
+        </script>
+            </div>
+        </div>
+        </section>
+        <!-- container -->
+       
+    </div>
+</body>
+</html>

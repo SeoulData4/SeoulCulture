@@ -1,0 +1,892 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body, input, textarea, select, button, table {
+    font-family: 'Noto Sans Kr','Nanum Gothic','Malgun gothic',Dotum,arial,sans-serif;
+    font-size: 15px;
+    color: #555;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: left;
+}
+
+caption, legend {
+    overflow: hidden;
+    position: static;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.btn {
+    display: inline-block;
+    color: #444;
+    font-size: 14px;
+    line-height: 14px;
+    transition: all .3s;
+    border: 0;
+}
+
+.btn:hover, .btn:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button, input[type="submit"] {
+    cursor: pointer;
+}
+
+#container .inner {
+    box-sizing: border-box;
+    border-left: 0px solid #ddd;
+}
+
+.inner {
+    position: relative;
+    max-width: 1275px;
+    margin: 0 auto;
+}
+
+#container .inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#content_wrap {
+    /* padding-left: 20%; */
+    box-sizing: border-box;
+}
+
+#content_wrap #content {
+    position: relative;
+    padding: 36px 0 32px 46px;
+    background: #fff;
+    min-height: 800px;
+    /* border-left: 1px solid #ddd; */
+}
+
+#content_wrap #content .location {
+    display: none;
+}
+
+#content_wrap #content .sub_tit {
+    position: relative;
+    margin-bottom: 49px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #444;
+    font-family: 'nsr';
+}
+
+#content_wrap #content .sub_tit h3 {
+    display: inline-block;
+    font-size: 27px;
+    line-height: 30px;
+    color: #1a1a1a;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+#content_wrap #content .sub_tit .subt_btn {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    display: none;
+}
+
+#content_wrap #content .sub_tit .subt_btn li {
+    float: left;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+img, fieldset {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: top;
+}
+
+.search-cont-wrap {
+    margin-top: -49px;
+}
+
+.search-top {
+    border-bottom: 1px solid #444;
+    padding: 30px 0;
+}
+
+.search-top .layout {
+    max-width: 657px;
+    margin: 0 auto;
+}
+
+.search-top .txt-group {
+    padding-left: 100px;
+    position: relative;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.search-top .search-group {
+    position: relative;
+}
+
+.search-top .search-group .input-wrap {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hide {
+    overflow: hidden;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.search-top .search-group .input-wrap .form-control {
+    width: calc(100% - 56px);
+    height: 100%;
+    border: 0;
+    padding-left: 13px;
+    font-size: 18px;
+    color: #000;
+}
+
+input[type="text"], input[type="password"] {
+    height: 32px;
+    border: 1px solid #bbc2d3;
+    text-indent: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+.search-top .search-group .input-wrap .btn {
+    width: 55px;
+    height: 100%;
+    display: inline-block;
+    background: url(https://www.heritage.go.kr/images/content/search-ico.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-indent: -99999999px;
+}
+
+.search-cont-wrap .rc-wrap {
+    margin-bottom: 0;
+}
+
+.search-top .rc-wrap {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.search-cont-wrap .search-top .rc-inner {
+    padding-right: 45px;
+}
+
+.search-cont-wrap .rc-inner {
+    position: relative;
+    display: inline-block;
+}
+
+.search-cont-wrap [type="radio"]:checked, .search-cont-wrap [type="radio"]:not(:checked), .search-cont-wrap [type="checkbox"]:checked, .search-cont-wrap [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.search-cont-wrap [type="radio"]:checked + label, .search-cont-wrap [type="radio"]:not(:checked) + label {
+    padding-left: 25px;
+}
+
+.search-cont-wrap [type="radio"]:checked + label, .search-cont-wrap [type="radio"]:not(:checked) + label, .search-cont-wrap [type="checkbox"]:checked + label, .search-cont-wrap [type="checkbox"]:not(:checked) + label {
+    cursor: pointer;
+    position: relative;
+    color: #666;
+    font-weight: 500;
+}
+
+.rc-wrap [type="radio"]:checked + label, .rc-wrap [type="radio"]:not(:checked) + label {
+    padding-left: 25px;
+}
+
+.search-cont-wrap [type="radio"]:not(:checked) + label:before {
+    background: url(https://www.heritage.go.kr/images/content/search-radio.png) no-repeat;
+}
+
+.search-cont-wrap [type="radio"]:checked + label:before {
+    background: url(https://www.heritage.go.kr/images/content/search-radio-checked.png) no-repeat;
+}
+
+.search-cont-wrap [type="radio"]:checked + label:before, .search-cont-wrap [type="radio"]:not(:checked) + label:before, .search-cont-wrap [type="checkbox"]:checked + label:before, .search-cont-wrap [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    width: 19px;
+    height: 19px;
+    border: 0;
+}
+
+.search-cont-wrap * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 필터링 시작 */
+
+.search-mid {
+    margin-bottom: 50px;
+}
+
+.search-mid .btn-wrap {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.search-mid .btn-wrap .btn:not(:last-of-type) {
+    margin-right: 35px;
+}
+
+.search-mid .btn-wrap .btn {
+    background: none;
+    position: relative;
+    color: #666;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 0;
+    padding-left: 18px;
+}
+
+.search-mid .btn-wrap .btn.btn-reset:after {
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+}
+
+.search-mid .btn-wrap .btn:after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(https://www.heritage.go.kr/images/content/search-mid-icon.gif) no-repeat 0 1px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.search-mid.on .btn-wrap .btn.btn-toggle:after {
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.search-mid .btn-wrap .btn.btn-toggle:after {
+    background-position: -23px 0;
+}
+
+/* 상세 검색 닫기 이미지 rotation */
+.search-mid .btn-wrap .btn.btn-toggle:after {
+    transform: rotate(-180deg);
+    transition: all 0.3s ease;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.rc-wrap_01 {
+    display: block;
+    padding: 2px 0 0 16px;
+    line-height: 2.5;
+    background: #f3f7fe;
+}
+
+.search-cont-wrap .rc-inner {
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox-wrap-container .checkbox-wrap li {
+    width: calc((100% - 71px) / 8);
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.search-cont-wrap [type="checkbox"]:checked + label, .search-cont-wrap [type="checkbox"]:not(:checked) + label {
+    color: #666;
+    font-weight: 500;
+}
+
+.search-cont-wrap [type="checkbox"]:checked + label, .search-cont-wrap [type="checkbox"]:not(:checked) + label {
+    padding-left: 21px;
+}
+
+.search-mid .btn-search {
+    margin-top: 25px;
+}
+
+.search-mid .btn-search {
+    text-align: center;
+}
+
+.search-mid .btn-search .btn {
+    background: #f84040;
+    padding: 0 5px;
+    min-width: 116px;
+    min-height: 47px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.22);
+}
+
+.search-mid .btn-search .btn span {
+    position: relative;
+    padding-left: 25px;
+}
+
+.search-mid .btn-search .btn span:after {
+    content: "";
+    display: block;
+    background: url(https://www.heritage.go.kr/images/content/search-mid-icon02.png) no-repeat;
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    top: 54%;
+    left: 0;
+    transform: translate(0px, -50%);
+}
+
+.csch_info1 {
+    overflow: hidden;
+    padding: 15px 0;
+    border-top: 1px solid #d5d5db;
+    margin-top: -20px;
+}
+
+.csch_info1 .media_list1 {
+    float: right;
+    border: 1px solid #5FBE76;
+    padding: 8px 18px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.csch_info1 .media_list1 li.excel_01 {
+    background: url(//www.heritage.go.kr/images/common/icon_excel.png) left center no-repeat;
+    margin-left: 0px;
+}
+
+.csch_info1 .media_list1 li {
+    float: left;
+    margin-left: 15px;
+    padding-left: 21px;
+    color: #555;
+}
+
+
+
+.checkbox-wrap-container .checkbox-wrap li .check-box:last-child {
+    border-right: 1px solid #dddddd;
+}
+
+.checkbox-wrap-container .checkbox-wrap li .check-box input[type=checkbox] {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.checkbox-wrap-container .checkbox-wrap li .check-box input[type=checkbox] + label {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-right: 0 none;
+    vertical-align: middle;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 5px;
+    height: 38px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 0.833rem;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.checkbox-wrap-container .checkbox-wrap li .check-box {
+    height: 38px;
+    position: relative;
+}
+
+.checkbox-wrap-container .checkbox-wrap li .check-box input:checked + label, .checkbox-wrap-container .checkbox-wrap li .check-box input:checked:focus + label {
+    border: 3px solid #f84040;
+    color: #000;
+    padding: 5px 3px;
+}
+
+.checkbox-wrap-container .checkbox-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.checkbox-wrap-container {
+    display: none;
+}
+
+.search-cont-wrap [type="checkbox"]:not(:checked) + label:before {
+    background: url(https://www.heritage.go.kr/images/content/search-checkbox.png) no-repeat;
+}
+
+.checkbox-wrap * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.checkbox-wrap-container .checkbox-wrap li .check-box input[type=checkbox] + label:before {
+    background: none;
+    display: none;
+}
+
+.search-bottom {
+    margin-bottom: 100px;
+}
+
+.search-bottom .search_tab_ul {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #4c4c4c;
+    display: flex;
+}
+
+.search-bottom .search_tab_ul li {
+    text-align: center;
+}
+
+.search-bottom .search_tab_ul li a {
+    padding: 15px 22px;
+    display: block;
+    font-weight: 500;
+}
+
+.search-bottom .search_tab_ul li a:hover span, .search-bottom .search_tab_ul li a:focus span, .search-bottom .search_tab_ul li a.active span {
+    color: #df3232;
+    display: inline-block;
+}
+
+.search-bottom .search_tab_ul li a span {
+    position: relative;
+    font-size: 16px;
+}
+
+.search-bottom .search_tab_ul li a.active span:after {
+    transform: scale(1, 1);
+}
+
+.search-bottom .search_tab_ul li a:hover span:after, .search-bottom .search_tab_ul li a:focus span:after, .search-bottom .search_tab_ul li a.active span:after {
+    transform: scale(1, 1);
+}
+
+.search-bottom .search_tab_ul li a span:after, .search-bottom .search_tab_ul li a.active span:after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: #df3232;
+    height: 3px;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+.search-bottom .search-summary {
+    background: #f3f6fb;
+    border-bottom: 1px solid #acaeb0;
+    padding: 19px 20px;
+    position: relative;
+}
+
+.search-bottom .search-summary > p {
+    margin-right: 330px;
+    position: relative;
+    padding-left: 26px;
+    color: #444;
+    font-weight: 400;
+    background: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.search-bottom .search-summary > p:after {
+    content: "";
+    display: block;
+    background: url(https://www.heritage.go.kr/images/content/search-result-icon.gif) no-repeat;
+    width: 17px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-right: 3px;
+    transform: translate(0px, -50%);
+}
+
+.search-bottom .search-summary > p {
+    margin-right: 330px;
+    position: relative;
+    padding-left: 26px;
+    color: #444;
+    font-weight: 400;
+    background: none;
+}
+
+.search-bottom .search-summary .legend-wrap {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.search-bottom .search-summary .legend-wrap .btn {
+    padding-right: 19px;
+    background: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.search-bottom .search-summary .legend-wrap .icon {
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.search-bottom .search-summary .legend-wrap .icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(https://www.heritage.go.kr/images/content/search-legend.gif) no-repeat;
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background-position: 0 0;
+}
+
+.search-bottom .search-summary .legend-wrap .btn:last-of-type {
+    padding-right: 0;
+}
+
+.search-bottom .search-summary .legend-wrap .btn:hover .icon, .search-bottom .search-summary .legend-wrap .btn:focus .icon {
+    border-color: #5d5d5d;
+}
+
+.search-bottom .search-summary .legend-wrap .btn:hover, .search-bottom .search-summary .legend-wrap .btn:focus {
+    color: #222;
+}
+
+.search-bottom .search-result {
+    margin-top: 40px;
+}
+
+.search-bottom .search-result > li {
+    float: left;
+    width: calc((100% - 81px) / 4);
+    margin-right: 23px;
+}
+
+.search-bottom .search-result > li a {
+    transition: all 0.3s ease;
+    display: block;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+.search-bottom .search-result .img-wrap {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    background: #adb0bd;
+    border-radius: 10px;
+    text-align: center;
+    height: 0;
+    position: relative;
+    padding-top: 82%;
+}
+
+.search-bottom .search-result > li a > span {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.search-bottom .search-result > li .tag, .search-bottom .search-result > li strong {
+    transition: all 0.3s ease;
+}
+
+.search-bottom .search-result > li .tag {
+    display: block;
+    font-size: 13px;
+    color: #222;
+    font-weight: 600;
+    padding: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.search-bottom .search-result .img-wrap img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+}
+
+.search-bottom .search-result > li a > strong {
+    max-width: 190px;
+    height: 46px;
+    overflow: hidden;
+    color: #666666;
+    display: block;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: left;
+}
+
+.search-bottom .search-result:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.search-bottom .search-result > li:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* 미디어 쿼리*/
+@media (max-width: 1024px) {
+    #content_wrap {
+        padding-left: 0;
+    }
+
+    #content_wrap #content .sub_tit {
+        text-align: center;
+    }
+
+    #content_wrap #content {
+        padding: 40px 2% 20px 2%;
+        border-left: 0;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    #content_wrap {
+        border-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #content_wrap #content .sub_tit h3 {
+        font-size: 25px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 780px) {
+    .search-top .rc-wrap {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .search-cont-wrap .search-top .rc-inner {
+        padding-right: 2%;
+    }
+
+    .search-bottom {
+        border: none;
+    }
+
+    .search-bottom .search_tab_ul {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .search-bottom .search_tab_ul li {
+        display: block;
+        width: 100%;
+        border: 1px solid #ddd;
+        margin-top: -1px;
+        border-bottom: 0;
+    }
+
+    .search-bottom .search_tab_ul li a {
+        padding: 12px 0;
+    }
+
+    .search-bottom .search_tab_ul li a span:after, .search-bottom .search_tab_ul li a.active span:after {
+        bottom: -12px;
+    }
+
+    .search-bottom .search-summary {
+        padding: 12px 15px;
+        border-top: 1px solid #acaeb0;
+    }
+
+    .search-bottom .search-summary > p {
+        margin-right: 0;
+    }
+
+    .search-bottom .search-summary .legend-wrap {
+        position: static;
+        transform: translate(0px, 0px);
+        margin-top: 12px;
+        margin-left: -8px;
+    }
+
+    .search-bottom .search-summary .legend-wrap .btn {
+        padding-right: 1%;
+    }
+
+    .search-bottom .search-summary .legend-wrap .icon {
+        transform: scale(0.7);
+        margin-right: -1px;
+    }
+
+    .search-bottom .search-result {
+        margin-top: 10px;
+    }
+
+    .search-bottom .search-result > li {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .search-bottom .search-result > li a > strong {
+        max-width: 100%;
+    }
+
+    .search-bottom .search-result > li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .checkbox-wrap-container .checkbox-wrap li {
+        width: calc((100% - 21px) / 5);
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    .checkbox-wrap-container .checkbox-wrap li:nth-child(5n) {
+        margin-right: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 780px) {
+    .checkbox-wrap-container .checkbox-wrap li {
+        width: calc((100% - 8px) / 2);
+        margin-bottom: 2px;
+        margin-right: 2px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .search-bottom .search-summary .legend-wrap .btn {
+        padding-right: 6px;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .checkbox-wrap-container .checkbox-wrap li:nth-child(8n) {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
