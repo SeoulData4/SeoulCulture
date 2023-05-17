@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/login.css" />
+  <title>로그인</title>
+</head>
+<body>
+<section class="base-body" id="baseBody">
+  <div class="base-tit">
+    <div class="base-tit-wrap">
+      <h1 class="tit-l">로그인</h1>
+      <div class="breadcrumbs">
+        <ul>
+          <li><span>Home</span></li>
+          <li><span>로그인</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-a">
+    <div class="wrap-cont">
+      <div class="login-wrap">
+        <div class="login-box">
+          <h2>서울시 아이디로 로그인하세요.</h2>
+          <p>서울시 아이디로 열린데이터광장 서비스 이용이 가능합니다.</p>
+          <form
+                  name="userForm"
+                  method="post"
+                  action="https://www.seoul.go.kr/member/userlogin/login.do"
+                  onsubmit="return(true)"
+          >
+            <input
+                    type="text"
+                    class="inp-base"
+                    placeholder="서울시 아이디"
+                    title="서울시 아이디 입력"
+                    name="userid"
+                    id="userid"
+            />
+            <input
+                    type="password"
+                    class="inp-base"
+                    placeholder="비밀번호"
+                    title="비밀번호 입력"
+                    name="userpwd"
+                    id="userpwd"
+                    onkeypress="check();"
+            />
+            <input type="hidden" name="div" value="mem" />
+            <input
+                    type="hidden"
+                    name="refresh_url"
+                    value="https://data.seoul.go.kr/sso/redirect.jsp?callbackURL=https%3A%2F%2Fdata.seoul.go.kr%2F"
+            />
+            <input type="hidden" name="SITE_GB" value="GB071" />
+            <input type="hidden" name="isExternal" value="Y" />
+          </form>
+          <button
+                  type="button"
+                  class="btn-base-b bgc-p3"
+                  onclick="goLogin();"
+          >
+            <span>로그인</span>
+          </button>
+        </div>
+        <div class="login-help">
+          <h2>로그인이 안되시나요?</h2>
+          <p>아이디 / 비밀번호 찾기를 이용해 보세요.</p>
+          <div class="login-help-link">
+            <a
+                    href="https://www.seoul.go.kr/member/findId/findId.do?SITE_GB=GB071"
+                    target="_blank"
+                    class="n1"
+                    title="새창 열림"
+            ><span>아이디 찾기</span></a
+            >
+            <a
+                    href="https://www.seoul.go.kr/member/findPwd/findPwd.do?SITE_GB=GB071"
+                    target="_blank"
+                    class="n2"
+                    title="새창 열림"
+            ><span>비밀번호 찾기</span></a
+            >
+            <a
+                    href="https://www.seoul.go.kr/member/join/regist01.do?SITE_GB=GB071"
+                    target="_blank"
+                    class="n3"
+                    title="새창 열림"
+            ><span>회원가입</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
