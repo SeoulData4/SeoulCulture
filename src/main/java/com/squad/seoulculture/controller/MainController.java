@@ -1,4 +1,4 @@
-package com.squid.seoulculture.controller;
+package com.squad.seoulculture.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
