@@ -8,15 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping("/")
+@RequestMapping("/culture")
 public class CultureController {
 
-    @GetMapping("")
-    public String index () {
-        return "index";
-    }
 
-    @GetMapping("/cultural")
+
+    @GetMapping("")
     public String cultural (Model model){
 
         return "/cultural/cultural_list";

@@ -29,8 +29,8 @@
           <form
                   name="userForm"
                   method="post"
-                  action="https://www.seoul.go.kr/member/userlogin/login.do"
-                  onsubmit="return(true)"
+                  action="/loginOk"
+                  id="loginFrm"
           >
             <input
                     type="text"
@@ -57,14 +57,14 @@
             />
             <input type="hidden" name="SITE_GB" value="GB071" />
             <input type="hidden" name="isExternal" value="Y" />
+
+            <a
+                    id="loginBtn"
+                    class="btn-base-b bgc-p3"
+            >
+              <span>로그인</span>
+            </a>
           </form>
-          <button
-                  type="button"
-                  class="btn-base-b bgc-p3"
-                  onclick="goLogin();"
-          >
-            <span>로그인</span>
-          </button>
         </div>
         <div class="login-help">
           <h2>로그인이 안되시나요?</h2>
@@ -85,7 +85,7 @@
             ><span>비밀번호 찾기</span></a
             >
             <a
-                    href="https://www.seoul.go.kr/member/join/regist01.do?SITE_GB=GB071"
+                    href="/join"
                     target="_blank"
                     class="n3"
                     title="새창 열림"
@@ -97,5 +97,6 @@
     </div>
   </div>
 </section>
+<script src="/js/login.js"></script>
 </body>
 </html>

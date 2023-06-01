@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="joinAgree.css">
+    <link rel="stylesheet" href="/css/joinAgree.css">
+    <script src="/js/jquery-3.1.1.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -1054,9 +1055,9 @@
                     <div class="join-process join-process-new">
                         <ul class="clfix tendina">
                             <li><em>1.</em> 약관동의</li>
-                            <li><em>2.</em> 본인확인</li>
+<!--                            <li><em>2.</em> 본인확인</li>-->
                             <li class="active"><em>3.</em> 회원정보 입력 <span class="sr-only">현재 단계</span></li>
-                            <li><em>4.</em> 부가서비스 신청</li>
+<!--                            <li><em>4.</em> 부가서비스 신청</li>-->
                         </ul>
                     </div>
                     <div class="join-info">
@@ -1078,7 +1079,7 @@
                                     <dd class="recheck-wrap">
                                     <span class="inp-btn">
                                     <input type="text" name="user_id" id="user_id" maxlength="15" placeholder="최소5자 ~ 최대15자" title="최소5자 ~ 최대15자" value="">
-                                    <button type="button" class="btn btn-id-check" onclick="_check_id(document.userForm, 'user_id', $(this));"><span>중복확인</span></button>
+                                    <button type="button" class="btn btn-id-check" onclick="double_check()"><span>중복확인</span></button>
                                     <!-- 181025_접근성 수정 추가 -->
                                     </span>
                                     <p class="caution">
@@ -1918,92 +1919,92 @@
                         }
                          */
                     }    	
-                    function _check_id(form1, name, opener)
-                    {
-                        var userId = "#"+name;
-                        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-                        var str = $(userId).val();
-                        str = str.replace(/^[\s]+/g,"");
-                        str = str.replace(/[\s]+$/g,"");
-                        var flag = false;
-                        var nums = "0123456789";
-                        var numchk =0;
-                        for(var k = 0 ; k < str.length; k++){
-                            if(chars.indexOf(str.charAt(k)) == -1){
-                                flag = false;
-                                break;
-                            }else{
-                                flag = true;
-                            }
-                        }
-                        for(var k = 0 ; k < str.length; k++){
-                            if(nums.indexOf(str.charAt(k)) > -1){
-                                numchk++;
-                            }
-                        }
-                        if (str == "")//form1.user_id.value
-                        {
-                            alert("아이디를 입력하세요.\n아이디 입력란으로 이동합니다.");
-                            $(userId).focus();
-                            return;
-                        }
-                        if(!flag){
-                            alert("회원 아이디에 특수문자는 사용할 수 없습니다.");
-                            $(userId).focus();
-                            return;
-                        }
-                        if(str.length == numchk){
-                            alert("아이디는 숫자로만 사용이 불가능합니다.");
-                            $(userId).focus();
-                            return;
-                        }
-                        if (str.length < 5)//form1.user_id.value
-                        {
-                            alert("아이디를 5자 이상 입력하세요.\n아이디 입력란으로 이동합니다.");
-                            $(userId).select();
-                            $(userId).focus();
-                            return;
-                        }
-                        if (str.length > 15)//form1.user_id.value
-                        {
-                            alert("아이디는 15자 이하로 입력하세요.\n아이디 입력란으로 이동합니다.");
-                            $(userId).select();
-                            $(userId).focus();
-                            return;
-                        }
-                        $("#want_id").val(str);
-                        var param = com.util.getFormParam('#userForm');
-                        com.ajax({
-                            type		: "POST"
-                            ,url		: "/member/popup/CheckIDApp.do"
-                            ,data		: param
-                            ,success: function(sdata){
-                                $("#want_id").val(sdata.want_id);					
-                                closeLayer('modal01');
-                                closeLayer('modal02');
-                                closeLayer('modal03');
-                                if(sdata.check_id == "0"){
-                                    $("#wantId01").text(sdata.want_id);
-                                    $("#wantId001").text(sdata.want_id);						
-                                    openLayer('modal01', null, null, opener); //181023_접근성 수정 추가
-                                }else if(sdata.check_id == "9"){
-                                    $("#wantId02").text(sdata.want_id);
-                                    $("#wantId002").text(sdata.want_id);
-                                    openLayer('modal02', null, null, opener); //181023_접근성 수정 추가
-                                }else{
-                                    $("#wantId03").text(sdata.want_id);
-                                    $("#wantId003").text(sdata.want_id);
-                                    openLayer('modal03', null, null, opener); //181023_접근성 수정 추가
-                                }
-                                return;					
-                            }
-                            ,error	: function(edata){
-                                alert("중복체크 중 오류가 발생했습니다.");
-                                return;
-                            }
-                        });     		
-                        $(userId).val(str);
-                    }
+                    // function _check_id(form1, name, opener)
+                    // {
+                    //     var userId = "#"+name;
+                    //     var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                    //     var str = $(userId).val();
+                    //     str = str.replace(/^[\s]+/g,"");
+                    //     str = str.replace(/[\s]+$/g,"");
+                    //     var flag = false;
+                    //     var nums = "0123456789";
+                    //     var numchk =0;
+                    //     for(var k = 0 ; k < str.length; k++){
+                    //         if(chars.indexOf(str.charAt(k)) == -1){
+                    //             flag = false;
+                    //             break;
+                    //         }else{
+                    //             flag = true;
+                    //         }
+                    //     }
+                    //     for(var k = 0 ; k < str.length; k++){
+                    //         if(nums.indexOf(str.charAt(k)) > -1){
+                    //             numchk++;
+                    //         }
+                    //     }
+                    //     if (str == "")//form1.user_id.value
+                    //     {
+                    //         alert("아이디를 입력하세요.\n아이디 입력란으로 이동합니다.");
+                    //         $(userId).focus();
+                    //         return;
+                    //     }
+                    //     if(!flag){
+                    //         alert("회원 아이디에 특수문자는 사용할 수 없습니다.");
+                    //         $(userId).focus();
+                    //         return;
+                    //     }
+                    //     if(str.length == numchk){
+                    //         alert("아이디는 숫자로만 사용이 불가능합니다.");
+                    //         $(userId).focus();
+                    //         return;
+                    //     }
+                    //     if (str.length < 5)//form1.user_id.value
+                    //     {
+                    //         alert("아이디를 5자 이상 입력하세요.\n아이디 입력란으로 이동합니다.");
+                    //         $(userId).select();
+                    //         $(userId).focus();
+                    //         return;
+                    //     }
+                    //     if (str.length > 15)//form1.user_id.value
+                    //     {
+                    //         alert("아이디는 15자 이하로 입력하세요.\n아이디 입력란으로 이동합니다.");
+                    //         $(userId).select();
+                    //         $(userId).focus();
+                    //         return;
+                    //     }
+                    //     $("#want_id").val(str);
+                    //     var param = com.util.getFormParam('#userForm');
+                    //     com.ajax({
+                    //         type		: "POST"
+                    //         ,url		: "/member/popup/CheckIDApp.do"
+                    //         ,data		: param
+                    //         ,success: function(sdata){
+                    //             $("#want_id").val(sdata.want_id);
+                    //             closeLayer('modal01');
+                    //             closeLayer('modal02');
+                    //             closeLayer('modal03');
+                    //             if(sdata.check_id == "0"){
+                    //                 $("#wantId01").text(sdata.want_id);
+                    //                 $("#wantId001").text(sdata.want_id);
+                    //                 openLayer('modal01', null, null, opener); //181023_접근성 수정 추가
+                    //             }else if(sdata.check_id == "9"){
+                    //                 $("#wantId02").text(sdata.want_id);
+                    //                 $("#wantId002").text(sdata.want_id);
+                    //                 openLayer('modal02', null, null, opener); //181023_접근성 수정 추가
+                    //             }else{
+                    //                 $("#wantId03").text(sdata.want_id);
+                    //                 $("#wantId003").text(sdata.want_id);
+                    //                 openLayer('modal03', null, null, opener); //181023_접근성 수정 추가
+                    //             }
+                    //             return;
+                    //         }
+                    //         ,error	: function(edata){
+                    //             alert("중복체크 중 오류가 발생했습니다.");
+                    //             return;
+                    //         }
+                    //     });
+                    //     $(userId).val(str);
+                    // }
                     //숫자인지 체크
                     function isNumber(sValue) {
                         for ( var i =0; i < sValue.length; i++) {
@@ -2070,4 +2071,5 @@
        
     </div>
 </body>
+<script src="/js/join_ok.js"/>
 </html>
