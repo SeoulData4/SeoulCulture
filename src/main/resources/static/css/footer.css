@@ -1,0 +1,323 @@
+/* 공통 CSS */
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    color: #111;
+    overflow-y: scroll;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+h1, h3, h4, h5 {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ol ol, ul ul, ol ul, ul ol {
+    margin-bottom: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+button, label {
+    cursor: pointer;
+}
+
+button, input[type="button"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 1em;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"], textarea, input[type="date"] {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.hide, caption, legend, .hidden {
+    position: absolute;
+    left: -300px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    line-height: 0;
+    overflow: hidden;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    appearance: none;
+    font: inherit;
+    font-size: 1em;
+    background: #fff url(../img/common/select.png) 95% center no-repeat;
+    padding: 0 15px 0 5px;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+input[type="radio"], input[type="checkbox"], label {
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 36px;
+    word-break: keep-all;
+}
+
+img {
+    max-width: 100%;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+/* //공통 CSS */
+
+h2 {
+    font-size: 36px;
+    word-break: keep-all;
+}
+.footerModify {
+    --footerModify__color: #000;
+    --footerModify__top-bg: #e9e9e9;
+    --footerModify__max-width: 1320px;
+    padding: 0 40px;
+    color: var(--footerModify__color);
+    background-color: #f9f9f9;
+    word-break: keep-all;
+}
+
+.footerModify__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--footerModify__max-width);
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: var(--footerModify__top-bg);
+}
+
+.footerModify__link {
+    gap: 20px;
+}
+
+.footerModify__top ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footerModify__link li {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.footerModify a {
+    color: var(--footerModify__color);
+}
+
+.footerModify__link li ~ li::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: -2px;
+    width: 2px;
+    height: 8px;
+    margin-right: 20px;
+    background: url(/img/mainImgs_177.png) no-repeat 0 0;
+}
+
+.footerModify__sns {
+    gap: 10px;
+}
+
+.footerModify__sns a {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, .18);
+    background-repeat: no-repeat;
+}
+
+.footerModify__sns a.facebook {
+    background-image: url(/img/mainImgs_188.png);
+}
+
+.footerModify__sns a.instagram {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDUlEQVQ4jZXUz4uXVRQG8M98nSayxkRoRiGKRqRAHEEigglmobRyFwoWLmRsIeIiNwMRgphgC124bhHUMupPmBwQBVuVkIrBYNHvlBhlnHLmcfHed7x8fSeZBy7n3nPuee6559xzB5KosAXvYAdGK/0wevin0v2NH/A1flzRJmnH0SQLWTseJPkkSS/JCuHBYrydZDrJ60m2JNm4yticZDzJkSS3iu/JlnAoya8luu1VxE8abyTZl2S08h+RZKKc8MX/OK8vkdW6+eI3meREmR/sYWtJ5xWP4z1cxT3cwRw+wDp8iW9LYVrfbYPYVBZ/9JGdwTQeYBaLmMC5IvehfSJ/FbmhVxEsVPPJQjaH8bJ+u9zmiuZpTVX7/2snNWGN94ucKldq8Rv2YxmHO/zW9fB0h+E1zRVnOmxzuI7tHbbhHv7tMNzHEJ7rsMFGTaH6sdTzKLE1LmAAxzps+zUtOtthm18th+dxG6dwGmN4EcfxmaYIH3c59jTPAp6v9L9jr+Y5fKhp/p9wttzoAL6r9j9b5PJgcYZX+g67hFdxCG+Ww7/Hp/ilb+9LK4EkGSttc3ENfdw/Pi8ce1rFN0XxUZKBNZK9m2Qpyc0kgwNpPtgxXMYLuKap8s+425V4PIPNeAu7NF22G5fqk15O8lWaD3MtmEmys+VpI6wxrOmCEY9a86kyX6z2/YkbRa7gIQmeLNG4vF/NAAAAAElFTkSuQmCC);
+}
+
+.footerModify__sns a.blog {
+    background-image: url(/img/mainImgs_191.png);
+}
+
+.footerModify__bot {
+    display: flex;
+    align-items: center;
+    max-width: var(--footerModify__max-width);
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footerModify__logo {
+    margin-right: 95px;
+}
+
+.footerModify__info .address, .footerModify__info .call {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footerModify__info .address::before, .footerModify__info .call::before {
+    opacity: 0.5;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footerModify__info .address::before {
+    background-image: url(/img/mainImgs_184.png);
+}
+
+.footerModify__info .call::before {
+    background-image: url(/img/mainImgs_194.png);
+}
+
+.footerModify__info .copyright {
+    /* margin-top: auto; */
+}
+
+.footerModify__banner {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.footerModify__banner .accessibility-mark {
+    width: 80px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .footerModify {
+        padding: 0 20px;
+    }
+
+    .footerModify__top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 0;
+        margin: 0 -20px;
+    }
+
+    .footerModify__bot {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footerModify__logo {
+        margin-right: 0;
+    }
+
+    .footerModify__info .address, .footerModify__info .call {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footerModify__banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-left: 0;
+    }
+}

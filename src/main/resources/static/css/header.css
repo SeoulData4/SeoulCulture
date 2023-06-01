@@ -1,0 +1,730 @@
+/* 공통 CSS */
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    color: #111;
+    overflow-y: scroll;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+h1, h3, h4, h5 {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ol ol, ul ul, ol ul, ul ol {
+    margin-bottom: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+button, label {
+    cursor: pointer;
+}
+
+button, input[type="button"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 1em;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"], textarea, input[type="date"] {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.hide, caption, legend, .hidden {
+    position: absolute;
+    left: -300px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    line-height: 0;
+    overflow: hidden;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    appearance: none;
+    font: inherit;
+    font-size: 1em;
+    background: #fff url(../img/common/select.png) 95% center no-repeat;
+    padding: 0 15px 0 5px;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+input[type="radio"], input[type="checkbox"], label {
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 36px;
+    word-break: keep-all;
+}
+
+img {
+    max-width: 100%;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+/* //공통 CSS */
+
+/* header */
+#header {
+    color: #fff;
+    z-index: 150;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    top: 0;
+    background: transparent;
+    transition: all .3s;
+}
+
+#header {
+    padding: 0 0 0 80px;
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px 0;
+    border-style: solid;
+
+    border-color: #cfcfcf;
+    position: fixed;
+    top: 48px;
+    background: #fff;
+    transition: all .4s;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    color: #2f2f2f;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.headerHide #header {
+    top: -101px;
+    opacity: 0;
+}
+
+/* header > logo */
+.logo {
+    display: block;
+}
+
+.logo a {
+    display: block;
+    width: 141px;
+    height: 43px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(/img/logo.png) no-repeat center center;
+}
+
+/* header > top_nav */
+#top_nav {
+    z-index: 151;
+    position: relative;
+    font-size: 23px;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#top_nav > ul {
+    display: flex;
+}
+
+#top_nav > ul > li {
+    position: relative;
+    text-align: center;
+}
+
+#top_nav > ul > li:first-child {
+    margin-left: 0;
+}
+
+#top_nav a {
+    display: block;
+    word-break: keep-all;
+    transition: all .5s;
+}
+
+#top_nav > ul > li > a {
+    padding: 0 45px;
+}
+
+#top_nav > ul > li > a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+#top_nav > ul > li > ul {
+    font-size: 16px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 320px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#top_nav > ul > li > ul > li {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    width: 100%;
+}
+
+/* header > a태그 */
+#visit-s {
+    display: block;
+    width: 107px;
+    height: 25px;
+    background: url(/img/seoul_logo.png) no-repeat 0 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+/* header > gnb */
+#gnb {
+    display: flex;
+}
+
+#gnb li {
+    border-left: 1px solid #cfcfcf;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#gnb a, #gnb button {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100px;
+    height: 100px;
+}
+
+#gnb .login {
+    background-image: url(/img/login.png);
+}
+
+#gnb .search-btn {
+    background-image: url(/img/search.svg);
+}
+
+#gnb .sitemap-btn {
+    background-image: url(/img/all_menu.svg);
+    position: relative;
+    transition: all .4s;
+}
+
+ #gnb .sitemap-btn::before, #gnb .sitemap-btn::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 30px;
+    border-radius: 2px;
+    background: #2f2f2f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left top;
+    max-height: 0;
+    transition: all .4s;
+} 
+
+#gnb .sitemap-btn::before {
+    transform: rotate(45deg) translate(-50%, -50%) translate(-0.5px, -0.5px);
+}
+
+/* header > allmenu_m */
+.allmenu_m {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #fff;
+    color: #333;
+    word-break: keep-all;
+}
+
+.allmenu_m .allmenu_m_wrap {
+    position: relative;
+    padding-top: 80px;
+    height: 100%;
+}
+
+.allmenu_m .m_h_top {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    font-size: 1.3em;
+    padding-right: 3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.allmenu_m .m_h_top .top_ui_m li {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.allmenu_m .m_h_top .top_ui_m li a {
+    display: flex;
+    align-items: center;
+}
+
+.allmenu_m .m_h_top .top_ui_m li a::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(/img/baseline_login_black_24dp.png) no-repeat 0 0 / 100% auto;
+    margin-right: 10px;
+}
+
+#depth1List_m {
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+}
+
+#depth1List_m > li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#depth1List_m > li > a {
+    font-size: 1.5em;
+    color: #111;
+    width: 50%;
+    word-break: break-all;
+    display: block;
+    white-space: pre-line;
+    font-weight: 500;
+    line-height: 1;
+    transition: all .5s;
+}
+
+#depth1List_m > li > a.active {
+    color: #FF385C;
+}
+
+#depth1List_m .depth2List_m {
+    background: #f4f4f4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#depth1List_m > li > a.active + .depth2List_m {
+    opacity: 1;
+    visibility: visible;
+}
+
+#depth1List_m .depth2List_m > li {
+    padding: 20px 20px 0 20px;
+}
+
+#depth1List_m .depth2List_m > li:first-child {
+    margin-top: 0;
+}
+
+#depth1List_m .depth2List_m > li > a {
+    font-size: 1.33em;
+    color: #666;
+    line-height: 1;
+}
+
+.allmenu_m .close_m {
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 100%;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    background: url(/img/btn-close_m.png) center center no-repeat;
+}
+
+/* header > depth_bg */
+.depth_bg {
+    width: 100%;
+    background: rgba(0,0,0,.85);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 320px;
+    display: none;
+}
+
+/* header > lnb_new */
+#lnb_new {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    overflow-y: auto;
+    z-index: 300;
+    color: #333;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: none;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+}
+
+#lnb_new > ul {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#lnb_new > ul > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    padding: 40px 40px 80px;
+    border-left: 1px solid #ccc;
+}
+
+#lnb_new > ul > li:first-child {
+    border-left: 0;
+}
+
+#lnb_new a {
+    display: block;
+}
+
+#lnb_new > ul > li > a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    position: relative;
+}
+
+#lnb_new .depth {
+    margin-top: 30px;
+    color: #666;
+}
+
+#lnb_new .depth > li {
+    margin-top: 0.8em;
+}
+
+#lnb_new .depth > li:first-child, #lnb_new .depth .depth3 > li:first-child {
+    margin-top: 0;
+}
+
+#lnb_new .depth > li > a {
+    font-size: 18px;
+    font-weight: 500;
+}
+/* //header */
+
+/* searchArea */
+.searchArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.searchArea form {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    position: relative;
+}
+
+.searchArea form ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 3px solid #FF385C;
+    border-radius: 3px;
+    height: 60px;
+}
+
+.searchArea form ul li {
+    height: 100%;
+    position: relative;
+}
+
+.searchArea form ul li:nth-child(1) {
+    width: 165px;
+}
+
+.searchArea form ul li:nth-child(2) {
+    flex: 1;
+}
+
+.searchArea form ul li:nth-child(3) {
+    width: 57px;
+}
+
+.searchArea select {
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    border: 0;
+    font-size: 18px;
+    color: #FF385C;
+    font-weight: 500;
+    padding: 0 20px;
+    background: url(/img/down_arrow.svg) no-repeat right 20px center #fff;
+}
+
+.searchArea input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 18px;
+    color: #8f8f8f;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.searchArea__btn {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/img/renewalSearchIcons_07.png) no-repeat center center #FF385C;
+}
+
+.searchArea__close {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: -52px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background: url(/img/renewalSearchIcons_03.png) no-repeat 0 0;
+}
+
+.searchArea.active {
+    display: flex;
+}
+
+/* //searchArea */
+
+/* 미디어쿼리 (768px) */
+@media (max-width:768px) {
+    /* header */
+    #header {
+        height: 70px;
+    }
+
+    #header .logo a {
+        width: 110px;
+    }
+
+    #visit-s {
+        width: 85px;
+        background-size: 100% auto;
+        background-position: center center;
+    }
+
+    #gnb a, #gnb button {
+        width: 45px;
+        height: 70px;
+    }
+
+    /* searchArea */
+    .searchArea form ul {
+        height: 50px;
+    }
+    
+    .searchArea select {
+        font-size: 16px;
+    }
+    
+    .searchArea input[type="text"] {
+        font-size: 16px;
+    }
+}
+
+/* 미디어쿼리 (1024px) */
+@media (max-width:1024px) {
+    body {
+        overflow: auto;
+    }
+
+    /* header */
+    #header {
+        padding: 0 0 0 20px;
+    }
+
+    #header {
+        border-top: 0;
+    }
+
+    .headerHide #header {
+        top: 0;
+        opacity: 1;
+    }
+
+    #top_nav {
+        display: none;
+    }
+
+    #visit-s {
+        margin: 0 auto 0 20px;
+    }
+
+    #gnb {
+        display: flex !important;
+    }
+
+    /* searchArea */
+    .searchArea form {
+        margin: 0 20px;
+    }
+}
+
+/* 미디어쿼리 (1200px) */
+@media (max-width:1200px) {
+    /* header */
+    .logo a {
+        width: 110px;
+        background-size: 100% auto !important;
+    }
+
+    #top_nav > ul > li > a {
+        padding: 0 10px;
+    }
+}
+
+/* 미디어쿼리 (1600px) */
+@media (max-width:1600px) {
+    /* header */
+    #top_nav > ul > li > a {
+        padding: 0 20px;
+    }
+    
+}
