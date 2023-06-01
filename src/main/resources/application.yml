@@ -1,7 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/aiDev?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://127.0.0.1:3306/scsquad?serverTimezone=Asia/Seoul
+
     username: root
     password: 1234
   jpa:
@@ -19,4 +20,5 @@ spring:
   main:
     allow-bean-definition-overriding: true
 server:
-  port: 7070
+  port: 9999
+
