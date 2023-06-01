@@ -1,4 +1,4 @@
-package com.catchmind.admin.model.config;
+package com.squad.seoulculture.model.config;
 
 import java.time.LocalDateTime;
 
