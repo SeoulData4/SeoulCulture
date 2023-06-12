@@ -2,17 +2,16 @@ create database scsquad;
 use scsquad;
 
 
-create table mem(
-	pr_idx int auto_increment primary key,
-    pr_name varchar(20) not null,
-    pr_userid varchar(20) not null,
-    pr_userpw varchar(100) not null,
-    pr_hp varchar(100) not null,
-    pr_hometel varchar(100),
-    pr_jobtel varchar(100),
-    pr_birth varchar(100) not null,
-    pr_region varchar(100) not null,
-    pr_email varchar(100) not null,
+create table member (
+    mem_idx int primary key auto_increment,
+    mem_id varchar(20) not null,
+    mem_pw varchar(300) not null,
+    mem_name varchar(20) not null,
+    mem_hp varchar(20) not null,
+    mem_email varchar(100) not null,
+    mem_nickname varchar(20),
+    mem_gender smallint,
+    mem_birth varchar(20),
     reg_date datetime default now(),
     update_date datetime
 );
