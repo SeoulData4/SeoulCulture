@@ -54,3 +54,22 @@ create table images(
     is_member smallint not null,
     review_idx int not null
 );
+
+create table culture_list(
+     sn varchar(100) primary key,
+     no varchar(100),
+     ccma_name varchar(100),
+     crltsno_nm varchar(100),
+     ccba_mnm1 varchar(100),
+     ccba_mnm2 varchar(100),
+     ccba_ctcd_nm varchar(100),
+     ccsi_name varchar(100),
+     ccba_admin varchar(100),
+     ccba_kdcd varchar(100),
+     ccba_ctcd varchar(100),
+     ccba_asno varchar(100),
+     ccba_cpno varchar(100),
+     longitude varchar(100),
+     latitude varchar(100),
+     ccba_cncl varchar(100)
+);

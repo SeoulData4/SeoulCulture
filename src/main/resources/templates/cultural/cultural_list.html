@@ -2,9 +2,379 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cultural.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>문화재 리스트</title>
 </head>
 <body>
- 히히
+<div id="container">
+    <!-- <strong class="hide">본문</strong> -->
+    <!-- 서브 비주얼 : 메뉴별로 m01, m02, m03, m04, m05의 클래스를 넣어주어야 합니다. : s -->
+    <div id="sub_visual" class="m01">
+    </div>
+    <!-- 서브 비주얼 : e -->
+    <div class="inner">
+
+        <!--content area : s-->
+        <div id="content_wrap">
+            <div id="content">
+                <!-- sub page title : s -->
+                <!-- sub page title : s -->
+                <div class="sub_tit">
+                    <h3>문화재 종목별 검색</h3>
+                    <ul class="subt_btn">
+                        <li><a href="#" onclick="javascript:printOpen();" title="인쇄"><img src="https://www.heritage.go.kr/images/layout/btn_print.png" alt="인쇄"></a></li>
+                    </ul>
+                </div>
+                <!-- search-cont-wrap -->
+                <div class="search-cont-wrap">
+                    <form name="imgPop" method="get" action="/heri/cul/imgHeritage.do">
+                        <input type="hidden" name="ccimId" value="">
+                        <input type="hidden" name="ccbaKdcd" value="">
+                        <input type="hidden" name="ccbaAsno" value="">
+                        <input type="hidden" name="ccbaCtcd" value="">
+                    </form>
+                    <form name="pform" method="get" action="/heri/cul/popHeritage.do">
+                        <input type="hidden" name="fileNm">
+                        <input type="hidden" name="imgDesc">
+                    </form>
+                    <form name="detailForm" id="detailForm" method="get" action="/heri/cul/culSelectDetail.do">
+                        <input type="hidden" name="culPageNo" value="1">
+                        <input type="hidden" name="region" value="1">
+                        <input type="hidden" name="searchCondition" value="">
+                        <input type="hidden" name="searchCondition2" value="">
+                        <input type="hidden" name="ccbaKdcd" value="16">
+                        <input type="hidden" name="ccbaAsno" value="00010000">
+                        <input type="hidden" name="ccbaCtcd" value="22">
+                        <input type="hidden" name="ccbaCpno" value="1362200010000">
+                        <input type="hidden" name="ccbaCndt" value="">
+                        <input type="hidden" name="ccbaLcto" value="">
+                        <input type="hidden" name="stCcbaAsdt" value="">
+                        <input type="hidden" name="endCcbaAsdt" value="">
+                        <input type="hidden" name="header" value="view">
+                        <input type="hidden" name="returnUrl" value="/heri/cul/culSelectViewList.do">
+                        <input type="hidden" name="pageNo" value="1_1_2_0">
+                        <input type="hidden" name="p" value="multiSch">
+                        <input type="hidden" name="sortType" value="CCBA_ASDT">
+                        <input type="hidden" name="sortOrd" value="ASC">
+                        <input type="hidden" name="sngl" value="Y">
+                        <input type="hidden" name="s_kdcdArr" class="addArr" value="00">
+                    </form>
+                    <form method="get" name="searchformNew" action="/heri/cul/culExcelDown.do">
+                        <input type="hidden" name="gbn" value="2">
+                        <input type="hidden" name="pageNo" value="1_1_2_0">
+                        <input type="hidden" name="culPageNo" value="1">
+                        <input type="hidden" name="ccbaCndt" value="">
+                        <!--search-top-->
+                        <div class="search-top">
+                            <div class="layout">
+                                <div class="txt-group" style="display: none;">
+                                    <p>
+                                        문화재의 지정종목 등을 선택한 후 <strong>'검색'</strong>버튼을 누르세요.
+                                    </p>
+                                    <p>
+                                        각 검색항목에 값을 입력하면 and처리가 되며 입력하시지 않으면 기본값을 적용합니다.
+                                    </p>
+                                    <p>
+                                        각 검색항목 선택은 <strong>'검색도우미'</strong>를 참조하세요.<a href="#searchHelp" class="link-helper" onclick="window.open('/heritage/searchHelp.jsp','helpsrch','width=500,height=600,resizable=no,scrollbars=yes');return false;"><span>검색도우미</span></a>
+                                    </p>
+                                </div>
+                                <div class="search-group">
+                                    <fieldset>
+                                        <legend>검색영역</legend>
+                                        <div class="input-wrap">
+                                            <label for="searchCondition" class="hide">검색어</label>
+                                            <input type="text" placeholder="검색어를 입력해 주세요" name="searchCondition" id="searchCondition" class="form-control" title="검색어를 입력해주세요" value="" autocomplete="off" maxlength="20" onkeypress="if(event.keyCode==13) doSearchNew();">
+                                            <input type="button" id="btnSearchTop" class="btn btn-dark" onclick="javascript:doSearchNew();" title="검색하기" value="검색">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="rc-wrap">
+                                    <div class="rc-inner">
+                                        <input type="radio" id="key1" name="region" checked="" value="1"><label for="key1"> 문화재명</label>
+                                    </div>
+                                    <div class="rc-inner">
+                                        <input type="radio" id="key2" name="region" value="2"><label for="key2">문화재명+설명</label>
+                                    </div>
+                                    <div class="rc-inner">
+                                        <input type="radio" id="key3" name="region" value="3"><label for="key3">문화재명+전승자명</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //search-top-->
+                        <!--search-mid-->
+                        <div class="search-mid on">
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-reset" onclick="initSearchForm();">초기화</button>
+                                <button type="button" class="btn btn-toggle">상세검색<span class="txt">닫기</span></button>
+                                <script>
+                                    const $search_mid = $('.search-mid');
+                                    const $checkbox_list = $('.checkbox-wrap-container');
+                                    $('.btn-toggle').click(function() {
+                                        $search_mid.toggleClass('on');
+                                        $('.checkbox-wrap-container').slideToggle();
+                                        if ($search_mid.hasClass('on')) {
+                                            $checkbox_list.animate({
+                                                // 'opacity': '1',
+                                                'height': '100%'
+                                            });
+                                            $('.btn-toggle .txt').text('닫기');
+                                        } else {
+                                            $checkbox_list.animate({
+                                                'height': '0',
+                                                //'opacity': '0'
+                                            });
+                                            $('.btn-toggle .txt').text('열기');
+                                        }
+                                    });
+                                </script>
+                            </div>
+                            <div class="checkbox-wrap-container" style="display: block;">
+                                <script>
+                                    var kdcd_array = '';
+                                    if(kdcd_array == undefined || kdcd_array == ''){
+                                        kdcd_array = '00';
+                                    }
+                                    $(function(){
+                                        $('form[name=searchformNew] .search-mid').each(function(){
+                                            $('.btn-toggle .txt').text('닫기');
+                                        });
+                                        var kdcd_checkboxes = $('.checkbox-wrap-container .checkbox-wrap.kdcd_list .type_checkbox');
+                                        kdcd_checkboxes.each(function(){
+                                            if(kdcd_array != undefined && kdcd_array != ''){
+                                                var temp_arrays = kdcd_array.split(',');
+                                                for(var i = 0;i<temp_arrays.length; i++){
+                                                    if($(this).hasClass('scope_'+temp_arrays[i])){
+                                                        $(this).prop('checked', true);
+                                                    }
+                                                }
+                                            }
+                                        });
+                                        kdcd_checkboxes.change(function(){
+                                            if($(this).hasClass('scope_00')){
+                                                kdcd_checkboxes.prop('checked', false);
+                                                $(this).prop('checked', true);
+                                                doSearchNew();
+                                            }else{
+                                                $('#searchScopeAll').prop('checked', false);
+                                                doSearchNew();
+                                            }
+                                        });
+                                        $('#canasset').change(function(){
+                                            doSearchNew();
+                                        });
+                                    });
+                                </script>
+                                <ul class="checkbox-wrap kdcd_list mt_20">
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="searchScopeAll" class="type_checkbox scope_00" value="00">
+                                            <label for="searchScopeAll">전체</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check11" class="type_checkbox scope_11" value="11">
+                                            <label for="check11">국보</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check12" class="type_checkbox scope_12" value="12">
+                                            <label for="check12">보물</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check13" class="type_checkbox scope_13" value="13">
+                                            <label for="check13">사적</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check14" class="type_checkbox scope_15" value="15">
+                                            <label for="check14">명승</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check15" class="type_checkbox scope_16" value="16">
+                                            <label for="check15">천연기념물</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check16" class="type_checkbox scope_17" value="17">
+                                            <label for="check16">국가무형문화재</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check-box checkbox-inline">
+                                            <input type="checkbox" name="s_kdcdArr" id="check17" class="type_checkbox scope_18" value="18">
+                                            <label for="check17">국가민속문화재</label>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check18" class="type_checkbox scope_79" value="79">
+                                        <label for="check18">국가등록문화재</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check19" class="type_checkbox scope_21" value="21">
+                                        <label for="check19">시도유형문화재</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check20" class="type_checkbox scope_22" value="22">
+                                        <label for="check20">시도무형문화재</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check21" class="type_checkbox scope_23" value="23">
+                                        <label for="check21">시도기념물</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check22" class="type_checkbox scope_24" value="24">
+                                        <label for="check22">시도민속문화재</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check23" class="type_checkbox scope_25" value="25">
+                                        <label for="check23">시도등록문화재</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check24" class="type_checkbox scope_31" value="31">
+                                        <label for="check24">문화재자료</label>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="check-box checkbox-inline">
+                                        <input type="checkbox" name="s_kdcdArr" id="check25" class="type_checkbox scope_80" value="80">
+                                        <label for="check25">이북5도 무형문화재</label>
+                                    </div>
+                                    </li> -->
+                                </ul>
+                                <input type="hidden" name="s_ctcdArr" value="00">
+                                <input type="hidden" name="ccbaPcd1Arr" value="99">
+                                <input type="hidden" name="stCcbaAsdt" value="">
+                                <input type="hidden" name="endCcbaAsdt" value="">
+                                <input type="hidden" name="ccbaGcodeArr" value="00">
+                                <!-- 해제된문화재 -->
+                                <!-- <div class="rc-wrap_01">
+                                    <div class="rc-inner">
+                                        <input type="checkbox" id="canasset" name="canasset" value="31">
+                                        <label for="canasset">
+                                        <span class="label-txt">해제된 문화재</span>
+                                        </label>
+                                    </div>
+                                </div> -->
+                                <!-- 해제된문화재 -->
+                                <div class="btn-search">
+                                    <button type="button" class="btn" onclick="javascript:doSearchNew();"><span>검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //search-mid-->
+                        <div class="csch_info1">
+                            <ul class="media_list1">
+                                <li class="excel_01"><a href="javascript:jsExcelDown();" title="엑셀파일로 저장">엑셀저장</a></li>
+                            </ul>
+                        </div>
+                        <!--search-bottom-->
+                        <div class="search-bottom">
+                            <ul class="search_tab_ul" id="search_category">
+                                <li><a href="#list" onclick="doSearchNew();"><span>문화재목록</span></a></li>
+                                <li><a href="#list" onclick="doSearchNewImg();"><span>행사목록</span></a></li>
+                                <!-- <li><a href="#list" onclick="doSearchNewVideo();"><span>동영상</span></a></li>
+                                <li><a href="#list" onclick="doSearchNewDraw();"><span>도면</span></a></li> -->
+                                <!--<li><a href=""><span>간행물</span></a></li>-->
+                            </ul>
+                            <div class="search-summary">
+                                <p>
+                                    총 <strong th:text="${result.totalCnt}">15148</strong>건 의 자료가 검색되었습니다.
+                                </p>
+                                <div class="legend-wrap">
+                                    <script>
+                                        function sortActive(sortType) {
+                                            if($("#sortType").val() == sortType) {
+                                                if($("#sortOrd").val() == "") {
+                                                    $("#sortOrd").val("ASC");
+                                                }else if($("#sortOrd").val() == "ASC") {
+                                                    $("#sortOrd").val("DESC");
+                                                }else{
+                                                    $("#sortType").val("");
+                                                    $("#sortOrd").val("");
+                                                }
+                                            }else{
+                                                $("#sortType").val(sortType);
+                                                $("#sortOrd").val("ASC");
+                                            }
+                                            doSearchNew();
+                                        }
+                                    </script>
+                                    <input type="hidden" id="sortType" name="sortType" value="CCBA_ASDT">
+                                    <input type="hidden" id="sortOrd" name="sortOrd" value="ASC">
+                                    <!-- <button type="button" class="btn" onClick="sortActive('CV_COUNT')"><i class="icon "><span></span></i>조회건수</button> -->
+                                    <button type="button" class="btn" onclick="sortActive('CCBA_MNM1')"><i class="icon "><span></span></i>가나다순</button>
+                                    <button type="button" class="btn" onclick="sortActive('CCBA_ASDT')"><i class="icon down"><span></span></i>지정일순</button>
+                                </div>
+                            </div>
+                            <!--search-result-->
+<!--                            <ul class="search-result" >-->
+<!--                                <li th:each="item : ${itemList}">-->
+<!--                                    <a data-href="/heri/cul/culSelectDetail.do?culPageNo=1&amp;region=1&amp;searchCondition=&amp;searchCondition2=&amp;s_kdcdArr=&amp;s_ctcdArr=&amp;ccbaPcd1Arr=&amp;ccbaKdcd=16&amp;ccbaAsno=00010000&amp;ccbaCtcd=22&amp;ccbaCpno=1362200010000&amp;ccbaCndt=&amp;ccbaLcto=&amp;stCcbaAsno=&amp;endCcbaAsno=&amp;stCcbaAsdt=&amp;endCcbaAsdt=&amp;chGubun=&amp;header=view&amp;returnUrl=%2fheri%2fcul%2fculSelectViewList.do&amp;pageNo=1_1_2_0&amp;sngl=Y" onclick="javascript:fn_detail('1362200010000','16','22','00010000');">-->
+<!--                                        <span class="img-wrap"><img data-src="https://www.heritage.go.kr/unisearch/images/natural_monument/thumb/2021041410202500.jpg" src="https://www.heritage.go.kr/unisearch/images/natural_monument/thumb/2021041410202500.jpg" alt="대구 도동 측백나무 숲" onerror="fn_noImg(this)"></span>-->
+<!--                                        <span class="tag" th:text="${item.ccmaName}">천연기념물</span>-->
+<!--                                        <strong th:text="${item.ccbaMnm1}">-->
+<!--                                            대구 도동 측백나무 숲<br>-->
+<!--                                            (大邱 道洞 側柏나무 숲) </strong>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+
+
+<!--                            </ul>-->
+                            <ul class="search-result">
+                                <li th:each="item : ${itemList}">
+                                    <a href="">
+                                        <span class="img-wrap">
+                                            <img alt="대구 도동 측백나무 숲" onerror="fn_noImg(this)"/>
+                                        </span>
+                                        <span class="tag">천연기념물</span>
+                                        <strong>
+                                            <span th:text="${item.ccbaMnm1}"></span><br>
+                                            <span th:text="${item.ccbaMnm2}"></span>
+                                        </strong>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- //search-result-->
+                            <!-- 페이징처리 -->
+
+                        </div>
+                        <!-- //search-bottom-->
+                    </form>
+                </div>
+                <!-- //search-cont-wrap-->
+
+            </div>
+        </div>
+        <!--content area : e-->
+    </div>
+</div>
 </body>
 </html>
