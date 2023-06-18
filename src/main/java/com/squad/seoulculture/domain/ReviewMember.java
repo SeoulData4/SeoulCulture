@@ -25,5 +25,4 @@ public class ReviewMember extends AuditingFields{
     @JoinColumn(name = "member_idx")
     public Member member;
 
-    // lk, images 추가 필요
 }

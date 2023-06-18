@@ -17,5 +17,9 @@ public class Images extends AuditingFields{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idx;
-    
+    private String imgPath;
+    private boolean isMember; // 0: 비회원, 1: 회원
+    private Long reviewIdx;
+
+
 }
