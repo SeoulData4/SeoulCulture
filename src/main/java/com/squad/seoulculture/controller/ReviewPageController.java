@@ -8,4 +8,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("")
 @RequiredArgsConstructor
 public class ReviewPageController {
+//    private final
 }
