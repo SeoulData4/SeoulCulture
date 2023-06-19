@@ -78,10 +78,8 @@ public class CultureController {
 
     @GetMapping("/cultural")
     public String cultural(Model model) {
-
-//        String url = "http://www.cha.go.kr/cha/SearchKindOpenapiList.do";
-        String url = "http://www.cha.go.kr/cha/SearchKindOpenapiList.do?pageUnit=101&pageIndex=1";
-
+        String url = "http://www.cha.go.kr/cha/SearchKindOpenapiList.do?pageUnit=5&pageIndex=1";
+        String urlImg = "https://www.cha.go.kr/cha/SearchImageOpenapi.do";
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_XML));
@@ -91,6 +89,7 @@ public class CultureController {
 
         if (response.getStatusCode() == HttpStatus.OK) {
             String responseBody = response.getBody();
+
             System.out.println("🍎" + responseBody);
 
             try {
@@ -99,11 +98,30 @@ public class CultureController {
                 System.out.println("❤️" + result);
                 List<CultureList> itemList = result.getItem();
                 System.out.println("❌" + itemList);
+
+                for (CultureList item : itemList) {
+                    String ccbaKdcd = item.getCcbaKdcd();
+                    String ccbaAsno = item.getCcbaAsno();
+                    String ccbaCtcd = item.getCcbaCtcd();
+
+                    String fullUrl = urlImg + "?ccbaKdcd=" + ccbaKdcd + "&ccbaAsno=" + ccbaAsno + "&ccbaCtcd=" + ccbaCtcd;
+                    ResponseEntity<String> responseImg = restTemplate.exchange(fullUrl, HttpMethod.GET, entity, String.class);
+                    String responseBodyImg = responseImg.getBody();
+                    CultureImgResult imgResult = objectMapper.readValue(responseBodyImg, CultureImgResult.class);
+                    List<CultureImg> itemImgList = imgResult.getItem();
+                    System.out.println("🌈🌈" + imgResult);
+                    System.out.println("🍊🍊" + itemImgList);
+//                    System.out.println("🗡️🗡️" + responseBodyImg);
+
+                    model.addAttribute("list", imgResult);
+                    model.addAttribute("imageUrl", itemImgList);
+
+                }
+
                 model.addAttribute("result", result);
                 model.addAttribute("itemList", itemList);
 
                 cultureListRepository.saveAll(result.getItem());
-
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
                 model.addAttribute("errorMessage", "XML 파싱에 실패했습니다.");
@@ -113,6 +131,7 @@ public class CultureController {
         }
         return "cultural/cultural_list";
     }
+
 
 
 }
