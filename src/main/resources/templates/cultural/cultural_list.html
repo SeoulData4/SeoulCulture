@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cultural.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/culturlList.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -349,15 +350,15 @@
 
 <!--                            </ul>-->
                             <ul class="search-result">
-                                <li th:each="item : ${itemList}">
+                                <li th:each="list : ${itemList}">
                                     <a href="">
-                                        <span class="img-wrap">
-                                            <img alt="대구 도동 측백나무 숲" onerror="fn_noImg(this)"/>
+                                        <span class="img-wrap" th:each="item : ${imageUrl}" >
+                                            <img alt="대구 도동 측백나무 숲" th:src="${item.imageUrl}"/>
                                         </span>
                                         <span class="tag">천연기념물</span>
                                         <strong>
-                                            <span th:text="${item.ccbaMnm1}"></span><br>
-                                            <span th:text="${item.ccbaMnm2}"></span>
+                                            <span th:text="${list.ccbaMnm1}"></span><br>
+                                            <span th:text="${list.ccbaMnm2}"></span>
                                         </strong>
                                     </a>
                                 </li>
